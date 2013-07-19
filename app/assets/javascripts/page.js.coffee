@@ -13,3 +13,6 @@ $(document).ready ->
   $("#show_new_review_form").bind "click", (event) ->
     event.preventDefault()
     $("#new_review_form_wrapper").toggleClass("hidden")
+
+  if $("#new_review_form_wrapper .field_with_errors").length > 0
+    $("#new_review_form_wrapper").removeClass "hidden"
