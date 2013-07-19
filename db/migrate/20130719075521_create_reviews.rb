@@ -7,7 +7,7 @@ class CreateReviews < ActiveRecord::Migration
       t.string :logo
       t.string :city
       t.text :content
-      t.boolean :moderated
+      t.boolean :moderated, :default => false
 
       t.timestamps
     end
