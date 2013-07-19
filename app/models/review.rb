@@ -4,8 +4,6 @@ class Review < ActiveRecord::Base
   mount_uploader :logo, ReviewLogoUploader
 
   validates :first_name, :content, presence: true
-  validates :company_name, presence: true, if: lambda { logo.to_s.present? }
-  validates :logo, presence: true, if: lambda { company_name.present? }
 
   scope :moderated, -> { where(moderated: true) }
 

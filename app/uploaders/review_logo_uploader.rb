@@ -1,6 +1,7 @@
 # encoding: utf-8
 class ReviewLogoUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
+  CarrierWave::SanitizedFile.sanitize_regexp = /[^[:word:]\.\-\+]/
 
   storage :file
 
