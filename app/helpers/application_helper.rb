@@ -20,4 +20,8 @@ module ApplicationHelper
     end
     raw errors
   end
+
+  def show_flash
+    raw "<div class='flash_notice'>#{flash[:notice]}</div>" if flash[:notice]
+  end
 end

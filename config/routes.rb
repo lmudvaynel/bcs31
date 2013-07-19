@@ -11,6 +11,7 @@ Cite::Application.routes.draw do
 
   resources :feedbacks, :only => :create
   resources :pages
+  resources :reviews, :only => [:index, :create]
   get 'reviews' => 'reviews#index'
   get ':slug' => 'pages#show', :as => :slug
 end
