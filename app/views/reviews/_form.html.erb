@@ -1,7 +1,27 @@
-<br />
-Имя<br />
-Фамилия<br />
-Город<br />
-Сообщение<br />
-Отправить<br />
-<br />
+<%= form_for @review, :url => reviews_path(@review) do |f| %>
+  <div class="field">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+    <%= errors_for @review, :first_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+    <%= errors_for @review, :last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :city %>
+    <%= f.text_field :city %>
+    <%= errors_for @review, :city %>
+  </div>
+
+  <div class="field">
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+    <%= errors_for @review, :content %>
+  </div>
+
+  <%= f.submit "Отправить" %>
+<% end %>
