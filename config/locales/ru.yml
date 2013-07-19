@@ -69,6 +69,7 @@ ru:
       review:
         first_name:   Имя
         last_name:    Фамилия
+        name:         Полное имя
         company_name: Название компании
         city:         Город
         content:      Сообщение
