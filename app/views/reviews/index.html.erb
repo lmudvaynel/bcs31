@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="row-fluid content">
+    <div>
+      <h2>Книга отзывов и предложений</h2>
+      <%= link_to "Оставить отзыв", "#" %>
+    </div>
+    <div>
+      Уважаемые Клиенты, теперь вы можете существенно сократить время,
+      затрачиваемое на оформление отправок в экспресс центрах.
+    </div>
+    <div>
+      <%= render 'form' %>
+    </div>
+    <%= render 'list', reviews: @reviews if @reviews.any? %>
+  </div>
+</div>
