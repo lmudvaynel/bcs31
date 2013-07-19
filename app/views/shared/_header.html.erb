@@ -3,7 +3,8 @@
     <div class="row-fluid">
       <div class="span12">
         <%= render 'shared/lang_switcher' %>
-        <%= render 'shared/menu' %>      
+        <%= render 'shared/menu' %>   
+        <%= yield(:header) if content_for?(:header) %>   
     </div>
   </div>
 </header>
