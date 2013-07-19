@@ -8,10 +8,22 @@ describe Review do
   end
 
   describe '#first_name' do
-    it 'should not be empty'
+    it 'should not be empty' do
+      review.first_name = ' '
+      review.should have(1).errors_on(:first_name)
+    end
   end
 
   describe '#content' do
-    it 'should not be empty'
+    it 'should not be empty' do
+      review.content = ' '
+      review.should have(1).errors_on(:content)
+    end
+  end
+
+  describe '#moderated' do
+    it 'should be false by default' do
+      review.should_not be_moderated
+    end
   end
 end

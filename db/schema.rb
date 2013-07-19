@@ -107,9 +107,9 @@ ActiveRecord::Schema.define(:version => 20130719075521) do
     t.string   "logo"
     t.string   "city"
     t.text     "content"
-    t.boolean  "moderated"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.boolean  "moderated",    :default => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
   end
 
   create_table "seo_translations", :force => true do |t|
