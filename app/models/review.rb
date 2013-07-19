@@ -4,4 +4,14 @@ class Review < ActiveRecord::Base
   mount_uploader :logo, ReviewLogoUploader
 
   validates :first_name, :content, presence: true
+
+  scope :moderated, -> { where(moderated: true) }
+
+  def name
+    "#{first_name}#{' ' + last_name if last_name}"
+  end
+
+  def caption
+    "#{name}#{', ' + city if city}"
+  end
 end

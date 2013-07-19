@@ -1,7 +1,7 @@
 <ul>
-  <% @reviews.each do |review| %>
+  <% @reviews.each_with_index do |review, index| %>
     <li>
-      <%= review.first_name %>
+      <%= render review, index: index %>
     </li>
   <% end %>
 </ul>
