@@ -8,10 +8,10 @@ class Review < ActiveRecord::Base
   scope :moderated, -> { where(moderated: true) }
 
   def name
-    "#{first_name}#{' ' + last_name if last_name}"
+    "#{first_name}#{' ' + last_name if last_name.present?}"
   end
 
   def caption
-    "#{name}#{', ' + city if city}"
+    "#{name}#{', ' + city if city.present?}"
   end
 end
