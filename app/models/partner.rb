@@ -3,6 +3,8 @@
 class Partner < ActiveRecord::Base
   attr_accessible :logo, :url
 
+  validates :logo, presence: true
+
   mount_uploader :logo, LogoUploader
 
   def to_s

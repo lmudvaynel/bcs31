@@ -21,7 +21,7 @@ class LogoUploader < CarrierWave::Uploader::Base
   def extension_white_list
     %w(jpg jpeg gif png)
   end
-  
+
   def convert_to_grayscale
     manipulate! do |img|
       img.colorspace("Gray")
@@ -29,6 +29,5 @@ class LogoUploader < CarrierWave::Uploader::Base
       img = yield(img) if block_given?
       img
     end
-  end 
+  end
 end
-

@@ -3,7 +3,6 @@
 ActiveAdmin.register Partner do
 
   index do
-    column :id
     column :url
     column :logo do |partner|
       image_tag partner.logo.thumb.url
