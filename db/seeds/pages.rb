@@ -9,3 +9,7 @@ Page.create!(slug: 'contacts', position: 2, translations_attributes: [
   { locale: 'ru', name: 'Контакты' },
   { locale: 'en', name: 'Contacts' }
 ])
+Page.create!(slug: 'about', position: 3, translations_attributes: [
+    { locale: 'ru', name: 'О компании' },
+    { locale: 'en', name: 'About' }
+])

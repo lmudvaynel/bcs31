@@ -1,8 +1,10 @@
 Cite::Application.routes.draw do
 
+
+
   mount_roboto
 
-  root :to => "pages#show", :slug => 'index', locale:'en'
+  root :to => "pages#show", :slug => 'index'
 
   mount Ckeditor::Engine => '/ckeditor'
 
@@ -11,9 +13,10 @@ Cite::Application.routes.draw do
 
   resources :feedbacks, :only => :create
 
-  localized do
-    root :to => "pages#show", :slug => 'index'
-    get ':slug' => 'pages#show', :as => :slug
-    resources :pages
-  end
+
+  resources :pages
+
+  resources :workers
+  get 'workers' => 'workers#index'
+  get ':slug' => 'pages#show', :as => :slug
 end

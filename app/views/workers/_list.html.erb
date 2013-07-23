@@ -1,0 +1,13 @@
+<ul>
+ <% @workers.each do |worker| %>
+   <li>
+     <%= worker.first_name %>
+   </li>
+   <li>
+     <%= worker.last_name %>
+   </li>
+   <li>
+     <%= image_tag worker.photo.thumb %>
+   </li>
+ <% end %>
+</ul>
