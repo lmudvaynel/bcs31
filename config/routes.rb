@@ -1,7 +1,5 @@
 Cite::Application.routes.draw do
 
-
-
   mount_roboto
 
   root :to => "pages#show", :slug => 'index'
@@ -12,11 +10,8 @@ Cite::Application.routes.draw do
   ActiveAdmin.routes(self)
 
   resources :feedbacks, :only => :create
-
-
   resources :pages
-
   resources :workers
-  get 'workers' => 'workers#index'
+  get 'about' => 'workers#index'
   get ':slug' => 'pages#show', :as => :slug
 end

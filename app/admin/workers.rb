@@ -6,8 +6,11 @@ ActiveAdmin.register Worker do
       column :id
       column :first_name
       column :last_name
+      column :th_name
+      column :job
+      column :phone
       column :photo do |worker|
-        image_tag worker.photo.thumb
+        image_tag worker.photo.thumb.url
       end
     column :created_at
     column :updated_at
@@ -17,8 +20,8 @@ ActiveAdmin.register Worker do
   show do
     attributes_table :id, :created_at, :updated_at
 
-    panel 'Логотип' do
-      image_tag worker.photo.thumb
+    panel 'Фото' do
+      image_tag worker.photo.thumb.url
     end
   end
 
