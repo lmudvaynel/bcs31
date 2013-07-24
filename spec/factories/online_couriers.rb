@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :online_courier do
-    type ""
+    transportation "kjkjj"
     date "2013-07-24"
     time "MyString"
     full_name "MyString"

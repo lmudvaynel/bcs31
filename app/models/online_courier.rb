@@ -3,5 +3,5 @@ class OnlineCourier < ActiveRecord::Base
                   :payer, :payer_id, :payment, :phone, :size, :time, :transportation, :weight
 
   validates :address, :amount, :cargo_type, :city, :date, :full_name, presence: true
-  validates :payer, :payment, :phone, :time, :type, :weight, presence: true
+  validates :payer, :payment, :phone, :time, :transportation, :weight, presence: true
 end
