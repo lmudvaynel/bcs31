@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130715131348) do
+ActiveRecord::Schema.define(:version => 20130724140033) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -71,6 +71,27 @@ ActiveRecord::Schema.define(:version => 20130715131348) do
 
   add_index "feedbacks", ["email"], :name => "index_feedbacks_on_email"
 
+  create_table "online_couriers", :force => true do |t|
+    t.string   "transportation"
+    t.date     "date"
+    t.string   "time"
+    t.string   "full_name"
+    t.string   "phone"
+    t.string   "company"
+    t.string   "address"
+    t.string   "weight"
+    t.string   "amount"
+    t.string   "size"
+    t.string   "cargo_type"
+    t.string   "city"
+    t.string   "payment"
+    t.string   "payer"
+    t.string   "payer_id"
+    t.string   "comment"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
   create_table "page_translations", :force => true do |t|
     t.integer  "page_id"
     t.string   "locale"
@@ -116,6 +137,18 @@ ActiveRecord::Schema.define(:version => 20130715131348) do
   create_table "seos", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "workers", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "th_name"
+    t.string   "logo"
+    t.string   "phone"
+    t.string   "job"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "photo"
   end
 
 end

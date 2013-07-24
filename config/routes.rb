@@ -11,6 +11,9 @@ Cite::Application.routes.draw do
 
   resources :feedbacks, :only => :create
 
+  resources :online_couriers, :only => :create
+  get 'online_couriers' => 'online_couriers#new'
+
   localized do
     root :to => "pages#show", :slug => 'index'
     get ':slug' => 'pages#show', :as => :slug
