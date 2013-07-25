@@ -35,6 +35,7 @@ module Cite
     #config.i18n.available_locales = [:en, :ru]
     config.i18n.locale = :ru
     config.i18n.default_locale = :ru
+    config.i18n.available_locales = [:en, :ru]
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"

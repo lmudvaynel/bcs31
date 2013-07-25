@@ -1,5 +1,9 @@
 #coding: utf-8
-
 Page.reset_column_information
-FactoryGirl.create(:page, slug: 'index')
-FactoryGirl.create(:page, slug: 'contacts')
+{ index:    'Главная',
+  reviews:  'Книга отзывов и предложений',
+  contacts: 'Контакты',
+  }.each do |slug, name|
+  page = FactoryGirl.create(:page, slug: slug)
+  page.translations.find_by_locale(:ru).update_attribute :name, name
+end
