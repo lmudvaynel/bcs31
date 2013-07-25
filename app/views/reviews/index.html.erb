@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="row-fluid content">
+    <div>
+      <h2>Книга отзывов и предложений</h2>
+      <%= link_to "Оставить отзыв", "#", id: "show_new_review_form" %>
+    </div>
+    <div>
+      Уважаемые Клиенты, теперь вы можете существенно сократить время,
+      затрачиваемое на оформление отправок в экспресс центрах.
+    </div>
+    <div id="new_review_form_wrapper" class="hidden">
+      <%= render 'form' %>
+    </div>
+    <%= render 'list' %>
+  </div>
+</div>

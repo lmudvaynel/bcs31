@@ -105,6 +105,17 @@ ActiveRecord::Schema.define(:version => 20130719082958) do
     t.string   "logo"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+
+  create_table "reviews", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "company_name"
+    t.string   "logo"
+    t.string   "city"
+    t.text     "content"
+    t.boolean  "moderated",    :default => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "seo_translations", :force => true do |t|
