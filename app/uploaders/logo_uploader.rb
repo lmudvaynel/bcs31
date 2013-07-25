@@ -12,7 +12,7 @@ class LogoUploader < CarrierWave::Uploader::Base
   end
 
   version :thumb do
-    process :resize_to_fill => [180, 181]
+    process :resize_to_fill => [130, 130]
     version :gray do
       process :convert_to_grayscale
     end
