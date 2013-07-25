@@ -1,4 +1,4 @@
-# Template Baltic IT
+# Bcs 31
 
 ## Деплой
 см. [DEPLOY.md](DEPLOY.md)
