@@ -1,6 +1,7 @@
 #coding: utf-8
 Page.reset_column_information
 { index:    'Главная',
+  about: 'О компании',
   reviews:  'Книга отзывов и предложений',
   contacts: 'Контакты',
   }.each do |slug, name|

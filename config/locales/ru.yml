@@ -41,6 +41,12 @@ ru:
         few:    Партнеров
         many:   Партнеров
         other:  Партнеры
+      worker:
+        zero:   Сотрудников
+        one:    Сотрудник
+        few:    Сотрудников
+        many:   Сотрудников
+        other:  Сотрудники
     attributes:
       admin_user:
         id: Номер
@@ -95,7 +101,7 @@ ru:
       worker:
         first_name: Имя
         last_name: Фамилия
-        th_name: Отчество
+        patronymic: Отчество
         phone: Телефон
         job: Должность
         photo: Фото

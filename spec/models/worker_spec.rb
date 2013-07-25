@@ -24,7 +24,7 @@ describe Worker do
     it 'should not be empty' do
       @worker.first_name = ''
       @worker.last_name = ''
-      @worker.th_name = ''
+      @worker.patronymic = ''
       @worker.should be_invalid
     end
   end
