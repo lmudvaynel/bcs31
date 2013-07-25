@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130715131348) do
+ActiveRecord::Schema.define(:version => 20130725072627) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -70,6 +70,15 @@ ActiveRecord::Schema.define(:version => 20130715131348) do
   end
 
   add_index "feedbacks", ["email"], :name => "index_feedbacks_on_email"
+
+  create_table "news", :force => true do |t|
+    t.string   "name"
+    t.text     "content"
+    t.string   "photo"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "page_translations", :force => true do |t|
     t.integer  "page_id"
