@@ -12,16 +12,10 @@ Cite::Application.routes.draw do
   resources :feedbacks, :only => :create
   resources :pages
 
-  resources :workers
+  resources :workers , :only  => :create
   get 'about' => 'workers#index'
 
   resources :reviews, :only => [:index, :create]
   get 'reviews' => 'reviews#index'
   get ':slug' => 'pages#show', :as => :slug
-
-  localized do
-    root :to => "pages#show", :slug => 'index'
-    get ':slug' => 'pages#show', :as => :slug
-    resources :pages
-  end
 end
