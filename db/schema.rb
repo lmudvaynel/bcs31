@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130715131348) do
+ActiveRecord::Schema.define(:version => 20130719082958) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -45,6 +45,13 @@ ActiveRecord::Schema.define(:version => 20130715131348) do
 
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
+
+  create_table "banners", :force => true do |t|
+    t.string   "content"
+    t.string   "url"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
@@ -99,6 +106,25 @@ ActiveRecord::Schema.define(:version => 20130715131348) do
   add_index "pages", ["position"], :name => "index_pages_on_position"
   add_index "pages", ["seo_id"], :name => "index_pages_on_seo_id"
   add_index "pages", ["slug"], :name => "index_pages_on_slug", :unique => true
+
+  create_table "partners", :force => true do |t|
+    t.string   "url"
+    t.string   "logo"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "reviews", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "company_name"
+    t.string   "logo"
+    t.string   "city"
+    t.text     "content"
+    t.boolean  "moderated",    :default => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+  end
 
   create_table "seo_translations", :force => true do |t|
     t.integer  "seo_id"

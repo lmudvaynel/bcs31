@@ -1,0 +1,18 @@
+<div class="<%= index.odd? ? 'left' : 'right' %>">
+  <% if review.logo.to_s.present? %>
+    <div>
+      <%= logo_for review %>
+    </div>
+  <% end %>
+  <div>
+  <%= review.caption %>
+  </div>
+  <% if review.company_name %>
+    <div>
+      <%= review.company_name %>
+    </div>
+  <% end %>
+</div>
+<div class="<%= index.even? ? 'left' : 'right' %>">
+  <%= review.content %>
+</div>

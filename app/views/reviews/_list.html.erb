@@ -1,0 +1,7 @@
+<ul>
+  <% @reviews.each_with_index do |review, index| %>
+    <li>
+      <%= render review, index: index %>
+    </li>
+  <% end %>
+</ul>
