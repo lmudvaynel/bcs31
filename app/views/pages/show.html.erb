@@ -1,6 +1,6 @@
 <div class="wrapper">
   <div class="row-fluid content">
-    <% if @page.parent.slug == "services" %>
+    <% if @page.parent && @page.parent.slug == "services" %>
     	<% @page.parent.children.each do |child| %>
             <li>
     			<% if child != @page %>
