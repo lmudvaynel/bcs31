@@ -14,7 +14,6 @@ Cite::Application.routes.draw do
 
   resources :workers
   get 'about' => 'workers#index'
-  get ':slug' => 'pages#show', :as => :slug
 
   resources :reviews, :only => [:index, :create]
   get 'reviews' => 'reviews#index'
