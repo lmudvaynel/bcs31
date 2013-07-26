@@ -1,0 +1,7 @@
+<div class="headline">
+  <h3>Новости</h3>
+</div>
+<% @news.each do |item| %>>
+  <%= link_to news.title, news_path(news) %>
+  <%= news.description %>
+<% end %>

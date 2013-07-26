@@ -71,11 +71,11 @@ ActiveRecord::Schema.define(:version => 20130725072627) do
 
   add_index "feedbacks", ["email"], :name => "index_feedbacks_on_email"
 
-  create_table "news", :force => true do |t|
-    t.string   "name"
+  create_table "news_pages", :force => true do |t|
+    t.string   "title"
     t.text     "content"
-    t.string   "photo"
-    t.text     "description"
+    t.string   "image"
+    t.string   "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end

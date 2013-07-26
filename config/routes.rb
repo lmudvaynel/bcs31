@@ -2,7 +2,7 @@ Cite::Application.routes.draw do
 
   mount_roboto
 
-  root :to => "pages#show", :slug => 'index'
+  root :to => "pages#index"
 
   mount Ckeditor::Engine => '/ckeditor'
 
@@ -10,8 +10,13 @@ Cite::Application.routes.draw do
   ActiveAdmin.routes(self)
 
   resources :feedbacks, :only => :create
-  resources :pages
+
+
   resources :reviews, :only => [:index, :create]
+  resources :news_page
+  get 'index' => 'pages#index'
+  get 'news_page/:id' => 'news_page#show'
   get 'reviews' => 'reviews#index'
   get ':slug' => 'pages#show', :as => :slug
+  resources :pages
 end
