@@ -1,3 +1,4 @@
+# encoding: utf-8
 class Banner < ActiveRecord::Base
   attr_accessible :content, :url
 

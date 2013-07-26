@@ -1,4 +1,4 @@
-# Encoding: utf-8
+# encoding: utf-8
 ActiveAdmin.register NewsPage do
   menu :priority => 6
   config.batch_actions = false
