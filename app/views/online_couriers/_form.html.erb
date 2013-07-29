@@ -1,4 +1,4 @@
-<%= form_for @online_courier, remote: true, validate: true do |f| %>
+<%= form_for @online_courier, :url => online_couriers_path(@online_courier), validate: true do |f| %>
 
   <div class="request" id="request">
     <div class="request-control">
@@ -10,7 +10,7 @@
       <div class="field">
         <%= f.label 'Дата исполнения заказа', class: 'request_lable' %>
         <%= f.date_select :date, as: :date_select,
-                          start_day: Time.now.day , start_year: Time.now.year, end_year: Time.now.year + 10 %>
+            start_day: Time.now.day , start_year: Time.now.year, end_year: Time.now.year + 10 %>
       </div>
       <div class="field">
         <%= f.label 'Временной интервал забора груза', class: 'request_lable' %>
