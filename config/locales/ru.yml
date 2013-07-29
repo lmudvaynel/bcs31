@@ -33,6 +33,12 @@ ru:
         few: Страницы
         many: Страниц
         other: Страницы
+      news_page:
+        zero: Новостей
+        one: Новость
+        few: Новостей
+        many: Новостей
+        other: Новости
       seo:
         СЕО
       review:

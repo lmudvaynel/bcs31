@@ -13,9 +13,9 @@ Cite::Application.routes.draw do
 
 
   resources :reviews, :only => [:index, :create]
-  resources :news_page
+  resources :news_pages
   get 'index' => 'pages#index'
-  get 'news_page/:id' => 'news_page#show'
+  get 'news_pages/:id' => 'news_pages#show'
   get 'reviews' => 'reviews#index'
   get ':slug' => 'pages#show', :as => :slug
   resources :pages

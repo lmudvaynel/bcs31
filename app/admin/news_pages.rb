@@ -15,5 +15,13 @@ ActiveAdmin.register NewsPage do
     default_actions
   end
 
-  form partial: 'form'
+  form do |f|
+    f.inputs do
+      f.input :title
+      f.input :description
+      f.input :content, as: :ckeditor
+      f.input :image
+    end
+    f.actions
+  end
 end
