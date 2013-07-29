@@ -1,6 +1,6 @@
 class NewsPagesController < ApplicationController
   def index
-    @news_pages = NewsPage.scoped.order('created_at DESC')
+    @news_pages = NewsPage.order('created_at DESC').all
   end
 
   def show
