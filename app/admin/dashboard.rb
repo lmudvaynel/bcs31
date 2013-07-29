@@ -1,4 +1,4 @@
-# Encoding: utf-8
+# encoding: utf-8
 ActiveAdmin.register_page "Dashboard" do
   menu :priority => 1, :label => 'Обзор'
 

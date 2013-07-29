@@ -10,7 +10,7 @@ Feature: Pages
     When I am on the page with slug "contacts"
     Then I fill in "feedback_email" with "<email>"
     And I fill in "feedback_message" with "<message>"
-    When I press "Send"
+    When I press "Отправить"
     Then I should see "<result>"
     Then "admin@example.com" should receive <got> email with subject "You have new feedback message"
   Examples:

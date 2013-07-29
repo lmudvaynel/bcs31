@@ -17,22 +17,28 @@ ru:
   activerecord:
     models:
       admin_user:
-        one: Администратор
+        one:   Администратор
         other: Администраторы
       banner:
-        zero: Баннеров
-        one: Баннер
-        few: Баннеров
-        many: Баннеров
+        zero:  Баннеров
+        one:   Баннер
+        few:   Баннеров
+        many:  Баннеров
         other: Баннеры
       feedback:
         Обратная связь
       page:
-        zero: Страниц
-        one: Страница
-        few: Страницы
-        many: Страниц
+        zero:  Страниц
+        one:   Страница
+        few:   Страницы
+        many:  Страниц
         other: Страницы
+      news_page:
+        zero:  Новостей
+        one:   Новость
+        few:   Новостей
+        many:  Новостей
+        other: Новости
       seo:
         СЕО
       review:
@@ -95,6 +101,12 @@ ru:
         moderated:    Прошёл модерацию
         created_at:   Дата создания
         updated_at:   Дата обновления
+      news_page:
+        title:        Заголовок
+        description:  Описание
+        content:      Содержание 
+        image:        Картинка
+        created_at:   Дата создания
       partner:
         logo:  Лого
         url:   Ссылка
