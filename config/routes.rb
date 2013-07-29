@@ -11,7 +11,6 @@ Cite::Application.routes.draw do
 
   resources :feedbacks, :only => :create
 
-
   resources :reviews, :only => [:index, :create]
   resources :news_pages
   get 'index' => 'pages#index'
