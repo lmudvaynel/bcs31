@@ -29,6 +29,12 @@ ru:
         other: Страницы
       seo:
         СЕО
+      online_courier:
+        zero:   Заявок курьеру
+        one:    Заявка курьеру
+        few:    Заявок курьеру
+        many:   Заявок курьеру
+        other:  Заявки курьеру
     attributes:
       admin_user:
         id: Номер

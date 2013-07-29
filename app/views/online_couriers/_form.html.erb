@@ -2,7 +2,7 @@
 
   <div class="request" id="request">
     <div class="request-control">
-      <h2>Вызов курьера по Казани</h2>
+      <h2>Вызов курьера по Белгороду</h2>
       <div class="field">
         <%= f.label 'Тип перевозки', class: 'request_lable' %>
         <%= f.select :transportation, options_for_select(["наличный расчет", "экспресс-доставка"]), class: 'input-block-level' %>
@@ -16,7 +16,7 @@
         <%= f.label 'Временной интервал забора груза', class: 'request_lable' %>
         <%= f.text_field :time, class: 'input-block-level' %>
       </div>
-      <p>Информация об отправителе<p>
+      Информация об отправителе
       <div class="field">
         <%= f.label 'Контактное лицо', class: 'request_lable' %>
         <%= f.text_field :full_name, class: 'input-block-level' %>
