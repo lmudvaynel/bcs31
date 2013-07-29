@@ -99,8 +99,7 @@ ru:
         created_at: Дата создания
         updated_at: Дата обновления
       worker:
-        first_name: Имя
-        last_name: Фамилия
+        name: Фамилия Имя
         patronymic: Отчество
         phone: Телефон
         job: Должность

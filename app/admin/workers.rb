@@ -3,14 +3,11 @@
 ActiveAdmin.register Worker do
 
     index do
-      column :last_name
-      column :first_name
+      column :name
       column :patronymic
       column :job
       column :phone
-      column :photo do |worker|
-        image_tag worker.photo.thumb.url
-      end
+
     default_actions
   end
 
