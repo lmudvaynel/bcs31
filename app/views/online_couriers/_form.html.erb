@@ -4,7 +4,7 @@
     <div class="request-control">
       <h2>Вызов курьера по Белгороду</h2>
       <div class="field">
-        <%= f.label 'Тип перевозки', class: 'request_lable' %>
+        <%= f.label "Тип перевозки", class: 'request_lable' %>
         <%= f.select :transportation, options_for_select(["наличный расчет", "экспресс-доставка"]), class: 'input-block-level' %>
       </div>
       <div class="field">
@@ -13,46 +13,36 @@
             start_day: Time.now.day , start_year: Time.now.year, end_year: Time.now.year + 10 %>
       </div>
       <div class="field">
-        <%= f.label 'Временной интервал забора груза', class: 'request_lable' %>
-        <%= f.text_field :time, class: 'input-block-level' %>
+        <%= raw( online_courier_text_field :time, f ) %>
       </div>
       Информация об отправителе
       <div class="field">
-        <%= f.label 'Контактное лицо', class: 'request_lable' %>
-        <%= f.text_field :full_name, class: 'input-block-level' %>
+        <%= raw( online_courier_text_field :full_name , f ) %>
       </div>
       <div class="field">
-        <%= f.label 'Контактный телефон', class: 'request_lable' %>
-        <%= f.text_field :phone, class: 'input-block-level' %>
+        <%= raw( online_courier_text_field :phone, f ) %>
       </div>
       <div class="field">
-        <%= f.label 'Организация отправителя', class: 'request_lable' %>
-        <%= f.text_field :company, class: 'input-block-level' %>
+        <%= raw( online_courier_text_field :company, f ) %>
       </div>
       <div class="field">
-        <%= f.label 'Адрес отправителя', class: 'request_lable' %>
-        <%= f.text_field :address, class: 'input-block-level' %>
+        <%= raw( online_courier_text_field :address, f ) %>
       </div>
       Информация о грузе и характере оплаты
       <div class="field">
-        <%= f.label 'Вес(кг)', class: 'request_lable' %>
-        <%= f.text_field :weight, class: 'input-block-level' %>
+        <%= raw( online_courier_text_field :weight, f ) %>
       </div>
       <div class="field">
-        <%= f.label 'Количество мест', class: 'request_lable' %>
-        <%= f.text_field :amount, class: 'input-block-level' %>
+        <%= raw( online_courier_text_field :amount, f ) %>
       </div>
       <div class="field">
-        <%= f.label 'Габариты', class: 'request_lable' %>
-        <%= f.text_field :size, class: 'input-block-level' %>
+        <%= raw( online_courier_text_field :size, f ) %>
       </div>
       <div class="field">
-        <%= f.label :'Характер груза', class: 'request_lable' %>
-        <%= f.text_field :cargo_type, class: 'input-block-level' %>
+        <%= raw( online_courier_text_field :cargo_type, f ) %>
       </div>
       <div class="field">
-        <%= f.label 'Город получения', class: 'request_lable' %>
-        <%= f.text_field :city, class: 'input-block-level' %>
+        <%= raw( online_courier_text_field :city, f ) %>
       </div>
       <div class="field">
         <%= f.label 'Тип оплаты', class: 'request_lable' %>
@@ -63,12 +53,10 @@
         <%= f.select :payer, options_for_select(["отправитель", "получатель", "третья сторона"]), class: 'input-block-level' %>
       </div>
       <div class="field">
-        <%= f.label '№ плательщика', class: 'request_lable' %>
-        <%= f.text_field :payer_id, class: 'input-block-level' %>
+        <%= raw( online_courier_text_field :payer_id, f ) %>
       </div>
       <div class="field">
-        <%= f.label 'Комментарии', class: 'request_lable' %>
-        <%= f.text_field :comment, class: 'input-block-level' %>
+        <%= raw( online_courier_text_field :comment, f ) %>
       </div>
         <%= f.submit 'Отправить', class: 'feedback-btn'%>
     </div>

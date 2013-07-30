@@ -9,10 +9,10 @@ class OnlineCourier < ActiveRecord::Base
 
   validate :right_dates
 
-
   def right_dates
     if date.end_of_day <= Time.now
       errors[:date] << 'Не может быть прошедшей датой'
     end
   end
+
 end
