@@ -1,13 +1,14 @@
 <%= semantic_form_for [:admin, resource] do |f| %>
-    <%= f.inputs do %>
-        <%= f.input :name %>
-        <%= f.input :patronymic %>
-        <%= f.input :job %>
-        <%= f.input :phone %>
-        <%= f.input :photo %>
+  <%= f.inputs do %>
+    <%= f.input :last_name %>
+    <%= f.input :first_name %>
+    <%= f.input :patronymic %>
+    <%= f.input :job %>
+    <%= f.input :phone %>
+    <%= f.input :photo %>
 
-        <%= image_tag resource.photo.thumb if resource.photo.thumb.present? %>
-    <% end %>
+    <%= image_tag resource.photo.thumb if resource.photo.present? && resource.photo.thumb.present? %>
+  <% end %>
 
-    <%= f.actions %>
+  <%= f.actions %>
 <% end %>

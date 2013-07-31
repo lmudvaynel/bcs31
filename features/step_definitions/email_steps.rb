@@ -14,7 +14,6 @@
 # read_emails_for
 # find_email
 #
-#
 # General form for email scenarios are:
 #   - clear the email queue (done automatically by email_spec)
 #   - execute steps that sends an email

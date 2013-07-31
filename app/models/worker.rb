@@ -1,7 +1,11 @@
 class Worker < ActiveRecord::Base
-  attr_accessible :name, :job, :logo, :phone, :patronymic, :photo
+  attr_accessible :first_name, :last_name, :job, :logo, :phone, :patronymic, :photo
 
   mount_uploader :photo, PhotoUploader
 
-  validates :name, :patronymic, :job, presence: true
+  validates :first_name, :last_name, :patronymic, :job, presence: true
+
+  def name
+    "#{last_name} #{first_name}"
+  end
 end

@@ -3,7 +3,9 @@
 ActiveAdmin.register Worker do
 
     index do
-      column :name
+      column :name do |worker|
+        worker.name
+      end
       column :patronymic
       column :job
       column :phone

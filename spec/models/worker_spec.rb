@@ -21,9 +21,7 @@ describe Worker do
   end
 
   describe '#full name' do
-    it 'should not be empty' do
-      @worker.first_name = ''
-      @worker.last_name = ''
+    it 'should have full name' do
       @worker.patronymic = ''
       @worker.should be_invalid
     end
