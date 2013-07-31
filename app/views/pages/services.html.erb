@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <div class="row-fluid content">
+    <% if @page.children.any? %>
+          <% @page.children.each do |child| %>
+            <li>
+              <%= link_to content_tag(:span, child.name), slug_path(child),
+                :class => menu_item_state(child) %>
+            </li>
+          <% end %>
+        </ul>
+    	<%= raw @page.children[0].content %>
+    <% end %>
+    <%= raw @page.content %>
+  </div>
+</div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130723071149) do
+ActiveRecord::Schema.define(:version => 20130725072627) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -46,6 +46,13 @@ ActiveRecord::Schema.define(:version => 20130723071149) do
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
 
+  create_table "banners", :force => true do |t|
+    t.string   "content"
+    t.string   "url"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
     t.string   "data_content_type"
@@ -70,6 +77,15 @@ ActiveRecord::Schema.define(:version => 20130723071149) do
   end
 
   add_index "feedbacks", ["email"], :name => "index_feedbacks_on_email"
+
+  create_table "news_pages", :force => true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.string   "image"
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "page_translations", :force => true do |t|
     t.integer  "page_id"

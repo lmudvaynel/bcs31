@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <%= link_to 'Новости', news_pages_path %>
+  <div class="row-fluid content">
+    <%= image_tag @news_page.image.thumb.url %><br/>
+    <%= @news_page.title %><br/>
+    <%= raw @news_page.content %><br/>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-# Encoding: utf-8
+# encoding: utf-8
 ActiveAdmin.register Review do
   menu priority: 4
   config.batch_actions = false
