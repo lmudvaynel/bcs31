@@ -53,6 +53,12 @@ ru:
         few:    Партнеров
         many:   Партнеров
         other:  Партнеры
+      worker:
+        zero:   Сотрудников
+        one:    Сотрудник
+        few:    Сотрудников
+        many:   Сотрудников
+        other:  Сотрудники
     attributes:
       admin_user:
         id: Номер
@@ -108,11 +114,19 @@ ru:
         image:        Картинка
         created_at:   Дата создания
       partner:
-        logo:  Лого
-        url:   Ссылка
+        logo:         Лого
+        url:          Ссылка
       seo:
-        title: Заголовок
-        keywords: Ключевые слова
-        description: Описание
-        created_at: Дата создания
-        updated_at: Дата обновления
+        title:        Заголовок
+        keywords:     Ключевые слова
+        description:  Описание
+        created_at:   Дата создания
+        updated_at:   Дата обновления
+      worker:
+        name:         Фамилия и Имя
+        first_name:   Имя
+        last_name:    Фамилия
+        patronymic:   Отчество
+        phone:        Телефон
+        job:          Должность
+        photo:        Фото

@@ -7,7 +7,7 @@ FactoryGirl.define do
       last_name     { Faker::Name.last_name }
       company_name  { Faker::Company.name }
       logo          { Rack::Test::UploadedFile.new(
-                      Dir.glob(File.join(Rails.root, 'spec', 'support', 'logos', '*.png')).sample
+                      Dir.glob(File.join(Rails.root, 'spec', 'support', 'logos', '*.jpg')).sample
                     ) }
       city          { Faker::AddressUS.city }
 
