@@ -87,20 +87,10 @@ ActiveRecord::Schema.define(:version => 20130725072627) do
     t.datetime "updated_at",  :null => false
   end
 
-  create_table "page_translations", :force => true do |t|
-    t.integer  "page_id"
-    t.string   "locale"
-    t.text     "content"
-    t.text     "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  add_index "page_translations", ["locale"], :name => "index_page_translations_on_locale"
-  add_index "page_translations", ["page_id"], :name => "index_page_translations_on_page_id"
-
   create_table "pages", :force => true do |t|
+    t.string   "name"
     t.string   "slug"
+    t.text     "content"
     t.boolean  "hidden",     :default => false
     t.datetime "created_at",                            :null => false
     t.datetime "updated_at",                            :null => false
@@ -135,22 +125,12 @@ ActiveRecord::Schema.define(:version => 20130725072627) do
     t.datetime "updated_at",                      :null => false
   end
 
-  create_table "seo_translations", :force => true do |t|
-    t.integer  "seo_id"
-    t.string   "locale"
+  create_table "seos", :force => true do |t|
     t.string   "title"
     t.string   "keywords"
     t.string   "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-  end
-
-  add_index "seo_translations", ["locale"], :name => "index_seo_translations_on_locale"
-  add_index "seo_translations", ["seo_id"], :name => "index_seo_translations_on_seo_id"
-
-  create_table "seos", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
   end
 
   create_table "workers", :force => true do |t|
