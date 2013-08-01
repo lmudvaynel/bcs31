@@ -3,7 +3,8 @@
         <%= f.input :transportation, :as => :select, :collection => ["наличный расчет", "экспресс-доставка"] %>
         <%= f.input :date, as: :date_select,
                     start_year: Time.now.year, end_year: Time.now.year + 10 %>
-        <%= f.input :time %>
+        <%= f.input :time_start %>
+        <%= f.input :time_end %>
         <%= f.input :full_name %>
         <%= f.input :phone %>
         <%= f.input :company %>
@@ -15,7 +16,7 @@
         <%= f.input :city %>
         <%= f.input :payment, :as => :select, :collection => ["наличный расчет", "безналичный расчет"] %>
         <%= f.input :payer, :as => :select, :collection => ["отправитель", "получатель", "третья сторона"] %>
-        <%= f.input :payer_id %>
+        <%= f.input :payer_number %>
     <% end %>
 
     <%= f.actions %>

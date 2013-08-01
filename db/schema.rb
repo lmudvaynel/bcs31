@@ -74,7 +74,8 @@ ActiveRecord::Schema.define(:version => 20130724111942) do
   create_table "online_couriers", :force => true do |t|
     t.string   "transportation"
     t.date     "date"
-    t.string   "time"
+    t.string   "time_start"
+    t.string   "time_end"
     t.string   "full_name"
     t.string   "phone"
     t.string   "company"
@@ -86,7 +87,7 @@ ActiveRecord::Schema.define(:version => 20130724111942) do
     t.string   "city"
     t.string   "payment"
     t.string   "payer"
-    t.string   "payer_id"
+    t.string   "payer_number"
     t.string   "comment"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
@@ -121,25 +122,6 @@ ActiveRecord::Schema.define(:version => 20130724111942) do
   add_index "pages", ["seo_id"], :name => "index_pages_on_seo_id"
   add_index "pages", ["slug"], :name => "index_pages_on_slug", :unique => true
 
-  create_table "partners", :force => true do |t|
-    t.string   "url"
-    t.string   "logo"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "reviews", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "company_name"
-    t.string   "logo"
-    t.string   "city"
-    t.text     "content"
-    t.boolean  "moderated",    :default => false
-    t.datetime "created_at",                      :null => false
-    t.datetime "updated_at",                      :null => false
-  end
-
   create_table "seo_translations", :force => true do |t|
     t.integer  "seo_id"
     t.string   "locale"
@@ -154,16 +136,6 @@ ActiveRecord::Schema.define(:version => 20130724111942) do
   add_index "seo_translations", ["seo_id"], :name => "index_seo_translations_on_seo_id"
 
   create_table "seos", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "workers", :force => true do |t|
-    t.string   "name"
-    t.string   "patronymic"
-    t.string   "photo"
-    t.string   "phone"
-    t.string   "job"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

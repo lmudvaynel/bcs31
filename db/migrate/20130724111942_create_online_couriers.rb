@@ -2,8 +2,9 @@ class CreateOnlineCouriers < ActiveRecord::Migration
   def change
     create_table :online_couriers do |t|
       t.string :transportation
-      t.date :date
-      t.string :time
+      t.date   :date
+      t.string :time_start
+      t.string :time_end
       t.string :full_name
       t.string :phone
       t.string :company
@@ -15,7 +16,7 @@ class CreateOnlineCouriers < ActiveRecord::Migration
       t.string :city
       t.string :payment
       t.string :payer
-      t.string :payer_id
+      t.string :payer_number
       t.string :comment
 
       t.timestamps

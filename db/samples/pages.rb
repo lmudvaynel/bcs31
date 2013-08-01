@@ -3,4 +3,4 @@
 Page.reset_column_information
 FactoryGirl.create(:page, slug: 'index')
 FactoryGirl.create(:page, slug: 'contacts')
-FactoryGilr.create(:page, slug: 'online_couriers')
+FactoryGirl.create(:page, slug: 'online_couriers')

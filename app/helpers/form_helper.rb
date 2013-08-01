@@ -1,5 +1,4 @@
 module FormHelper
-
   def online_courier_text_field(field, form)
     <<-HTML
       <div class="field">
@@ -8,5 +7,4 @@ module FormHelper
       </div>
     HTML
   end
-
 end

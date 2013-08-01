@@ -11,3 +11,5 @@
  *= require_self
  *= require_tree .
  */
+.ui-datepicker {z-index:49999 !important}
+#ui-datepicker-div {border: 1px solid #d4d4d4; box-shadow: rgba(0, 0, 0, 0.0980392) 2px 2px 2px 0px;}
