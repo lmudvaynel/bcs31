@@ -20,5 +20,3 @@
 //= require shared/global
 //= require rails.validations
 //= require_tree .
-//= require i18n
-//= require i18n/translations

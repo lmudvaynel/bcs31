@@ -12,31 +12,17 @@
     </li>
   <% end %>
 
-  <div class="globalize-inputs globalize-content">
-    <%= f.globalize_inputs :translations do |lf| %>
-      <%= lf.inputs do %>
-        <%= lf.input :name, input_html: {rows:1}, label: 'Заголовок страницы' %>
-        <%= lf.input :content, as: :ckeditor, label: 'Контент' %>
-
-        <%= lf.input :locale, :as => :hidden %>
-      <% end %>
-    <% end %>
-  </div>
+  <%= f.inputs "Наполнение" do %>
+    <%= f.input :name, input_html: {rows: 1}, label: 'Заголовок страницы' %>
+    <%= f.input :content, as: :ckeditor, label: 'Контент' %>
+  <% end %>
 
   <%= f.inputs "SEO" do %>
     <%= f.input :slug, required: false %>
     <%= f.semantic_fields_for :seo do |j| %>
-      <div class="globalize-inputs globalize-seo">
-        <%= j.globalize_inputs :translations do |lf| %>
-          <%= lf.inputs do %>
-            <%= lf.input :title, input_html: {rows:1} %>
-            <%= lf.input :keywords, input_html: {rows:1} %>
-            <%= lf.input :description, input_html: {rows:1} %>
-
-            <%= lf.input :locale, :as => :hidden %>
-          <% end %>
-        <% end %>
-      </div>
+      <%= j.input :title, input_html: {rows: 1} %>
+      <%= j.input :keywords, input_html: {rows: 1} %>
+      <%= j.input :description, input_html: {rows: 1} %>
     <% end %>
   <% end %>
 
