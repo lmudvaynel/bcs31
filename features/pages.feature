@@ -20,4 +20,4 @@ Feature: Pages
     | bad'mail'bad@ml.com | I don't want to work!           | Введите правильный e-mail | no  |
     | without.dog.mail.ru | Я танцую джигу-дрыгу на столе.. | Введите правильный e-mail | no  |
     | o@b@m@us.us         | Я Обама. А чего добился ты?     | Введите правильный e-mail | no  |
-    | man@example.com     | I'm a man                       | слишком короткое          | no  |
+    | man@example.com     | I'm a man                       | too short                 | no  |
