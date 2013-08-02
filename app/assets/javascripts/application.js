@@ -22,5 +22,6 @@
 //= require back-to-top
 //= require respond
 //= require rails.validations
+//= require page
 //= require_tree .
 
