@@ -4,7 +4,7 @@ Page.reset_column_information
   about:    'О компании',
   reviews:  'Книга отзывов и предложений',
   contacts: 'Контакты',
-  services: 'Услуги',
+  services: 'Услуги'
   }.each do |slug, name|
   page = FactoryGirl.create(:page, slug: slug, name: name)
 end
