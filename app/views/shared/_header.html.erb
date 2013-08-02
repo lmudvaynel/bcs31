@@ -2,7 +2,8 @@
   <div class="wrapper">
     <div class="row-fluid">
       <div class="span12">
-        <%= render 'shared/menu' %>      
+        <%= render 'shared/menu' %>
+        <%= yield(:header) if content_for?(:header) %>
     </div>
   </div>
 </header>

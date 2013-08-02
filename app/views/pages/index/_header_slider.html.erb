@@ -1,0 +1,17 @@
+<div class="header_slider">
+  <div id="da-slider" class="da-slider">
+    
+    <% Banner.all.each do |banner| %>
+      <%= render 'pages/index/slide', banner: banner %>
+    <% end %>
+
+    <nav class="da-arrows">
+      <span class="da-arrows-prev">
+        <%= image_tag 'nav_upper_slider_left.png' %>
+      </span>
+      <span class="da-arrows-next">
+        <%= image_tag 'nav_upper_slider_right.png' %>
+      </span>
+    </nav>
+  </div>
+</div>

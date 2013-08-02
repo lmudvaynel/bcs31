@@ -17,16 +17,28 @@ ru:
   activerecord:
     models:
       admin_user:
-        one: Администратор
+        one:   Администратор
         other: Администраторы
+      banner:
+        zero:  Баннеров
+        one:   Баннер
+        few:   Баннеров
+        many:  Баннеров
+        other: Баннеры
       feedback:
         Обратная связь
       page:
-        zero: Страниц
-        one: Страница
-        few: Страницы
-        many: Страниц
+        zero:  Страниц
+        one:   Страница
+        few:   Страницы
+        many:  Страниц
         other: Страницы
+      news_page:
+        zero:  Новостей
+        one:   Новость
+        few:   Новостей
+        many:  Новостей
+        other: Новости
       seo:
         СЕО
       online_courier:
@@ -35,6 +47,24 @@ ru:
         few:    Заявок курьеру
         many:   Заявок курьеру
         other:  Заявки курьеру
+      review:
+        zero:   Отзывов
+        one:    Отзыв
+        few:    Отзыва
+        many:   Отзывов
+        other:  Отзывы
+      partner:
+        zero:   Партнеров
+        one:    Партнер
+        few:    Партнеров
+        many:   Партнеров
+        other:  Партнеры
+      worker:
+        zero:   Сотрудников
+        one:    Сотрудник
+        few:    Сотрудников
+        many:   Сотрудников
+        other:  Сотрудники
     attributes:
       admin_user:
         id: Номер
@@ -48,6 +78,12 @@ ru:
         sign_in_count: Число входов
         password: Пароль
         password_confirmation: Подтверждение пароля
+      banner:
+        id: Номер
+        content: Содержание
+        url: Ссылка
+        created_at: Дата создания
+        updated_at: Дата обновления
       feedback:
         id: Номер
         email: Емайл
@@ -66,6 +102,26 @@ ru:
         position: Позиция
         slug: Псевдоним
         updated_at: Дата обновления
+      review:
+        first_name:   Имя
+        last_name:    Фамилия
+        name:         Полное имя
+        company_name: Название компании
+        city:         Город
+        content:      Сообщение
+        logo:         Логотип
+        moderated:    Прошёл модерацию
+        created_at:   Дата создания
+        updated_at:   Дата обновления
+      news_page:
+        title:        Заголовок
+        description:  Описание
+        content:      Содержание 
+        image:        Картинка
+        created_at:   Дата создания
+      partner:
+        logo:         Лого
+        url:          Ссылка
       seo:
         title: Заголовок
         keywords: Ключевые слова
@@ -89,3 +145,16 @@ ru:
         payer:          "Кто платит"
         payer_number:   "№ плательщика"
         comment:        "Комментарии"
+        title:        Заголовок
+        keywords:     Ключевые слова
+        description:  Описание
+        created_at:   Дата создания
+        updated_at:   Дата обновления
+      worker:
+        name:         Фамилия и Имя
+        first_name:   Имя
+        last_name:    Фамилия
+        patronymic:   Отчество
+        phone:        Телефон
+        job:          Должность
+        photo:        Фото

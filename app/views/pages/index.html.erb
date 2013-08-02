@@ -1,6 +1,7 @@
 <%=link_to "Вызов курьера", OnlineCourier  %>
+<% content_for :header do %>
+  <%= render 'pages/index/header_slider' %>
+<% end %>
 <div class="wrapper">
-  <div class="row-fluid content">
-    <%= raw @page.content %>
-  </div>
+  <%= render 'news_pages/list' %>
 </div>

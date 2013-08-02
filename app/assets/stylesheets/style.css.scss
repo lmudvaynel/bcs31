@@ -1,0 +1,70 @@
+/*Block headline*/
+.heading {
+	padding:5px 20px 5px 20px;
+	border-left:4px solid #27c5f2;
+}
+
+.headline {
+	display:block;
+	margin:10px 0 25px 0;
+	border-bottom:1px dotted #e4e9f0;
+}
+.headline h3,
+.headline h4 {
+	color:#585f69;
+	margin:0 0 -2px 0;
+	padding-right:10px;
+	display:inline-block;
+	text-shadow:0 0 1px #f6f6f6;
+	border-bottom:2px solid #72c02c;
+}
+
+/*Clients (Flexslider)*/
+.clients {
+  box-shadow:none !important;
+  margin-bottom:0 !important;
+}
+.clients li {
+  float:left;
+  overflow:hidden;
+  margin-left:1px;
+  position:relative;
+  background:#fafafa;
+}
+.clients li:hover {
+  background:#f6f6f6;
+}
+.clients li img.color-img {
+  top:0;
+  left:0;
+  display:none;
+  position:absolute;
+}
+.clients li:hover img.color-img {
+  display:block;
+}
+.clients li img {
+  filter:gray; /* IE6-9 */
+  float:none !important;
+  margin:0 auto !important;
+}
+.clients li img:hover {
+  filter:none;
+}
+.clients,
+.flexslider.home {
+  border:0px;
+  overflow:hidden;
+  margin-top:10px;
+  margin-bottom:30px;
+  border-radius:0;
+  -moz-border-radius:0;
+  -webkit-border-radius:0;
+}
+
+.flexslider {
+  margin-top:10px !important;
+}
+.flexslider .flex-direction-nav a {
+  margin-top:-10px !important;
+}

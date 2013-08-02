@@ -1,5 +1,17 @@
 <div class="wrapper">
   <div class="row-fluid content">
+    <% if @page.parent && @page.parent.slug == "services" %>
+    	<% @page.parent.children.each do |child| %>
+            <li>
+    			<% if child != @page %>
+	              <%= link_to content_tag(:span, child.name), slug_path(child),
+	                :class => menu_item_state(child) %>
+	            <% else %>
+	            	<%= child.name %>
+	            <% end %>
+            </li>
+        <% end %>
+    <% end %>
     <%= raw @page.content %>
   </div>
 </div>

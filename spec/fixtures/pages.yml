@@ -1,13 +1,17 @@
 index:
-  id: 1
-  slug: index
+  slug:     index
+  name:     Главная
+  content:  <%= Faker::HTMLIpsum.fancy_string %>
 contacts:
-  id: 2
-  slug: contacts
+  slug:     contacts
+  name:     Контакты
+  content:  <%= [Faker::Company.name, Faker::PhoneNumber.short_phone_number].join(', ') %>
 doverie:
-  id: 3
-  slug: doverie
+  slug:     doverie
+  name:     Нам доверяют
+  content:  <%= Faker::HTMLIpsum.fancy_string %>
 vacansy:
-  id: 4
-  slug: vacansy
-  hidden: true
+  slug:     vacansy
+  hidden:   true
+  name:     Вакансии
+  content:  <%= Faker::HipsterIpsum.phrases(10).join("<br />") %>

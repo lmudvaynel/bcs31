@@ -2,7 +2,8 @@
 FactoryGirl.define do
   factory :online_courier do
     transportation { ["наличный расчет", "экспресс-доставка"].sample }
-    time           { rand(3..24) }
+    time_start     { rand(3..24) }
+    time_end       {time_start + 3.hour}
     date           { DateTime.now }
     full_name      { Faker::Name.name}
     phone          { Faker::PhoneNumber.phone_number }

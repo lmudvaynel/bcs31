@@ -1,4 +1,3 @@
-
 namespace :db do
   desc 'fill db with sample data from db/samples'
   task :sample => :environment do
