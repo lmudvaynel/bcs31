@@ -9,5 +9,17 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require bootstrap/css/bootstrap
+ *= require menu_style
+ *= require bootstrap/css/bootstrap-responsive.min
+ *= require font-awesome
+ *= require flexslider/flexslider
+ *= require parallax-slider/parallax-slider
+ *= require style
+ *= require style_responsive
+ *= require themes/default
+ *= require header_style
+ *= require footer_style
+ *= require online_requests
  *= require_tree .
  */
