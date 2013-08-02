@@ -2,7 +2,7 @@ Cite::Application.routes.draw do
 
   mount_roboto
 
-  root :to => "pages#show"
+  root :to => "pages#index"
 
   mount Ckeditor::Engine => '/ckeditor'
 
