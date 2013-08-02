@@ -1,6 +1,71 @@
+<!--?????????????????????????-->
 <% content_for :header do %>
   <%= render 'pages/index/header_slider' %>
 <% end %>
-<div class="wrapper">
+<%= yield(:header) if content_for?(:header) %>
+<!--/????????????????????????????-->
+<div class="welcome_message_background row-fluid">
+  <div class="container">
+    <div class="welcome_message">
+      <h3 class="welcome_message_header">Мэйджор Экспресс Белгород</h3>
+      <p>увеличивает скорость обслуживания в экспресс центрах.</p>
+      <p>Уважаемые Клиенты, теперь вы можете существенно сократить время,
+        затрачиваемое на оформление отправок в экспресс центрах.</p>
+      <p>С наилучшими пожеланиями,</p>
+      <p class="welcome_message_end">Команда Major Express.</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row-fluid">
+    <div class="span4">
+      <a class="service_link" href="<%= slug_path('price_of_delivery') %>">
+        <div class="service clearfix">
+          <div class="service_icon"><%= image_tag('open_box.png') %></div>
+          <div class="desc">
+            <div class="desc_header">
+              <h4>Стоимость доставки</h4>
+            </div>
+            <p class="desc_content">Уважаемые Клиенты, теперь вы можете существенно
+              сократить время, затрачиваемое на оформление
+              отправок в экспресс центрах.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="span4">
+      <a class="service_link" href="<%= slug_path('documents') %>">
+        <div class="service clearfix">
+          <div class="service_icon"><%= image_tag('archive.png') %></div>
+          <div class="desc">
+            <div class="desc_header">
+              <h4>Документы</h4>
+            </div>
+            <p class="desc_content">Уважаемые Клиенты, теперь вы можете существенно
+              сократить время, затрачиваемое на оформление
+              отправок в экспресс центрах.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="span4">
+      <a class="service_link" href="<%= slug_path('delivery_status') %>">
+        <div class="service clearfix">
+          <div class="service_icon"><%= image_tag('zoom.png') %></div>
+          <div class="desc">
+            <div class="desc_header">
+              <h4>Состояние доставки</h4>
+            </div>
+            <p class="desc_content">Уважаемые Клиенты, теперь вы можете существенно
+              сократить время, затрачиваемое на оформление
+              отправок в экспресс центрах.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
   <%= render 'news_pages/list' %>
 </div>

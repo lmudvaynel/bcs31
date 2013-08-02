@@ -1,5 +1,10 @@
-<div>
-  <%= link_to news_page.title, news_page_path(news_page) %><br/>
-  <%= news_page.description %><br/>
-  <%= image_tag news_page.image.thumb.url %><br/>
-</div>
+  <li class="span3">
+    <div class="thumbnail-style thumbnail-kenburn">
+      <div class="thumbnail-img">
+        <div class="overflow-hidden"> <%= image_tag news_page.image.thumb.url %> </div>
+        <a class="btn-more hover-effect" href="#">подробнее +</a>
+      </div>
+      <h3> <%= link_to news_page.title, news_page_path(news_page), class: 'hover-effect' %> </h3>
+      <p class="desc_content"> <%= news_page.description %> </p>
+    </div>
+  </li>
