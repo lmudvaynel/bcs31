@@ -4,22 +4,16 @@ Page.reset_column_information
   about:    'О компании',
   reviews:  'Книга отзывов и предложений',
   contacts: 'Контакты',
+  services: 'Услуги'
   }.each do |slug, name|
-  page = FactoryGirl.create(:page, slug: slug)
-  page.translations.find_by_locale(:ru).update_attribute :name, name
+  page = FactoryGirl.create(:page, slug: slug, name: name)
 end
 
-services = FactoryGirl.create(:page, slug: 'services')
-services.translations.find_by_locale(:ru).update_attribute :name, 'Услуги'
-
-{ order:    'Заказ (забор из другого города)',
-  express:  'Экспресс доставка',
-  assembled: 'Сборные грузы',
-  commander: 'Командирская почта',
-  tariffs: 'Тарифы' }.each do |slug, name|
-  page = FactoryGirl.create(:page, slug: slug)
-  page.parent = services
-  page.translations.find_by_locale(:ru).update_attribute :name, name
-  page.save!
-
+services = Page.find_by_slug(:services)
+{ order:      'Заказ (забор из другого города)',
+  express:    'Экспресс доставка',
+  assembled:  'Сборные грузы',
+  commander:  'Командирская почта',
+  tariffs:    'Тарифы' }.each do |slug, name|
+  page = FactoryGirl.create(:page, slug: slug, name: name, parent_id: services.id)
 end
