@@ -1,0 +1,22 @@
+<% @workers.each do |worker| %>
+  <ul class="worker">
+    <li class="worker_attribute_photo">
+      <%= image_tag worker.photo.thumb.url %>
+    </li>
+    <li class="worker_attribute_first_name">
+      <%= worker.first_name %>
+    </li>
+    <li class="worker_attribute_last_name">
+      <%= worker.last_name %>
+    </li>
+    <li class="worker_attribute_patronymic">
+      <%= worker.patronymic %>
+    </li>
+    <li class="worker_attribute_job">
+      <%= worker.job %>
+    </li class="">
+    <li class="worker_attribute_phone">
+      <%= worker.phone %>
+    </li>
+  </ul>
+<% end %>

@@ -1,25 +1,17 @@
 class Page < ActiveRecord::Base
-  attr_accessible :slug, :hidden, :seo_id, :seo_attributes, :layout, :position,
-                  :translations_attributes, :translations, :parent_id, :name
+  attr_accessible :slug, :hidden, :seo_id, :seo_attributes, :content,
+                  :layout, :position, :parent_id, :name
 
   belongs_to :seo
   has_ancestry
 
   acts_as_list
 
-  translates :content, :name
-
   accepts_nested_attributes_for :seo, :allow_destroy => true, :reject_if => :all_blank
-  accepts_nested_attributes_for :translations
 
   validates :slug, presence: true, uniqueness: true
   validates :name, presence: true
   validates :content, html: true
-
-  # Зачем это здесь?
-  class Translation
-    validates :name, presence: true
-  end
 
   extend FriendlyId
   friendly_id :slug
@@ -38,10 +30,6 @@ class Page < ActiveRecord::Base
   private
 
   def fill_slug
-    if slug.blank?
-      slug = translations.find{|t| t.locale == :en}.try(:name)
-      slug = slug || translations.find{|t| t.locale == :ru}.try(:name)
-      self.slug = Russian::translit(slug).parameterize if slug.present?
-    end
+    self.slug = Russian::translit(name).parameterize if slug.blank? && name.present?
   end
 end
