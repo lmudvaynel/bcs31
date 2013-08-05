@@ -7,18 +7,4 @@ class OnlineCourier < ActiveRecord::Base
   validates :payer, :payment, :phone, :transportation, :weight, presence: true
 
   validates :time_start, :time_end, presence: true, length: { maximum: 5 }
-
-  validate :right_dates
-
-  def right_dates
-    if date < DateTime.now
-      errors[:date] << 'Не может быть прошедшей датой'
-    end
-  end
-
-  def right_time_interval
-    if time_end.to_i - time_start.to_i < 3
-      errors[:time_end] << "Временной интервал должен быть не менее 3 часов"
-    end
-  end
 end

@@ -34,8 +34,4 @@ class ApplicationController < ActionController::Base
       format.all { render nothing: true, status: 500}
     end
   end
-
-  def set_admin_locale
-    I18n.locale = params[:locale] || :ru
-  end
 end
