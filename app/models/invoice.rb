@@ -10,4 +10,17 @@ class Invoice < ActiveRecord::Base
                                     :personally, :guard, :kinsman ],
                               default: :personally
   NUMBER_OF_DIGITS = 8
+
+  before_validation :set_date_of_delivery
+
+  validates :number,  presence: true,
+                      uniqueness: true,
+                      inclusion: { in: 10**(NUMBER_OF_DIGITS - 1)..(10**NUMBER_OF_DIGITS - 1) }
+  validates :status, :send_from, :arrival_to, :recipient_surname, :recipient_role, presence: true
+
+  private
+
+  def set_date_of_delivery
+    update_attribute :delivered_at, DateTime.now if status && status.cargo_is_delivered?
+  end
 end

@@ -16,15 +16,10 @@ describe Invoice do
       invoice.should have(1).errors_on(:number)
     end
 
-    it 'should have right format' do
-      invoice.number = invoice.number.to_s
-      invoice.should have(1).errors_on(:number)
-    end
-
     it 'should have right length' do
-      invoice.number = 5082013
+      invoice.number = 9999999
       invoice.should have(1).errors_on(:number)
-      invoice.number = 999999999
+      invoice.number = 100000000
       invoice.should have(1).errors_on(:number)
     end
   end
@@ -52,13 +47,10 @@ describe Invoice do
 
   describe '#delivered_at' do
     it 'should not be empty only if invoice has status :cargo_is_delivered' do
-      Invoice.status.values.each do |status|
-        invoice.status = status
-        errors_number = invoice.status_cargo_is_delivered? ? 1 : 0
-        invoice.should have(errors_number).errors_on(:delivered_at)
-        invoice.delivered_at = DateTime.now
-        invoice.should have(1 - errors_number).errors_on(:delivered_at)
-      end
+      invoice.delivered_at.should be_nil
+      invoice.status = :cargo_is_delivered
+      invoice.save
+      invoice.delivered_at.should be_between(DateTime.now - 5.seconds, DateTime.now)
     end
   end
 
