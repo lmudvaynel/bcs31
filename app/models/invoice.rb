@@ -1,5 +1,6 @@
 class Invoice < ActiveRecord::Base
   extend Enumerize
+  extend ActiveModel::Naming
   attr_accessible :status, :number, :send_from, :arrival_to,
                   :recipient_surname, :recipient_role, :delivered_at
   enumerize :status,  in: [ :cargo_taken_back, :cargo_manifested, :cargo_sent,
