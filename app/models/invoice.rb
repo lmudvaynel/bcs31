@@ -7,7 +7,7 @@ class Invoice < ActiveRecord::Base
                             :submitted_to_courier, :cargo_is_delivered ],
                       default: :cargo_taken_back
   enumerize :recipient_role,  in: [ :reception, :employee, :expedition,
-                                    :personally, :guard, :kinsman],
+                                    :personally, :guard, :kinsman ],
                               default: :personally
   NUMBER_OF_DIGITS = 8
 end

@@ -8,7 +8,6 @@ FactoryGirl.define do
     send_from         { Faker::AddressUS.city }
     arrival_to        { Faker::AddressUK.city }
     recipient_surname { Faker::Name.last_name }
-    delivered_at      { DateTime.now }
 
     factory :singular_invoice do
       status            { Invoice.status.values.sample }
