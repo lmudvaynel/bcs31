@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130805071308) do
+ActiveRecord::Schema.define(:version => 20130725072627) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -77,18 +77,6 @@ ActiveRecord::Schema.define(:version => 20130805071308) do
   end
 
   add_index "feedbacks", ["email"], :name => "index_feedbacks_on_email"
-
-  create_table "invoices", :force => true do |t|
-    t.integer  "number"
-    t.string   "status"
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "middle_name"
-    t.string   "send_from"
-    t.string   "arrival_to"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
 
   create_table "news_pages", :force => true do |t|
     t.string   "title"
