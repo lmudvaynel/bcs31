@@ -2,7 +2,8 @@
   <a href="#"><%= image_tag("logo.png", alt: "") %></a>
 </div><!-- /logo -->
 <div class="header_top_call_us_resp">
-  <%= image_tag("call_us_free.png", alt: "", class: "header_top_call_us_logo") %>
+  <%= link_to "Позвонить нам бесплатно", "#", alt: "", class: "button_call_us reddish" %>
+  <%= link_to "Вызов курьера", "#", alt: "", class: "button_courier yellow" %>
 </div>
 
 <div class="header_top_phone">
@@ -14,5 +15,10 @@
   </div>
 </div>
 <div class="header_top_call_us">
-  <%= image_tag("call_us_free.png", alt: "", class: "header_top_call_us_logo") %>
+  <div class="header_buttons_container">
+    <%= link_to "Позвонить нам бесплатно", "#", alt: "", class: "button_call_us reddish" %>
+    <div class="courier_button_container">
+      <%= link_to "Вызов курьера", "#", alt: "", class: "button_courier yellow" %>
+    </div>
+  </div>
 </div>

@@ -1,3 +1,4 @@
+@import 'buttons';
 .top {
     padding:7px 0 8px;
 }
@@ -51,6 +52,39 @@
     height: 76px;
     /*background-color: darkgrey;*/
 
+}
+.header_buttons_container {
+  position: relative;
+  height:55px;
+  width: 210px;
+  background-color: red;
+  overflow: hidden;
+  right: -20px;
+}
+
+.courier_button_container {
+  position: absolute;
+  top: 32px;
+  height: 23px;
+  width: 210px;
+  background-color: green;
+}
+
+.button_call_us.reddish {
+  position: absolute;
+  ont-family:Verdana,Geneva,Kalimati,sans-serif;
+  font-size: 11px!important;
+  @include buttons3;
+  top:-8px;
+  z-index: 10;
+}
+
+.button_courier.yellow {
+  position: absolute;
+  @include buttons4;
+  font-size: 11px!important;
+  top: -16px;
+  z-index: 1;
 }
 
 .header_top_call_us_resp {

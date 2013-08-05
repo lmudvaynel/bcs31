@@ -13,7 +13,7 @@
                     <%= link_to content_tag(:span, child.name), slug_path(child),
                       :class => (menu_item_state(child).to_s + "hover-effect") %>
                   <% else %>
-                    <span style="font-weight: bold"> <%= child.name %> </span>
+                    <span class="text_bold"> <%= child.name %> </span>
                   <% end %>
                 </li>
             <% end %>
