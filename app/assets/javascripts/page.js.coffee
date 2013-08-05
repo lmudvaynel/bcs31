@@ -8,7 +8,6 @@ $(document).ready ->
 
   $(".menu_item").bind 'mouseleave', (event) ->
     $links = $(this).find('.nested_links')
-
     $links.addClass('hidden')
 
   $("#show_new_review_form").bind "click", (event) ->

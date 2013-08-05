@@ -125,6 +125,8 @@ ActiveAdmin.setup do |config|
   #
   # config.before_filter :do_something_awesome
 
+  config.before_filter :set_admin_locale
+
   # == Register Stylesheets & Javascripts
   #
   # We recommend using the built in Active Admin layout and loading

@@ -16,6 +16,10 @@ describe OnlineCourier do
       @online_courier.date = Date.yesterday
       @online_courier.should be_invalid
     end
+    it "should be valid" do
+      @online_courier.date = Date.tomorrow
+      @online_courier.should be_valid
+    end
   end
 
 end
