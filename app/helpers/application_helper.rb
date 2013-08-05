@@ -24,4 +24,8 @@ module ApplicationHelper
   def show_flash
     raw "<div class='flash_notice'>#{flash[:notice]}</div>" if flash[:notice]
   end
+
+  def date_format_for(date)
+    date.strftime("%d.%m.%Y %H:%M")
+  end
 end
