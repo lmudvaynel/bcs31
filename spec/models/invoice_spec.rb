@@ -7,8 +7,12 @@ describe Invoice do
   it 'should be valid with valid attributes' do
     invoice.should be_valid
   end
-  it { should enumerize(:status).in(*Invoice.status.values).with_default(:cargo_taken_back) }
-  it { should enumerize(:recipient_role).in(*Invoice.recipient_role.values).with_default(:personally) }
+  it { should enumerize(:status)
+              .in(*Invoice.status.values)
+              .with_default(:cargo_taken_back) }
+  it { should enumerize(:recipient_role)
+              .in(*Invoice.recipient_role.values)
+              .with_default(:personally) }
 
   describe '#number' do
     it 'should be unique' do
