@@ -1,3 +1,5 @@
 class Invoice < ActiveRecord::Base
-  attr_accessible :arrival_to, :first_name, :last_name, :middle_name, :number, :send_from, :status
+  attr_accessible :status, :number, :send_from, :arrival_to,
+                  :recipient_surname, :recipient_role, :delivered_at
+  NUMBER_OF_DIGITS = 8
 end
