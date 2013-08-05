@@ -328,3 +328,61 @@ h3{
   font-style: italic;
 }
 
+.indented {
+  font-weight: bold;
+}
+
+li.services {
+  list-style-type: none;
+}
+//////////////Services//////////////
+
+.services_padding_div {
+  height: 10px;
+}
+.services_headers {
+  width:270px;
+  height: 130px;
+  font-family:Verdana,Geneva,Kalimati,sans-serif;
+  font-size: 14px;
+  float: left;
+  margin-left: 15px;
+}
+.services_content {
+  font-family:Verdana,Geneva,Kalimati,sans-serif;
+  font-size: 14px;
+  width: 733px;
+  float: left;
+  margin-left: 45px;
+}
+
+
+@media (max-width:1200px) {
+  .services_content {
+    width: 600px;
+    float: right;
+  }
+}
+
+@media (max-width:1000px) {
+  .services_content {
+    width: 380px;
+    float: right;
+  }
+}
+
+@media (max-width:700px) {
+  .services_headers {
+    margin: 0px;
+    width: 100%;
+  }
+  .services_content {
+    margin: 0px;
+    width: 100%!important;
+
+  }
+  .services_content {
+    width: 380px;
+    float: right;
+  }
+}

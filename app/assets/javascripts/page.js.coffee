@@ -23,7 +23,5 @@ $(document).ready ->
 
   $(".dropdown-toggle").bind 'mouseenter', (event) ->
     $(".dropdown-menu").css "display", "block"
-  $(".dropdown-toggle").bind 'mouseleave', (event) ->
-    $(".dropdown-menu").css "display", "none" unless $(".dropdown-menu").is ":hover"
-  $(".dropdown-menu").bind 'mouseleave', (event) ->
-    $(this).css "display", "none"
+  $(".dropdown-menu").parent().bind 'mouseleave', (event) ->
+    $(".dropdown-menu").css "display", "none"

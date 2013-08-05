@@ -106,6 +106,16 @@ ActiveRecord::Schema.define(:version => 20130725072627) do
   add_index "pages", ["seo_id"], :name => "index_pages_on_seo_id"
   add_index "pages", ["slug"], :name => "index_pages_on_slug", :unique => true
 
+  create_table "partners", :force => true do |t|
+    t.string   "url"
+    t.string   "logo"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "position"
+  end
+
+  add_index "partners", ["position"], :name => "index_partners_on_position"
+
   create_table "reviews", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"

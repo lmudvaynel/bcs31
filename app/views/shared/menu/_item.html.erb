@@ -1,7 +1,7 @@
 <li>
   <% if page.children.any? %>
-    <%= link_to '#', :class => "dropdown-toggle #{menu_item_state(page)}",
-                     :'data-toggle' => 'dropdown' do %>
+    <%= link_to '/order', :class => "dropdown-toggle #{menu_item_state(page)}",
+                     :'data-toggle' => '' do %>
       <%= raw(page.name) %>
       <b class='caret'></b>
     <% end %>
