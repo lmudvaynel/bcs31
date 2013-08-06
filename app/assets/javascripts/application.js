@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-modal
-//= require bootstrap/js/bootstrap.min
+//= require bootstrap
 //= require shared/global
 //= require shared/eco
 //= require flexslider/jquery.flexslider

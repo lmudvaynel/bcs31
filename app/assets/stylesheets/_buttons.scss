@@ -91,7 +91,7 @@
   background-color:$dropshadow-color;
 
   &:hover{
-    @include background-image(linear-gradient(lighten($gradient-top-color, 4%), lighten($gradient-bottom-color, 4%)));
+    @include background-image(linear-gradient(lighten($gradient-top-color, 8%), lighten($gradient-bottom-color, 8%)));
   }
 
   &:active{
@@ -125,7 +125,7 @@
   background-color:$dropshadow-color;
 
   &:hover{
-    @include background-image(linear-gradient(lighten($gradient-top-color, 4%), lighten($gradient-bottom-color, 4%)));
+    @include background-image(linear-gradient(lighten($gradient-top-color, 8%), lighten($gradient-bottom-color, 8%)));
   }
 
   &:active{
