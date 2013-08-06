@@ -62,7 +62,7 @@ Cite::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  config.middleware.use ExceptionNotifier,
+  config.middleware.use ExceptionNotification::Rack,
     email: {
       email_prefix: "[Whatever] ",
       email_format: :html,
