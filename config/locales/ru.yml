@@ -32,6 +32,17 @@ ru:
         personally: лично
         guard:      охрана
         kinsman:    родственник
+    online_courier:
+      transportation:
+        cash:                 Наличный расчет
+        express_delivery:     Экспресс доставка
+      payment:
+        cash:                 Наличный расчет
+        cashless:             Безналичный расчет
+      payer:
+        sender:               Отправитель
+        recipient:            Получатель
+        dark_side:            Третья сторона
   activerecord:
     models:
       admin_user:
@@ -59,6 +70,12 @@ ru:
         other: Новости
       seo:
         СЕО
+      online_courier:
+        zero:   Заявок курьеру
+        one:    Заявка курьеру
+        few:    Заявок курьеру
+        many:   Заявок курьеру
+        other:  Заявки курьеру
       review:
         zero:   Отзывов
         one:    Отзыв
@@ -141,11 +158,35 @@ ru:
         logo:         Лого
         url:          Ссылка
       seo:
-        title:        Заголовок
-        keywords:     Ключевые слова
-        description:  Описание
-        created_at:   Дата создания
-        updated_at:   Дата обновления
+        title: Заголовок
+        keywords: Ключевые слова
+        description: Описание
+        created_at: Дата создания
+        updated_at: Дата обновления
+      online_courier:
+        transportation: Тип перевозки
+        date:           Дата исполнения заказа
+        time:           Временной интервал забора груза
+        time_start:     Начало временного промежутка
+        time_end:       Конец промежутка
+        full_name:      Контактное лицо
+        phone:          Контактный телефон
+        company:        Организация отправителя
+        address:        Адрес отправителя
+        weight:         Вес(кг)
+        amount:         Количество мест
+        size:           Габариты
+        cargo_type:     Характер груза
+        city:           Город получения
+        payment:        Тип оплаты
+        payer:          Кто платит
+        payer_number:   № плательщика
+        comment:        Комментарии
+        title:          Заголовок
+        keywords:       Ключевые слова
+        description:    Описание
+        created_at:     Дата создания
+        updated_at:     Дата обновления
       worker:
         name:         Фамилия и Имя
         first_name:   Имя
