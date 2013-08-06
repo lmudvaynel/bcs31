@@ -1,4 +1,5 @@
 ActiveAdmin.register Banner do
+  menu priority: 2
 
   form do |f|
     f.inputs do

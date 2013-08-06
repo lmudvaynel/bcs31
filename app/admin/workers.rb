@@ -1,6 +1,6 @@
 # encoding: utf-8
-
 ActiveAdmin.register Worker do
+  menu priority: 8
 
     index do
       column :name do |worker|

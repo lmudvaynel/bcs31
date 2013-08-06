@@ -1,6 +1,6 @@
 # encoding: utf-8
-
 ActiveAdmin.register Partner do
+  menu priority: 7
 
   index do
     column :url
