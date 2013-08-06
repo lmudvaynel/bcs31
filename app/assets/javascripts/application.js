@@ -12,8 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap-modal
 //= require bootstrap
+//= require bootstrap-modal
 //= require shared/global
 //= require shared/eco
 //= require flexslider/jquery.flexslider
