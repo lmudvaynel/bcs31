@@ -14,11 +14,21 @@ Cite::Application.routes.draw do
   resources :workers , :only  => :create
   get 'about' => 'workers#index'
 
+  resources :online_couriers, :only => :create
+  get 'online_couriers' => 'online_couriers#new'
+  get 'thanks' => 'online_couriers#thanks', :as => :thanks
+
   resources :reviews, :only => [:index, :create]
   resources :news_pages
+
+  resources :invoices do
+    post :search, on: :collection
+  end
+
   get 'index' => 'pages#index'
   get 'news_pages/:id' => 'news_pages#show'
   get 'reviews' => 'reviews#index'
   get ':slug' => 'pages#show', :as => :slug
+
   resources :pages
 end

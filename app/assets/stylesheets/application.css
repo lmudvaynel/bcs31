@@ -22,4 +22,5 @@
  *= require footer_style
  *= require online_requests
  *= require_tree .
+ *= require bootstrap
  */

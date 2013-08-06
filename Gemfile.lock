@@ -1,6 +1,13 @@
 GIT
+  remote: git://github.com/brainspec/enumerize.git
+  revision: 33b5691f684343c387b1253c50035b3216604811
+  specs:
+    enumerize (0.6.1)
+      activesupport (>= 3.2)
+
+GIT
   remote: git://github.com/gregbell/active_admin.git
-  revision: 3cbaaaa7dc9ecd2a9952aca3d43863c7b30e073f
+  revision: 02ff1623590ba67042306a2d046d095aa9b70305
   specs:
     activeadmin (0.6.0)
       arbre (>= 1.0.1)
@@ -31,7 +38,7 @@ GIT
 
 GIT
   remote: git://github.com/smartinez87/exception_notification.git
-  revision: b977b653da0ea674096a0451ac8b5925a590a3b8
+  revision: de497934fd49dcce2f0967b9e8c017ec5426a0f1
   specs:
     exception_notification (4.0.0)
       actionmailer (>= 3.0.4)
@@ -96,6 +103,7 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-datetimepicker-rails (0.0.11)
     bootstrap-sass (2.3.2.1)
       sass (~> 3.2)
     bourbon (3.1.8)
@@ -192,7 +200,7 @@ GEM
       debugger-ruby_core_source (~> 1.2.3)
     debugger-linecache (1.2.0)
     debugger-ruby_core_source (1.2.3)
-    devise (3.0.0)
+    devise (3.0.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -222,7 +230,7 @@ GEM
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
     fastercsv (1.5.5)
-    ffaker (1.16.2)
+    ffaker (1.18.0)
     ffi (1.9.0)
     font-awesome-rails (3.2.1.2)
       railties (>= 3.2, < 5.0)
@@ -278,7 +286,7 @@ GEM
     mini_magick (3.6.0)
       subexec (~> 0.2.1)
     mini_portile (0.5.1)
-    multi_json (1.7.7)
+    multi_json (1.7.8)
     multi_test (0.0.2)
     multipart-post (1.2.0)
     mysql2 (0.3.13)
@@ -448,6 +456,7 @@ DEPENDENCIES
   ancestry
   better_errors
   binding_of_caller
+  bootstrap-datetimepicker-rails
   bootstrap-sass
   brakeman
   capistrano
@@ -470,6 +479,7 @@ DEPENDENCIES
   eco
   email_spec
   email_validator
+  enumerize!
   exception_notification!
   factory_girl_rails
   ffaker

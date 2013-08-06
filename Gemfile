@@ -21,6 +21,7 @@ gem 'client_side_validations'
 gem 'acts_as_list'
 gem 'activeadmin-sortable'
 gem "font-awesome-rails"
+gem 'enumerize', github: 'brainspec/enumerize'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -47,6 +48,7 @@ gem 'roboto'
 
 gem 'ffaker'
 gem 'factory_girl_rails'
+gem 'bootstrap-datetimepicker-rails'
 
 group :test do
   gem 'cucumber'

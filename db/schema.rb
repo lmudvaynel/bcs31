@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130725072627) do
+ActiveRecord::Schema.define(:version => 20130805071308) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -78,6 +78,18 @@ ActiveRecord::Schema.define(:version => 20130725072627) do
 
   add_index "feedbacks", ["email"], :name => "index_feedbacks_on_email"
 
+  create_table "invoices", :force => true do |t|
+    t.string   "status"
+    t.integer  "number"
+    t.string   "send_from"
+    t.string   "arrival_to"
+    t.string   "recipient_surname"
+    t.string   "recipient_role"
+    t.datetime "delivered_at"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
   create_table "news_pages", :force => true do |t|
     t.string   "title"
     t.text     "content"
@@ -85,6 +97,28 @@ ActiveRecord::Schema.define(:version => 20130725072627) do
     t.string   "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "online_couriers", :force => true do |t|
+    t.string   "transportation"
+    t.date     "date"
+    t.string   "time_start"
+    t.string   "time_end"
+    t.string   "full_name"
+    t.string   "phone"
+    t.string   "company"
+    t.string   "address"
+    t.string   "weight"
+    t.string   "amount"
+    t.string   "size"
+    t.string   "cargo_type"
+    t.string   "city"
+    t.string   "payment"
+    t.string   "payer"
+    t.string   "payer_number"
+    t.string   "comment"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "pages", :force => true do |t|
@@ -111,10 +145,7 @@ ActiveRecord::Schema.define(:version => 20130725072627) do
     t.string   "logo"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.integer  "position"
   end
-
-  add_index "partners", ["position"], :name => "index_partners_on_position"
 
   create_table "reviews", :force => true do |t|
     t.string   "first_name"

@@ -1,6 +1,6 @@
 # encoding: utf-8
 ActiveAdmin.register AdminUser do
-  menu :priority => 2
+  menu priority: 1
 
   index do
     column :email

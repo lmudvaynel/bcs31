@@ -14,6 +14,35 @@ ru:
   translation:
     en: "English"
     ru: "Русский"
+  enumerize:
+    invoice:
+      status:
+        cargo_taken_back:     Груз забран у отправителя
+        cargo_manifested:     Груз манифестирован
+        cargo_sent:           Груз отправлен
+        cargo_arrived:        Прибытие в город
+        cargo_is_received:    Груз получен от поставщика
+        delivery_accepted:    Груз принят агентом
+        submitted_to_courier: Передано на доставку курьеру
+        cargo_is_delivered:   Груз доставлен получателю
+      recipient_role:
+        reception:  секретарь (reception)
+        employee:   сотрудник
+        expedition: канцелярия (экспедиция)
+        personally: лично
+        guard:      охрана
+        kinsman:    родственник
+    online_courier:
+      transportation:
+        cash:                 Наличный расчет
+        express_delivery:     Экспресс доставка
+      payment:
+        cash:                 Наличный расчет
+        cashless:             Безналичный расчет
+      payer:
+        sender:               Отправитель
+        recipient:            Получатель
+        dark_side:            Третья сторона
   activerecord:
     models:
       admin_user:
@@ -41,6 +70,12 @@ ru:
         other: Новости
       seo:
         СЕО
+      online_courier:
+        zero:   Заявок курьеру
+        one:    Заявка курьеру
+        few:    Заявок курьеру
+        many:   Заявок курьеру
+        other:  Заявки курьеру
       review:
         zero:   Отзывов
         one:    Отзыв
@@ -59,6 +94,12 @@ ru:
         few:    Сотрудников
         many:   Сотрудников
         other:  Сотрудники
+      invoice:
+        zero:   Накладных
+        one:    Накладная
+        few:    Накладных
+        many:   Накладных
+        other:  Накладные
     attributes:
       admin_user:
         id: Номер
@@ -110,18 +151,42 @@ ru:
       news_page:
         title:        Заголовок
         description:  Описание
-        content:      Содержание 
+        content:      Содержание
         image:        Картинка
         created_at:   Дата создания
       partner:
         logo:         Лого
         url:          Ссылка
       seo:
-        title:        Заголовок
-        keywords:     Ключевые слова
-        description:  Описание
-        created_at:   Дата создания
-        updated_at:   Дата обновления
+        title: Заголовок
+        keywords: Ключевые слова
+        description: Описание
+        created_at: Дата создания
+        updated_at: Дата обновления
+      online_courier:
+        transportation: Тип перевозки
+        date:           Дата исполнения заказа
+        time:           Временной интервал забора груза
+        time_start:     Начало временного промежутка
+        time_end:       Конец промежутка
+        full_name:      Контактное лицо
+        phone:          Контактный телефон
+        company:        Организация отправителя
+        address:        Адрес отправителя
+        weight:         Вес(кг)
+        amount:         Количество мест
+        size:           Габариты
+        cargo_type:     Характер груза
+        city:           Город получения
+        payment:        Тип оплаты
+        payer:          Кто платит
+        payer_number:   № плательщика
+        comment:        Комментарии
+        title:          Заголовок
+        keywords:       Ключевые слова
+        description:    Описание
+        created_at:     Дата создания
+        updated_at:     Дата обновления
       worker:
         name:         Фамилия и Имя
         first_name:   Имя
@@ -130,3 +195,14 @@ ru:
         phone:        Телефон
         job:          Должность
         photo:        Фото
+      invoice:
+        id:                 Номер
+        status:             Статус
+        number:             Накладная
+        send_from:          Откуда
+        arrival_to:         Куда
+        recipient_surname:  Фамилия получателя
+        recipient_role:     Роль получателя
+        delivered_at:       Дата доставки
+        created_at:         Дата создания
+        updated_at:         Дата обновления

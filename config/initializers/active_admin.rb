@@ -124,6 +124,7 @@ ActiveAdmin.setup do |config|
   # Active Admin resources and pages from here.
   #
   # config.before_filter :do_something_awesome
+  config.before_filter :set_admin_locale
 
   # == Register Stylesheets & Javascripts
   #
@@ -204,6 +205,5 @@ ActiveAdmin.setup do |config|
   # You can enable or disable them for all resources here.
   #
   # config.filters = true
-
 
 end
