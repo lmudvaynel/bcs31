@@ -1,4 +1,4 @@
-Cite::Application.configure do
+Bcs31::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
@@ -62,7 +62,7 @@ Cite::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  config.middleware.use ExceptionNotifier,
+  config.middleware.use ExceptionNotification::Rack,
     email: {
       email_prefix: "[BalticIT Stage ] ",
       email_format: :html,
