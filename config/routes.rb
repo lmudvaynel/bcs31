@@ -16,6 +16,9 @@ Cite::Application.routes.draw do
 
   resources :reviews, :only => [:index, :create]
   resources :news_pages
+  resources :invoices do
+    post :search, on: :collection
+  end
   get 'index' => 'pages#index'
   get 'news_pages/:id' => 'news_pages#show'
   get 'reviews' => 'reviews#index'

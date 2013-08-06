@@ -1,6 +1,10 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+  def set_admin_locale
+    I18n.locale = :ru
+  end
+
   unless Rails.application.config.consider_all_requests_local
     rescue_from Exception, with: :render_500
     rescue_from ActionController::RoutingError, with: :render_404

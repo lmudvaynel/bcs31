@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/brainspec/enumerize.git
+  revision: 33b5691f684343c387b1253c50035b3216604811
+  specs:
+    enumerize (0.6.1)
+      activesupport (>= 3.2)
+
+GIT
   remote: git://github.com/gregbell/active_admin.git
   revision: ec9996406df5c07f4720eabc0120f710ae46c997
   specs:
@@ -464,6 +471,7 @@ DEPENDENCIES
   eco
   email_spec
   email_validator
+  enumerize!
   exception_notification!
   factory_girl_rails
   ffaker
