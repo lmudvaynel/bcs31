@@ -329,6 +329,18 @@ h3{
 li.services {
   list-style-type: none;
 }
+.flash_notice {
+  position: relative;
+  top: 30px;
+  //margin: 0 auto;
+  display: block;
+  //width: 200px;
+  //margin-right: auto;
+  //margin-left: auto;
+  text-align: center;
+  color: red;
+  //background-color: green;
+}
 //////////////Services//////////////
 
 .services_padding_div {
