@@ -8,18 +8,13 @@ describe OnlineCourier do
   end
 
   describe "#date" do
-    it "should be valid" do
-      online_courier.date = Date.tomorrow
-      online_courier.should be_valid
-    end
-
-    it "should be invalid" do
+    it "should not be empty" do
       online_courier.date = nil
       online_courier.should be_invalid
     end
   end
 
-  describe "validation of time" do
+  describe "#time_start and #time_end" do
     it "should be valid with empty end time of interval" do
       online_courier.time_start = "12.20"
       online_courier.time_end = nil
@@ -41,70 +36,70 @@ describe OnlineCourier do
   end
 
   describe "#address" do
-    it "should be invalid with empty address" do
+    it "should not be empty" do
       online_courier.address = nil
       online_courier.should be_invalid
     end
   end
 
   describe "#amount" do
-    it "should be invalid with empty amount" do
+    it "should not be empty" do
       online_courier.amount = nil
       online_courier.should be_invalid
     end
   end
 
   describe "#cargo_type" do
-    it "should be invalid with empty cargo_type" do
+    it "should not be empty" do
       online_courier.cargo_type = nil
       online_courier.should be_invalid
     end
   end
 
   describe "#city" do
-    it "should be invalid with empty city" do
+    it "should not be empty" do
       online_courier.city = nil
       online_courier.should be_invalid
     end
   end
 
   describe "#full_name" do
-    it "should be invalid with empty full name" do
+    it "should not be empty" do
       online_courier.full_name = nil
       online_courier.should be_invalid
     end
   end
 
   describe "#payer" do
-    it "should be invalid with empty payer" do
+    it "should not be empty" do
       online_courier.payer = nil
       online_courier.should be_invalid
     end
   end
 
   describe "#payment" do
-    it "should be invalid with empty payment" do
+    it "should not be empty" do
       online_courier.payment = nil
       online_courier.should be_invalid
     end
   end
 
   describe "#phone" do
-    it "should be invalid with empty phone" do
+    it "should not be empty" do
       online_courier.phone = nil
       online_courier.should be_invalid
     end
   end
 
   describe "#transportation" do
-    it "should be invalid with empty transportation" do
+    it "should not be empty" do
       online_courier.transportation = nil
       online_courier.should be_invalid
     end
   end
 
   describe "#weight" do
-    it "should be invalid with empty weight" do
+    it "should not be empty" do
       online_courier.weight = nil
       online_courier.should be_invalid
     end
