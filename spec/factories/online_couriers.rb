@@ -1,7 +1,7 @@
 #encoding: utf-8
 FactoryGirl.define do
   factory :online_courier do
-    transportation { ["наличный расчет", "экспресс-доставка"].sample }
+    transportation { OnlineCourier.transportation.values.sample }
     time_start     { rand(3..24) }
     time_end       {time_start + 3.hour}
     date           { DateTime.now + 1.hours }
@@ -14,8 +14,8 @@ FactoryGirl.define do
     size           { (1..3).map{rand(1..20)*5}.join('x') }
     cargo_type     { Faker::HipsterIpsum.word }
     city           { Faker::Address.city }
-    payment        { ["наличный расчет", "безналичный расчет"].sample }
-    payer          { ["отправитель", "получатель", "третья сторона"].sample }
+    payment        { OnlineCourier.payment.values.sample }
+    payer          { OnlineCourier.payer.values.sample }
     comment        { Faker::Lorem.sentence }
 
     factory :payment_number do

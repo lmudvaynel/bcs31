@@ -32,6 +32,17 @@ ru:
         personally: лично
         guard:      охрана
         kinsman:    родственник
+    online_courier:
+      transportation:
+        cash:                 Наличный расчет
+        express_delivery:     Экспресс доставка
+      payment:
+        cash:                 Наличный расчет
+        cashless:             Безналичный расчет
+      payer:
+        sender:               Отправитель
+        recipient:            Получатель
+        dark_side:            Третья сторона
   activerecord:
     models:
       admin_user:
