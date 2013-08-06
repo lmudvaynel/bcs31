@@ -1,9 +1,6 @@
-<div class="review_field_container">
-
+<div class="review_field_container">                                                  §
   <% if index.odd? %>
-    <div class="review_item_author_wrapper left
-    <%= review.logo.to_s.present? ? 'logos': 'nologos'%>
-    ">
+    <div class="review_item_author_wrapper left <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
       <div class="review_item_author">
         <div class="review_caption">
           <%= review.caption %>
@@ -17,8 +14,7 @@
     </div>
 
     <div class="review_logo_container
-     <%= review.logo.to_s.present? ? 'logos': 'nologos'%>
-     left ">
+     <%= review.logo.to_s.present? ? 'logos': 'nologos'%> left ">
       <% if review.logo.to_s.present? %>
         <div class="review_logo">
           <%= logo_for review %>
@@ -26,22 +22,19 @@
       <% end %>
     </div>
 
-    <div class="review_item_content right
-    <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
+    <div class="review_item_content right <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
       <p class="content_text"><%= review.content %></p>
       <div class="content_box_arrow right"></div>
     </div>
   <% end %>
 
   <% if index.even? %>
-    <div class="review_item_content left
-    <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
+    <div class="review_item_content left <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
       <p class="content_text"><%= review.content %></p>
       <div class="content_box_arrow left"></div>
     </div>
 
-    <div class="review_logo_container right
-    <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
+    <div class="review_logo_container right <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
       <% if review.logo.to_s.present? %>
         <div class="review_logo">
           <%= logo_for review %>
@@ -49,9 +42,7 @@
       <% end %>
     </div>
 
-    <div class="review_item_author_wrapper right
-       <%= review.logo.to_s.present? ? 'logos': 'nologos'%>
-       ">
+    <div class="review_item_author_wrapper right <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
       <div class="review_item_author">
         <div class="review_caption">
           <%= review.caption %>
