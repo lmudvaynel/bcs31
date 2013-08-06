@@ -1,12 +1,16 @@
-<div class="wrapper">
+<div class="container">
 <%= render 'pages/index/partners' %>
 </div>
-<footer class="footer">
-  <div class="wrapper">
+
+<div class="footer">
+  <div class="container">
     <div class="row-fluid">
-      <div class="span12">
-        © <%= Time.now.year %> <%= t 'footer.text' %>
+      <div class="span4 e_sign">
+        <%= image_tag ("eeee.png"), class: "e_image" , alt: "" %>
       </div>
+      <%= render "shared/footer/info" %>
+      <%= render "shared/footer/contacts" %>
     </div>
   </div>
-</footer>
+</div>
+<%= render "shared/footer/copyright" %>

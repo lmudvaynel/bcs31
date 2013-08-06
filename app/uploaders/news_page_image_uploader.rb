@@ -10,7 +10,7 @@ class NewsPageImageUploader < CarrierWave::Uploader::Base
   end
 
   version :thumb do
-    process :resize_to_fill => [200, 130]
+    process :resize_to_fill => [260, 164]
   end
 
   def extension_white_list

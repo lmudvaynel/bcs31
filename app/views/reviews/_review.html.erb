@@ -1,18 +1,58 @@
-<div class="<%= index.odd? ? 'left' : 'right' %>">
-  <% if review.logo.to_s.present? %>
-    <div>
-      <%= logo_for review %>
+<div class="review_field_container">
+  <% if index.odd? %>
+    <div class="review_item_author_wrapper left <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
+      <div class="review_item_author">
+        <div class="review_caption">
+          <%= review.caption %>
+        </div>
+        <% if review.company_name %>
+          <div class="review_company">
+            <%= review.company_name %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="review_logo_container
+     <%= review.logo.to_s.present? ? 'logos': 'nologos'%> left ">
+      <% if review.logo.to_s.present? %>
+        <div class="review_logo">
+          <%= logo_for review %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="review_item_content right <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
+      <p class="content_text"><%= review.content %></p>
+      <div class="content_box_arrow right"></div>
     </div>
   <% end %>
-  <div>
-  <%= review.caption %>
-  </div>
-  <% if review.company_name %>
-    <div>
-      <%= review.company_name %>
+
+  <% if index.even? %>
+    <div class="review_item_content left <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
+      <p class="content_text"><%= review.content %></p>
+      <div class="content_box_arrow left"></div>
+    </div>
+
+    <div class="review_logo_container right <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
+      <% if review.logo.to_s.present? %>
+        <div class="review_logo">
+          <%= logo_for review %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="review_item_author_wrapper right <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
+      <div class="review_item_author">
+        <div class="review_caption">
+          <%= review.caption %>
+        </div>
+        <% if review.company_name %>
+          <div class="review_company">
+            <%= review.company_name %>
+          </div>
+        <% end %>
+      </div>
     </div>
   <% end %>
-</div>
-<div class="<%= index.even? ? 'left' : 'right' %>">
-  <%= review.content %>
 </div>

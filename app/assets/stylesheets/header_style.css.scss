@@ -1,0 +1,249 @@
+@import 'buttons';
+.top {
+    padding:7px 0 8px;
+}
+
+.header {
+    z-index:999;
+    position:relative;
+    border-bottom:solid 2px #eee;
+    //min-height: 126px;
+}
+.header .container {
+    position:relative;
+}
+
+@media (min-width: 1200px) {
+  .header .container {
+    width: 1070px;
+  }
+}
+.header_top{
+    position: relative;
+}
+@media (max-width: 600px) {
+  .header_top {
+    height: 86px;
+  }
+}
+
+.logo {
+    position: absolute;
+    float: left;
+    width: 33%;
+    height: 1px;
+    margin-top: 10px;
+    z-index: -1;
+}
+
+.header_top_phone {
+    position: absolute;
+    left: 33%;
+    width: 50%;
+    height: 76px;
+    z-index: 100;
+}
+
+.header_top_call_us {
+    position: relative;
+    top: -5px;
+    left: 83%;
+    width: 16%;
+    height: 76px;
+    /*background-color: darkgrey;*/
+
+}
+.header_buttons_container {
+  position: relative;
+  height:55px;
+  width: 210px;
+  overflow: hidden;
+  left: 15px;
+  top: -10px
+}
+
+.courier_button_container {
+  position: absolute;
+  top: 32px;
+  height: 23px;
+  width: 210px;
+  overflow: hidden;
+}
+
+.button_call_us.reddish {
+  position: absolute;
+  font-family:Verdana,Geneva,Kalimati,sans-serif;
+  font-size: 11px!important;
+  @include buttons3;
+  top:-8px;
+  z-index: 10;
+}
+
+.button_courier.yellow {
+  position: absolute;
+  font-family:Verdana,Geneva,Kalimati,sans-serif;
+  color: #666;
+  @include buttons4;
+  font-size: 11px!important;
+  top: -16px;
+  z-index: 1;
+}
+
+.header_top_call_us_resp {
+  position: relative;
+  float: right;
+  top: 80px;
+  z-index: 5000;
+}
+
+.call_us_span {
+  position: relative;
+  margin-top: 7px;
+  left: 20px;
+  //right: 20px;
+}
+.courier_span {
+  position: relative;
+  margin-top: 10px;
+  left: 20px;
+}
+
+.megaphon_head {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+.megaphon_handle {
+  position: absolute;
+  left: 33px;
+  top: 19px;
+}
+
+.header_top_phone_number  {
+  position: absolute;
+  font-family: Arial, verdana, sans-serif;
+  font-size: 30px;
+  color: #606060;
+  width: 85%;
+  line-height: 1.6em;
+}
+.header_top_phone_number p {
+  float: right;
+}
+
+.header_top_phone_logo {
+  position: relative;
+  float: right;
+  margin-left: 24%;
+}
+
+.header_top_call_us_logo {
+  margin-top: 10px;
+  float: right;
+}
+
+@media (min-width:600px) {
+  .header_top_call_us_resp {
+      display: none;
+
+  }
+}
+
+@media (max-width:600px) {
+    .logo {
+        /*text-align: center;*/
+        /*position: relative;*/
+        /*width: 100%;*/
+        /*height: 101px;*/
+        /*background-color: rgba(0, 128, 0, 0.33);*/
+    }
+    .header_top_call_us {
+        display: none;
+        /*background-color: green;*/
+    }
+    .navbar .btn-navbar {
+        float: left!important;
+    }
+    .header_top_phone {
+        position: absolute;
+        float: left;
+        width: 67%;
+        /*left:0px;*/
+        top: 0px;
+    }
+    .header_top_phone_number  {
+        position: absolute;
+        left: 12px;
+        font-family: Arial, verdana, sans-serif;
+        font-size: 20px;
+        color: #606060;
+    }
+    .header_top_phone_logo {
+        position: relative;
+        float: left;
+        margin-left: 28%;
+        position: absolute;
+        right:0px;
+        top: 0px;
+    }
+}
+
+@media (min-width:979px) and (max-width:1230px) {
+    .header_top_phone_number {
+        margin-left: -20px;
+        /*margin-top: 13px;*/
+    }
+}
+
+@media (min-width:720px) and (max-width:979px) {
+    .header_top_phone_number {
+        margin-left: -30px;
+        /*margin-top: 13px;*/
+    }
+}
+
+@media (min-width:600px) and (max-width:720px) {
+    .header_top_phone_number {
+        top: 10px;
+        margin-left: -35px;
+        font-size: 25px;
+        /*margin-top: 13px;*/
+    }
+}
+
+@media (min-width:500px) and (max-width:660px) {
+    .header_top_phone_number {
+        top:5px;
+        margin-left: -45px;
+        font-size: 25px;
+        /*margin-top: 13px;*/
+    }
+}
+@media (min-width:300px) and (max-width:500px) {
+    .header_top_phone_number {
+        top:15px;
+        margin-left: -55px;
+        font-size: 18px;
+        /*margin-top: 13px;*/
+    }
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    .header_top_phone_number {
+        margin-left: -60px;
+        /*margin-top: 13px;*/
+        font-size: 18px;
+        top: 10px;
+    }
+}
+
+@media (max-width:350px) {
+    .header_top_phone_number {
+        margin-left: -50px;
+        /*margin-top: 13px;*/
+        font-size: 15px;
+        top: 10px;
+    }
+}
+
+

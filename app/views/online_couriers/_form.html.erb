@@ -1,22 +1,22 @@
 <%= form_for @online_courier, :url => online_couriers_path(@online_courier), validate: true do |f| %>
-  <div class="request" id="request">
+  <div class="" id="request">
     <div class="request-control">
-      <h2>Вызов курьера по Белгороду</h2>
-      <div class="field">
-        <%= f.label "Тип перевозки", class: 'request_lable' %>
+      <h3>Вызов курьера по Белгороду</h3>
+      <div class="field_container">
+        <%= f.label "Тип перевозки", class: 'request_lable field_name' %>
         <%= f.select :transportation, OnlineCourier.transportation.options,  class: 'input-block-level' %>
       </div>
-      <div class="field">
-        <%= f.label :date, class: 'request_lable' %>
+      <div class="field_container">
+        <%= f.label :date, class: 'request_lable field_name' %>
         <%= f.date_select :date, as: :date_select,
                           start_year: Time.now.year, end_year: Time.now.year + 5 %>
       </div>
-      <p>Временной интервал забора груза</p>
-      <div class="field">
-        <%= f.text_field :time_start, class:"input-block-level" %>
+      <div class="field_container">
+        <span class="field_name">Временной интервал забора груза</span>
+          <%= f.text_field :time_start, class:"input-block-level text_field" %>
       </div>
       -
-      <div class="field">
+      <div class="field_container">
         <%= f.text_field :time_end, class:"input-block-level" %>
       </div>
       <p>Информация об отправителе</p>
@@ -30,11 +30,11 @@
         <%= online_courier_text_field :size, f %>
         <%= online_courier_text_field :cargo_type, f %>
         <%= online_courier_text_field :city, f %>
-      <div class="field">
+      <div class="field_container">
         <%= f.label 'Тип оплаты', class: 'request_lable' %>
         <%= f.select :payment, OnlineCourier.payment.options, class: 'input-block-level' %>
       </div>
-      <div class="field">
+      <div class="field_container">
         <%= f.label 'Кто платит', class: 'request_lable' %>
         <%= f.select :payer, OnlineCourier.payer.options, class: 'input-block-level' %>
       </div>
