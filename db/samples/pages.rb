@@ -9,8 +9,6 @@ Page.reset_column_information
   page = FactoryGirl.create(:page, slug: slug, name: name)
 end
 
-online_couriers = Page.find_by_slug(:online_couriers)
-
 services = Page.find_by_slug(:services)
 { order:      'Заказ (забор из другого города)',
   express:    'Экспресс доставка',

@@ -4,7 +4,7 @@
       <h2>Вызов курьера по Белгороду</h2>
       <div class="field">
         <%= f.label "Тип перевозки", class: 'request_lable' %>
-        <%= f.select :transportation, options_for_select(["наличный расчет", "экспресс-доставка"]), class: 'input-block-level' %>
+        <%= f.select :transportation, OnlineCourier.transportation.options,  class: 'input-block-level' %>
       </div>
       <div class="field">
         <%= f.label :date, class: 'request_lable' %>
@@ -20,26 +20,26 @@
         <%= f.text_field :time_end, class:"input-block-level" %>
       </div>
       <p>Информация об отправителе</p>
-        <%= raw(online_courier_text_field :full_name, f) %>
-        <%= raw(online_courier_text_field :phone, f) %>
-        <%= raw(online_courier_text_field :company, f) %>
-        <%= raw(online_courier_text_field :address, f) %>
+        <%= online_courier_text_field :full_name, f %>
+        <%= online_courier_text_field :phone, f %>
+        <%= online_courier_text_field :company, f %>
+        <%= online_courier_text_field :address, f %>
       <p>Информация о грузе и характере оплаты</p>
-        <%= raw(online_courier_text_field :weight, f) %>
-        <%= raw(online_courier_text_field :amount, f) %>
-        <%= raw(online_courier_text_field :size, f) %>
-        <%= raw(online_courier_text_field :cargo_type, f ) %>
-        <%= raw(online_courier_text_field :city, f) %>
+        <%= online_courier_text_field :weight, f %>
+        <%= online_courier_text_field :amount, f %>
+        <%= online_courier_text_field :size, f %>
+        <%= online_courier_text_field :cargo_type, f %>
+        <%= online_courier_text_field :city, f %>
       <div class="field">
         <%= f.label 'Тип оплаты', class: 'request_lable' %>
-        <%= f.select :payment, options_for_select(["наличный расчет", "безналичный расчет"]), class: 'input-block-level' %>
+        <%= f.select :payment, OnlineCourier.payment.options, class: 'input-block-level' %>
       </div>
       <div class="field">
         <%= f.label 'Кто платит', class: 'request_lable' %>
-        <%= f.select :payer, options_for_select(["отправитель", "получатель", "третья сторона"]), class: 'input-block-level' %>
+        <%= f.select :payer, OnlineCourier.payer.options, class: 'input-block-level' %>
       </div>
-        <%= raw(online_courier_text_field :payer_number, f) %>
-        <%= raw(online_courier_text_field :comment, f) %>
+        <%= online_courier_text_field :payer_number, f %>
+        <%= online_courier_text_field :comment, f %>
       </div>
         <%= f.submit 'Отправить', class: 'feedback-btn'%>
     </div>
