@@ -47,6 +47,7 @@ gem 'roboto'
 
 gem 'ffaker'
 gem 'factory_girl_rails'
+gem 'bootstrap-datetimepicker-rails'
 
 group :test do
   gem 'cucumber'
