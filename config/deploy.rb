@@ -10,7 +10,7 @@ require 'capistrano/ext/multistage'
 set :application, "bcs31" #write app name there
 
 set :scm, :git
-set :repository,  "git@github.com:balticit/bcs31.git" #place your repo there
+set :repository,  "git@github.com:Nesit/bcs31.git" #place your repo there
 
 set :deploy_via, :remote_cache
 
