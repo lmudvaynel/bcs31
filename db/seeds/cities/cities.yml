@@ -1,0 +1,172 @@
+cities:
+  - name: Абакан (респ. Хакассия)
+    central: true
+  - name: Архангельск
+    central: true
+  - name: Астрахань
+    central: true
+  - name: Барнаул
+    central: true
+  - name: Белгород
+    central: true
+    affiliate: true
+  - name: Брянск
+    central: true
+  - name: Владивосток
+    central: true
+  - name: Владикавказ
+    central: true
+  - name: Владимир
+    central: true
+  - name: Волгоград
+    central: true
+  - name: Вологда
+    central: true
+  - name: ВОРОНЕЖ
+    central: true
+  - name: Екатеринбург
+    central: true
+  - name: Иваново
+    central: true
+  - name: Ижевск
+    central: true
+  - name: Иркутск
+    central: true
+  - name: Казань
+    central: true
+  - name: Калининград
+    central: true
+  - name: Калуга
+  - name: Кемерово
+    central: true
+  - name: Киров
+    central: true
+  - name: Когалым
+    central: true
+  - name: Кострома
+    central: true
+  - name: Краснодар
+    central: true
+  - name: Красноярск
+    central: true
+  - name: Курган
+    central: true
+  - name: КУРСК
+    central: true
+  - name: Липецк
+  - name: Магадан
+    central: true
+  - name: Магнитогорск
+    central: true
+  - name: Махачкала
+    central: true
+  - name: Мирный, Респ. Саха
+    central: true
+  - name: МОСКВА
+    central: true
+  - name: Мурманск
+    central: true
+  - name: Набережные Челны
+    central: true
+  - name: Надым
+    central: true
+  - name: Новый Уренгой
+    central: true
+  - name: Нерюнгри
+    central: true
+  - name: Нефтеюганск
+    central: true
+  - name: Нижневартовск
+    central: true
+  - name: Нижнекамск
+    central: true
+  - name: Нижний Новгород
+    central: true
+  - name: Новгород Великий
+    central: true
+  - name: Новокузнецк
+    central: true
+  - name: Новороссийск
+    central: true
+  - name: Новосибирск
+    central: true
+  - name: Норильск
+    central: true
+  - name: Ноябрьск
+    central: true
+  - name: Омск
+    central: true
+  - name: ОРЕЛ
+    central: true
+  - name: Оренбург
+    central: true
+  - name: Пенза
+    central: true
+  - name: Пермь
+    central: true
+  - name: Петрозаводск
+    central: true
+  - name: Петропавловск-Камчатский
+    central: true
+  - name: Псков
+    central: true
+  - name: Ростов-на-Дону
+    central: true
+  - name: Рязань
+    central: true
+  - name: САНКТ-ПЕТЕРБУРГ
+    central: true
+  - name: Самара
+    central: true
+  - name: Саранск
+    central: true
+  - name: Саратов
+    central: true
+  - name: Смоленск
+    central: true
+  - name: Сочи
+    central: true
+  - name: Ставрополь
+    central: true
+  - name: Салехард
+    central: true
+  - name: Сургут
+    central: true
+  - name: Сыктывкар
+    central: true
+  - name: Тамбов
+    central: true
+  - name: Тверь
+    central: true
+  - name: Тольятти
+    central: true
+  - name: Томск
+    central: true
+  - name: ТУЛА
+    central: true
+  - name: Тюмень
+    central: true
+  - name: Улан-Удэ
+    central: true
+  - name: Ульяновск
+    central: true
+  - name: Уфа
+    central: true
+  - name: Хабаровск
+    central: true
+  - name: Ханты-Мансийск
+    central: true
+  - name: Череповец
+    central: true
+  - name: Чебоксары
+    central: true
+  - name: Челябинск
+    central: true
+  - name: Чита
+    central: true
+  - name: Южно-Сахалинск
+    central: true
+  - name: Якутск
+    central: true
+  - name: Ярославль
+    central: true
