@@ -1,10 +1,10 @@
   <li class="span3">
     <div class="thumbnail-style thumbnail-kenburn">
       <div class="thumbnail-img">
-        <div class="overflow-hidden"> <%= image_tag news_page.image.thumb.url %> </div>
-        <a class="btn-more hover-effect" href="#">подробнее +</a>
+        <div class="overflow-hidden"> <%= link_to image_tag(news_page.image.thumb.url), news_page_path(news_page) %> </div>
+        <%= link_to "подробнее +", news_page_path(news_page), class: "btn-more hover-effect" %>
       </div>
-      <h3> <%= link_to news_page.title, news_page_path(news_page), class: 'hover-effect' %> </h3>
+      <h3> <%= link_to news_page.title, news_page_path(news_page), class: 'hover-effect news_page_title_main' %> </h3>
       <p class="desc_content"> <%= news_page.description %> </p>
     </div>
   </li>
