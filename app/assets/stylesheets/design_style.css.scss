@@ -486,9 +486,56 @@ li.services {
 .cussion {
   height: 90px;
 }
-
-
-
 /////////feedback form////////
 
+/////////Courier Form////////
+.courier_from {
+  width: 700px;
+  margin: 0 auto;
+}
 
+.courier_from h3 {
+  //margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.bold_courier {
+  font-weight: bold;
+}
+
+.select_field {
+  float: right;
+}
+.pickup_delivery_date {
+  float: right;
+}
+.clear_courier_one {
+  height: 1px;
+  clear: both;
+}
+
+.clear_courier {
+  height: 15px;
+  clear: both;
+}
+
+.courier_field_container {
+  min-height: 34px;
+}
+
+.courier_field_container .text_field {
+  @include border-radius(8px);
+  width: 336px;
+  height: 34px!important;
+  padding: 0!important;
+  //margin-bottom: 8px;
+
+}
+
+.pickup_delivery_date select {
+  width: 110px;
+}
+.select_field.wide {
+  width: 338px;
+}
