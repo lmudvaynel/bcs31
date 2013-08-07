@@ -205,7 +205,6 @@ ActiveRecord::Schema.define(:version => 20130807114606) do
     t.integer  "price_cents"
     t.boolean  "contract_price"
     t.integer  "additional_price_cents"
-    t.integer  "delivery_id"
     t.string   "cargo_kind"
     t.datetime "created_at",             :null => false
     t.datetime "updated_at",             :null => false

@@ -7,7 +7,6 @@ class CreateTariffs < ActiveRecord::Migration
       t.integer :price_cents
       t.boolean :contract_price
       t.integer :additional_price_cents
-      t.integer :delivery_id
       t.string :cargo_kind
 
       t.timestamps
