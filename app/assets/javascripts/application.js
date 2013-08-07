@@ -12,11 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
 //= require bootstrap-modal
-//= require jquery.mousewheel
-//= require jquery.liquidcarousel
-//= require modernizr.custom
-//= require jquery.cslider
 //= require shared/global
+//= require shared/eco
+//= require flexslider/jquery.flexslider
+//= require parallax-slider/modernizr
+//= require parallax-slider/jquery.cslider
+//= require back-to-top
+//= require respond
 //= require rails.validations
+//= require page
 //= require_tree .
+

@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   layout :layout
 
   def index
-    @news_pages = NewsPage.order('created_at DESC').first(3)
+    @news_pages = NewsPage.order('created_at DESC').first(4)
   end
     
   def show

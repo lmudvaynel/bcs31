@@ -1,16 +1,19 @@
 <div class="wrapper">
-  <div class="row-fluid content">
-    <div>
-      <h2>Книга отзывов и предложений</h2>
-      <%= link_to "Оставить отзыв", "#", id: "show_new_review_form" %>
+  <div class="container">
+    <div class="row-fluid content">
+      <div class="headline">
+        <h3>Книга отзывов и предложений</h3>
+        <%= link_to "Оставить отзыв", "#", id: "show_new_review_form", class: "button comment orange" %>
+      </div>
+      <div class="content_text">
+        Уважаемые Клиенты, теперь вы можете существенно сократить время,
+        затрачиваемое на оформление отправок в экспресс центрах.
+      </div>
+      <%= show_flash %>
+      <div id="new_review_form_wrapper">
+        <%= render 'form' %>
+      </div>
+      <%= render 'list' %>
     </div>
-    <div>
-      Уважаемые Клиенты, теперь вы можете существенно сократить время,
-      затрачиваемое на оформление отправок в экспресс центрах.
-    </div>
-    <div id="new_review_form_wrapper" class="hidden">
-      <%= render 'form' %>
-    </div>
-    <%= render 'list' %>
   </div>
 </div>

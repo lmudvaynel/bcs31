@@ -12,7 +12,7 @@ namespace :db do
   end
 
   task :sample, :roles => :app do
-    run "cd #{latest_release} && RAILS_ENV=#{rails_env} bundle exec rake db:load_sample"
+    run "cd #{latest_release} && RAILS_ENV=#{rails_env} bundle exec rake db:sample"
   end
 
   task :backup_name, :roles => :db, :only => { :primary => true } do

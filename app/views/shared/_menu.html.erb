@@ -1,15 +1,16 @@
-<nav class="header-menu">
-  <ul>
-		<% Page.roots.visible.each do |page| %>
-			<li class="menu_item <%= menu_item_state(page) %>">
-				<%= link_to content_tag(:span, page.name), slug_path(page) %>
-				<ul class="nested_links hidden">
-				  <% page.children.each do |child| %>
-            <%= link_to content_tag(:span, child.name), slug_path(child),
-                        :class =>  menu_item_state(child) %>
-				  <% end %>  
-				</ul>
-			</li>
-		<% end %>
-	</ul>
-</nav>
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </a><!-- /nav-collapse -->
+    <div class="nav-collapse collapse">
+      <ul class="nav top-2">
+        <% Page.roots.visible.each do |page| %>
+          <%= render 'shared/menu/item', page: page %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

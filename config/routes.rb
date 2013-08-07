@@ -1,4 +1,4 @@
-Cite::Application.routes.draw do
+Bcs31::Application.routes.draw do
 
   mount_roboto
 
