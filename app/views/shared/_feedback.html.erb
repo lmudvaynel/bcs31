@@ -3,12 +3,13 @@
 <div class="feedback" id="feedback">
   <%= form_for feedback, remote: true, validate: true do |f| %>
     <div class="feedback-bg"></div>
-    <div class="feedback-controls">
+    <div class="feedback-controls feedback_form_container">
       <%= f.text_field :email, placeholder: t('mailer.email'),
-                       class: 'input-block-level feedback-control' %>
+                       class: 'input-block-level feedback-control text_field feedback' %>
       <%= f.text_area :message, placeholder: t('mailer.message'), rows: 4,
-                       class: 'input-block-level feedback-control' %>
+                       class: 'input-block-level feedback-control text_area feedback' %>
     </div>
-    <%= f.submit t('mailer.send'), class: 'feedback-btn' %>
+    <div class="cussion"></div>
+    <%= f.submit t('mailer.send'), class: 'feedback-btn submit_button orange' %>
   <% end %>
 </div>

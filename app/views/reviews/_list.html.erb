@@ -1,0 +1,9 @@
+<div class="review_buffer"></div>
+<ul>
+  <% @reviews.each_with_index do |review, index| %>
+    <li class="review_list_container">
+      <%= render review, index: index %>
+    </li>
+    <div class="clear_review_list"></div>
+  <% end %>
+</ul>

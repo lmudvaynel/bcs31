@@ -5,7 +5,7 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Cite"
+  config.site_title = "Bcs31"
   config.register_javascript 'ckeditor/init.js'
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -124,7 +124,6 @@ ActiveAdmin.setup do |config|
   # Active Admin resources and pages from here.
   #
   # config.before_filter :do_something_awesome
-
   config.before_filter :set_admin_locale
 
   # == Register Stylesheets & Javascripts
@@ -206,6 +205,5 @@ ActiveAdmin.setup do |config|
   # You can enable or disable them for all resources here.
   #
   # config.filters = true
-
 
 end

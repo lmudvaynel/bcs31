@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 Then /^(?:|I )should can visit each of base pages$/ do
   # Should be screened out by parent_id later
   base_pages = Page.visible.without(:slug, :index)
@@ -5,13 +7,8 @@ Then /^(?:|I )should can visit each of base pages$/ do
     step %Q(I follow "#{base_page.name}")
     current_path.sub('/', '').should == base_page.slug
     # Confirm that the page will display
-    step %Q(I should see "Projects")
+    step %Q(I should see "Главная")
   end
-end
-
-Given /^there is a page with the slug "(.*?)" create translation "(.*?)" with the name "(.*?)" with the content "(.*?)"$/ do |slug, locale, name, content|
-  page = Page.create!(slug: slug)
-  page.translations.create!(name: name, locale: locale, content: content)
 end
 
 And /^the page "(.*?)" has child "(.*?)"$/ do |parent_name, child_name|
@@ -29,5 +26,3 @@ And /^I select link "(.*?)" from menu$/ do |name|
   	$("a[href='/#{p.slug}']").trigger('mouseover');
   }
 end
- 
-

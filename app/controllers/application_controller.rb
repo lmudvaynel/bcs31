@@ -1,10 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-   
-  before_filter :export_i18n_messages
 
-  def export_i18n_messages
-    SimplesIdeias::I18n.export! if Rails.env.development?
+  def set_admin_locale
+    I18n.locale = :ru
   end
 
   unless Rails.application.config.consider_all_requests_local
@@ -40,9 +38,4 @@ class ApplicationController < ActionController::Base
       format.all { render nothing: true, status: 500}
     end
   end
-
-  def set_admin_locale
-    I18n.locale = params[:locale] || :ru
-  end
-
 end

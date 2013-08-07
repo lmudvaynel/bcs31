@@ -1,6 +1,6 @@
-# Encoding: utf-8
+# encoding: utf-8
 ActiveAdmin.register_page "Dashboard" do
-  menu :priority => 1, :label => 'Обзор'
+  menu priority: 0, label: 'Обзор'
 
   content :title => proc{ I18n.t("active_admin.dashboard") } do
     div :class => "blank_slate_container", :id => "dashboard_default_message" do

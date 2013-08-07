@@ -1,0 +1,32 @@
+<h2>Информация о грузе</h2>
+<div>
+  Накладная Major Express:
+  <span class="value"><%= @invoice.number %></span>
+</div>
+<div>
+  Особые отметки клиента:
+</div>
+<div>
+  Откуда:
+  <span class="value"><%= @invoice.send_from %></span>
+</div>
+<div>
+  Куда:
+  <span class="value"><%= @invoice.arrival_to %></span>
+</div>
+<% if @invoice.delivered_at %>
+  <div>
+    Груз доставлен:
+    <span class="value"><%= date_format_for @invoice.delivered_at %></span>
+  </div>
+<% end %>
+<div>
+  Кем получен:
+  <span class="value">
+    <%= @invoice.recipient_surname %> (<%= @invoice.recipient_role.text %>)
+  </span>
+</div>
+<div>
+  Статус:
+  <span class="value"><%= @invoice.status.text %></span>
+</div>

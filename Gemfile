@@ -13,8 +13,6 @@ gem 'mini_magick'
 gem 'friendly_id'
 gem 'ckeditor'
 gem 'noty-rails'
-gem 'route_translator'
-gem 'i18n-js', :github => 'fnando/i18n-js'
 gem 'globalize3'
 gem 'ActiveAdmin-Globalize3-inputs'
 gem 'ancestry'
@@ -22,6 +20,8 @@ gem 'email_validator', require: 'email_validator/strict'
 gem 'client_side_validations'
 gem 'acts_as_list'
 gem 'activeadmin-sortable'
+gem "font-awesome-rails"
+gem 'enumerize', github: 'brainspec/enumerize'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -48,6 +48,7 @@ gem 'roboto'
 
 gem 'ffaker'
 gem 'factory_girl_rails'
+gem 'bootstrap-datetimepicker-rails'
 
 group :test do
   gem 'cucumber'

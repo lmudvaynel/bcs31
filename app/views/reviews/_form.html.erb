@@ -1,0 +1,23 @@
+<%= form_for @review, :url => reviews_path(@review) do |f| %>
+  <div class="review_form_container">
+    <div class="field_container">
+      <%= f.label :first_name, class: "field_name" %>
+      <%= f.text_field :first_name, class: "text_field" %>
+    </div>
+    <div class="field_container">
+      <%= f.label :last_name, class: "field_name" %>
+      <%= f.text_field :last_name, class: "text_field" %>
+    </div>
+    <div class="field_container">
+      <%= f.label :city, class: "field_name" %>
+      <%= f.text_field :city, class: "text_field" %>
+    </div>
+    <div class="field_container textarea">
+      <%= f.label :content, class: "field_name" %>
+      <%= f.text_area :content, class: "text_field area" %>
+    </div>
+    <div class="submit_container">
+      <%= f.submit "Отправить", class: "submit_button orange" %>
+    </div>
+  </div>
+<% end %>

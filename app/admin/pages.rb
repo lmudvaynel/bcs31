@@ -1,6 +1,6 @@
-# Encoding: utf-8
+# encoding: utf-8
 ActiveAdmin.register Page do
-  menu :priority => 3
+  menu priority: 9
   config.batch_actions = false
   config.sort_order = 'position_asc'
 
