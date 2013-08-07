@@ -22,11 +22,11 @@ class City < ActiveRecord::Base
     end
   end
 
-  def delivery_price_to(city, weight, cargo_type, pay_in_affiliate)
+  def delivery_price_to(city, weight, cargo_kind, pay_in_affiliate)
     zone = self.zone_to(city, pay_in_affiliate)
     cents = 0
     if zone
-      tariff = zone.tariff(weight, cargo_type)
+      tariff = zone.tariff(weight, cargo_kind)
       if tariff
         cents = tariff.price_cents
         if weight > tariff.weight_end

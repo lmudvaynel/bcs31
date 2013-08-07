@@ -4,6 +4,28 @@ class PagesController < ApplicationController
   def index
     @news_pages = NewsPage.order('created_at DESC').first(4)
   end
+
+  def price_of_delivery
+    @page = Page.find_by_slug(:price_of_delivery)
+    delivery = params[:delivery]
+    result = if delivery
+      city_from = City.find(delivery[:city_from_id])
+      city_to = City.find(delivery[:city_to_id])
+      weight = delivery[:weight].to_f
+      cargo_kind = delivery[:cargo_kind]
+      price_cents = city_from.delivery_price_to(city_to, weight, cargo_kind, true)
+      { delivery_price: price_cents.to_f / 100 }
+    else
+      {}
+    end
+
+    respond_to do |format|
+      format.html
+      format.json do
+        render json: result
+      end
+    end
+  end
     
   def show
     @page = Page.find_by_slug(params[:slug]) || Page.find(params[:slug])
