@@ -1,10 +1,10 @@
 <div class="container">
   <div class="headline">
     <h3>
-      <%= link_to 'Новости', news_pages_path %>
+      <%= link_to 'Новости', news_pages_path, class: "hover-effect" %>
     </h3>
   </div>
   <ul class="thumbnails">
-    <%= render @news_pages %>
+    <%= render @news_pages%>
   </ul>
 </div>

@@ -76,11 +76,6 @@ h3{
 .desc_header h4 {
   margin-top: 0px;
 }
-.desc_content {
-  font-family:Verdana,Geneva,Kalimati,sans-serif;
-  font-size: 14px;
-  color: #666;
-}
 .thumbnail-style a.btn-more {
   font-family:Verdana,Geneva,Kalimati,sans-serif;
   font-size: 14px;
@@ -120,9 +115,12 @@ h3{
   float: right;
 }
 .message {
+  position: relative;
   clear: both;
-  margin-left: 120px;
+  margin-left: 123px;
+  top: -8px;
   color: red;
+  font-size: 13px;
 }
 
 .field_name  {
@@ -136,7 +134,8 @@ h3{
   @include border-radius(8px);
   width: 325px;
   height: 34px!important;
-  padding: 0!important;
+  @include box-sizing(border-box);
+  padding: 0 7px!important;
   //margin-bottom: 8px;
 
 }
@@ -144,6 +143,8 @@ h3{
 .text_field.area {
   height:164px !important;
   resize: none;
+  @include box-sizing(border-box);
+  padding: 6px 7px!important;
 
 }
 .text_field {
@@ -244,7 +245,7 @@ h3{
 }
 .content_box_arrow.right {
   position: absolute;
-  left: -14.2px;
+  left: -14px;
   top: 0px;
   width: 20px;
   height: 100%;
@@ -330,16 +331,13 @@ li.services {
   list-style-type: none;
 }
 .flash_notice {
+  font-family:Verdana,Geneva,Kalimati,sans-serif;
+  font-size: 15px;
   position: relative;
   top: 30px;
-  //margin: 0 auto;
   display: block;
-  //width: 200px;
-  //margin-right: auto;
-  //margin-left: auto;
   text-align: center;
-  color: red;
-  //background-color: green;
+  color: #F7941F;
 }
 //////////////Services//////////////
 
@@ -450,21 +448,28 @@ li.services {
   margin-right: auto;
   margin-top: 24px;
 }
+.feedback_form_container .message {
+  margin-left: -13px;
+}
 
 .feedback.text_field {
   font-family:Verdana,Geneva,Kalimati,sans-serif;
   font-size: 16px!important;
   @include border-radius(8px);
+  @include box-sizing(border-box);
+  padding: 0 7px!important;
   margin-left: -15px;
   width: 490px;
   height: 34px!important;
-  padding: 0!important;
   float: none;
 }
 
 .feedback.text_area {
   font-family:Verdana,Geneva,Kalimati,sans-serif;
   font-size: 16px!important;
+  @include border-radius(8px);
+  @include box-sizing(border-box);
+  padding: 6px 7px;
   margin-left: -15px;
   width: 490px;
   height:200px !important;
@@ -475,14 +480,12 @@ li.services {
   @include buttons2;
   margin: 0 auto;
 }
-.feedback .message {
-  margin-left: 0px;
-}
 
 
 
 .cussion {
   height: 90px;
+  //background-color: red;
 }
 /////////feedback form////////
 
@@ -491,17 +494,14 @@ li.services {
   width: 700px;
   margin: 0 auto;
 }
-
 .courier_from h3 {
   //margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
 }
-
 .bold_courier {
   font-weight: bold;
 }
-
 .select_field {
   float: right;
 }
@@ -512,7 +512,6 @@ li.services {
   height: 1px;
   clear: both;
 }
-
 .clear_courier {
   height: 15px;
   clear: both;
@@ -521,19 +520,77 @@ li.services {
 .courier_field_container {
   min-height: 34px;
 }
-
 .courier_field_container .text_field {
   @include border-radius(8px);
   width: 336px;
   height: 34px!important;
-  padding: 0!important;
-  //margin-bottom: 8px;
-
+  padding: 0 7px!important;
+  @include box-sizing(border-box);
+  //padding: 0!important;
 }
-
+.courier_field_container .message {
+  margin-left: 365px;
+}
 .pickup_delivery_date select {
   width: 110px;
 }
+
 .select_field.wide {
   width: 338px;
+}
+
+.courier_comment.text_field {
+  height: 100px!important;
+  resize: none;
+  padding: 6px 7px!important;
+  @include box-sizing(border-box);
+}
+
+/////////News/////////////////
+.news.headline {
+  margin: 0;
+}
+.news_cussion {
+  height: 30px;
+}
+.news_small_image {
+  margin-bottom: 15px;
+}
+.news_image_container {
+  float: left;
+}
+.content_text.news {
+  margin-left: 100px;
+  width: 800px;
+  float: left;
+}
+.clear_news {
+  clear: both;
+}
+
+.news_header {
+  font-family:Verdana,Geneva,Kalimati,sans-serif;
+  color: #666!important;
+  font-size: 21px;
+  //font-weight: bold!important;
+}
+
+.news_page_title_main {
+  font-family:Verdana,Geneva,Kalimati,sans-serif;
+  font-size: 18px!important;
+}
+
+.news_header.show {
+  font-family:Verdana,Geneva,Kalimati,sans-serif;
+  font-size: 18px;
+}
+.desc_content {
+  margin-top: 3px;
+  font-family:Verdana,Geneva,Kalimati,sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+#habla_window_div {
+  margin: 0px 65px!important;
 }

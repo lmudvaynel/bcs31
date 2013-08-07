@@ -1,8 +1,12 @@
-<div class="wrapper">
-  <%= link_to 'Новости', news_pages_path %>
+<div class="container">
+  <div class="news headline">
+  <h3><%= link_to 'Новости', news_pages_path, class: "hover-effect" %></h3>
+  </div>
   <div class="row-fluid content">
-    <%= image_tag @news_page.image.thumb.url %><br/>
-    <%= @news_page.title %><br/>
-    <%= raw @news_page.content %><br/>
+    <%#= image_tag @news_page.image.thumb.url %><br/>
+    <h4 class="news_header show"><%= @news_page.title %></h4>
+    <div class="content_text">
+      <%= raw @news_page.content %>
+    </div>
   </div>
 </div>

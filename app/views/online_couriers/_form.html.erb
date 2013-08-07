@@ -43,7 +43,10 @@
       </div>
       <div>
         <%= online_courier_text_field :payer_number, f %>
-        <%= online_courier_text_field :comment, f %>
+        <div class="courier_field_container">
+          <%= f.label "Комментарий", class: "field_name" %>
+          <%= f.text_area :comment, class: "text_field courier_comment" %>
+        </div>
       </div>
       <div class="clear_courier"></div>
         <%= f.submit 'Отправить', class: 'feedback-btn submit_button orange'%>
