@@ -5,7 +5,8 @@ class Zone < ActiveRecord::Base
 
   enumerize :provider, in: [:bcs, :major_express], predicates: true, scope: true
 
-  belongs_to :delivery_city_relation
+  has_many :zone_delivery_relations
+  has_many :delivery_city_relations, through: :zone_delivery_relations
   has_many :tariffs
 
   validates :name, presence: true, uniqueness: { scope: :provider }
