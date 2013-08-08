@@ -29,6 +29,5 @@ Bcs31::Application.routes.draw do
   get 'news_pages/:id' => 'news_pages#show'
   get 'reviews' => 'reviews#index'
   get ':slug' => 'pages#show', :as => :slug
-
   resources :pages
 end

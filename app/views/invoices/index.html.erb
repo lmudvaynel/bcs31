@@ -1,9 +1,13 @@
-<h1>Состояние доставки</h1>
-<div>
-  Уважаемые Клиенты, теперь вы можете существенно сократить время,
-  затрачиваемое на оформление отправок в экспресс-центрах.
+<div class="container">
+  <div class="headline">
+    <h3>Состояние доставки</h3>
+  </div>
+  <div class="content_text delivery_header">
+    Уважаемые Клиенты, теперь вы можете существенно сократить время,
+    затрачиваемое на оформление отправок в экспресс-центрах.
+  </div>
+
+  <%= render 'search_form' %>
+
+  <%= render 'info_about_cargo' if @invoice and not @invoice.new_record? %>
 </div>
-
-<%= render 'search_form' %>
-
-<%= render 'info_about_cargo' if @invoice and not @invoice.new_record? %>

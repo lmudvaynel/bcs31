@@ -594,3 +594,40 @@ li.services {
 #habla_window_div {
   margin: 0px 65px!important;
 }
+
+///////////Delivery//////////
+.field_container.delivery {
+  margin-top: 50px;
+  width: 1000px;
+  margin-bottom: 20px;
+}
+.field_container.delivery .field_name {
+  font-size: 14px;
+  margin-left: 160px;
+}
+.delivery .text_field  {
+  float: right;
+  font-size: 14px!important;
+  margin-right: 30px;
+}
+.content_text.delivery_header {
+  font-size: 16px;
+}
+.cargo_info {
+  height: 200px;
+  width: 325px;
+  float: right;
+  margin-right: 200px;
+}
+
+.invoice_info_container {
+  //background-color: rgba(255, 0, 0, 0.30);
+  font-size: 14px;
+}
+
+.invoice_info_container .value  {
+  float: right;
+}
+
+
+
