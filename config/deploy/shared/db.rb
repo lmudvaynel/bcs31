@@ -15,6 +15,10 @@ namespace :db do
     run "cd #{latest_release} && RAILS_ENV=#{rails_env} bundle exec rake db:sample"
   end
 
+  task :setup_sample, :roles => :app do
+    run "cd #{latest_release} && RAILS_ENV=#{rails_env} bundle exec rake db:setup_sample"
+  end
+
   task :backup_name, :roles => :db, :only => { :primary => true } do
     run "mkdir -p #{shared_path}/db_backups"
     backup_time = Time.now.strftime("%Y-%m-%d-%Hh%Mm%Ss%Lms")
