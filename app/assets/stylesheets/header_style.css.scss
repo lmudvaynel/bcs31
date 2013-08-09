@@ -187,7 +187,7 @@
     }
     .header_top_phone_number  {
         position: absolute;
-        left: 12px;
+        left: -70px;
         font-family: Arial, verdana, sans-serif;
         font-size: 20px;
         color: #606060;
@@ -216,39 +216,49 @@
 
 @media (min-width:600px) and (max-width:720px) {
     .header_top_phone_number {
-        top: 10px;
+        //top: 10px;
         margin-left: -35px;
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 
-@media (min-width:500px) and (max-width:660px) {
+@media (min-width:565px) and (max-width:680px) {
     .header_top_phone_number {
         top:5px;
-        margin-left: -45px;
+        margin-left: -40px;
         font-size: 25px;
     }
 }
-@media (min-width:300px) and (max-width:500px) {
+
+@media (min-width:520px) and (max-width:565px) {
+  .header_top_phone_number {
+    top:5px;
+    margin-left: -25px;
+    font-size: 25px;
+  }
+}
+
+
+@media (min-width:460px) and (max-width:520px) {
     .header_top_phone_number {
-        top:15px;
-        margin-left: -55px;
-        font-size: 18px;
+        top:10px;
+        margin-left: -5px;
+        font-size: 25px;
     }
 }
 
-@media (min-width:300px) and (max-width:400px) {
+@media (min-width:440px) and (max-width:460px) {
     .header_top_phone_number {
-        margin-left: -60px;
-        font-size: 18px;
+        margin-left: 20px;
+        font-size: 20px;
         top: 10px;
     }
 }
 
-@media (max-width:350px) {
+@media (max-width:440px) {
     .header_top_phone_number {
-        margin-left: -50px;
-        font-size: 15px;
+        margin-left: 40px;
+        font-size: 18px;
         top: 10px;
     }
 }

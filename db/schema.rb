@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130805071308) do
+ActiveRecord::Schema.define(:version => 20130807114606) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -53,6 +53,19 @@ ActiveRecord::Schema.define(:version => 20130805071308) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "cities", :force => true do |t|
+    t.integer  "region_id"
+    t.boolean  "central"
+    t.boolean  "district_level"
+    t.boolean  "affiliate"
+    t.string   "name"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "cities", ["name"], :name => "index_cities_on_name"
+  add_index "cities", ["region_id"], :name => "index_cities_on_region_id"
+
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
     t.string   "data_content_type"
@@ -68,6 +81,15 @@ ActiveRecord::Schema.define(:version => 20130805071308) do
 
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], :name => "idx_ckeditor_assetable"
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_ckeditor_assetable_type"
+
+  create_table "delivery_city_relations", :force => true do |t|
+    t.integer  "city_from_id"
+    t.integer  "city_to_id"
+    t.string   "delivery_time"
+    t.boolean  "business_morning"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
 
   create_table "feedbacks", :force => true do |t|
     t.string   "email"
@@ -147,6 +169,15 @@ ActiveRecord::Schema.define(:version => 20130805071308) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "regions", :force => true do |t|
+    t.string   "name"
+    t.integer  "main_city_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "regions", ["name"], :name => "index_regions_on_name"
+
   create_table "reviews", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"
@@ -167,6 +198,22 @@ ActiveRecord::Schema.define(:version => 20130805071308) do
     t.datetime "updated_at",  :null => false
   end
 
+  create_table "tariffs", :force => true do |t|
+    t.integer  "zone_id"
+    t.float    "weight_start"
+    t.float    "weight_end"
+    t.integer  "price_cents"
+    t.boolean  "contract_price"
+    t.integer  "additional_price_cents"
+    t.string   "cargo_kind"
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
+  end
+
+  add_index "tariffs", ["weight_end"], :name => "index_tariffs_on_weight_end"
+  add_index "tariffs", ["weight_start"], :name => "index_tariffs_on_weight_start"
+  add_index "tariffs", ["zone_id"], :name => "index_tariffs_on_zone_id"
+
   create_table "workers", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"
@@ -174,6 +221,20 @@ ActiveRecord::Schema.define(:version => 20130805071308) do
     t.string   "photo"
     t.string   "phone"
     t.string   "job"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "zone_delivery_relations", :force => true do |t|
+    t.integer  "zone_id"
+    t.integer  "delivery_city_relation_id"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+  end
+
+  create_table "zones", :force => true do |t|
+    t.string   "name"
+    t.string   "provider"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

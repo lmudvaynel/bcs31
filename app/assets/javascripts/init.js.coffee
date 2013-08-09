@@ -1,6 +1,13 @@
 $(document).ready ->
-  App.init()
-  $('#liquid1').liquidcarousel(height: 183, duration: 500, hidearrows: false)
-  App.initSliders()
-  Index.initParallaxSlider()
   $('#da-slider').cslider()
+  $('#clients-flexslider').flexslider
+    animation: "slide",
+    easing: "swing",
+    animationLoop: true,
+    itemWidth: 1,
+    itemMargin: 1,
+    minItems: 2,
+    maxItems: 9,
+    controlNav: false,
+    directionNav: false,
+    move: 2

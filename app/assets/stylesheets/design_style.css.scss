@@ -196,7 +196,6 @@ h3{
 }
 .review_field_container {
   display: table-row;
-
   position: relative;
   overflow: hidden;
   padding-bottom: 10px;
@@ -215,6 +214,11 @@ h3{
 }
 .review_item_content.left {
   margin-left: 137px;
+}
+@media (max-width:300px) {
+  .review_item_content.left {
+    margin-left: 0px;
+  }
 }
 .review_item_content.left.logos {
   margin-left: 87px;
@@ -427,6 +431,22 @@ li.services {
   font-size: 16px;
   margin-left: 68px;
 }
+@media (max-width: 530px) {
+  .worker {
+    margin-left: 20px;
+  }
+  .worker_info {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 440px) {
+  .worker {
+    margin-left: 20px;
+  }
+  .worker_info {
+    margin-left: 0px;
+  }
+}
 .worker_attribute_first_name,
 .worker_attribute_last_name,
 .worker_attribute_patronymic,{
@@ -628,6 +648,4 @@ li.services {
 .invoice_info_container .value  {
   float: right;
 }
-
-
 
