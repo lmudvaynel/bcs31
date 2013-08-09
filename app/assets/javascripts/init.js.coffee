@@ -1,6 +1,6 @@
 $(document).ready ->
   $('#da-slider').cslider()
-  $('#clients-flexslider').flexslider (
+  $('#clients-flexslider').flexslider
     animation: "slide",
     easing: "swing",
     animationLoop: true,
@@ -10,4 +10,4 @@ $(document).ready ->
     maxItems: 9,
     controlNav: false,
     directionNav: false,
-    move: 2 )
+    move: 2
