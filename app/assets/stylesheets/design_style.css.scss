@@ -3,7 +3,9 @@
 h3{
   line-height: 18px;
 }
-
+body, html {
+  height: 100%;
+}
 .container.main {
   min-height: 100%;
   height: auto !important;
