@@ -4,7 +4,13 @@ h3{
   line-height: 18px;
 }
 
-
+.container.main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+  width: 100%;
+}
 
 .headline h3 {
   line-height: 40px!important;
@@ -649,3 +655,40 @@ li.services {
   float: right;
 }
 
+/////////////////Price of delivery//////////////////
+.calculator_container {
+  width: 450px;
+  margin: 40px auto 50px;
+}
+.delivery_price_container {
+  text-align: center;
+  font-size: 18px;
+}
+.checkboxes {
+  text-align: center;
+  font-size: 15px;
+  vertical-align: middle;
+  margin-top: 7px;
+}
+.weight_input input[type="text"] {
+  height: 24px!important;
+  @include border-radius(8px);
+  //padding: 0px!important;
+}
+.checkboxes input[type="radio"] {
+  position: relative;
+  vertical-align: middle;
+  bottom: 3px;
+  margin: 0px!important;
+}
+.checkboxes input[type="checkbox"] {
+  position: relative;
+  vertical-align: middle;
+  bottom: 1px;
+  margin: 0px!important;
+}
+.weight_input {
+  margin-top: 10px;
+  text-align: center;
+}
+/////////////////Price of delivery//////////////////
