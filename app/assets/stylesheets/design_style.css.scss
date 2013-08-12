@@ -3,8 +3,16 @@
 h3{
   line-height: 18px;
 }
-
-
+body, html {
+  height: 100%;
+}
+.container.main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  //margin: 0 auto -150px;
+  width: 100%;
+}
 
 .headline h3 {
   line-height: 40px!important;
@@ -177,6 +185,7 @@ h3{
 }
 
 ///////////FORM//////////////
+////////////Courier
 
 ////////////Review////////////
 
@@ -197,7 +206,6 @@ h3{
 }
 .review_field_container {
   display: table-row;
-
   position: relative;
   overflow: hidden;
   padding-bottom: 10px;
@@ -216,6 +224,11 @@ h3{
 }
 .review_item_content.left {
   margin-left: 137px;
+}
+@media (max-width:300px) {
+  .review_item_content.left {
+    margin-left: 0px;
+  }
 }
 .review_item_content.left.logos {
   margin-left: 87px;
@@ -262,6 +275,19 @@ h3{
   float: right;
 
 }
+
+@media (max-width:900px) {
+
+  .review_item_content.left {;
+    float: none;
+
+  }
+  .review_item_content.right {
+    float: none;
+
+  }
+}
+
 .review_logo_container {
   display: table-cell;
   vertical-align: middle;
@@ -306,7 +332,44 @@ h3{
   vertical-align: middle;
   padding-left: 32px;
 }
+@media (max-width:750px) {
 
+.review_field_container {
+  display: block;
+}
+
+.review_item_author_wrapper.left,
+.review_item_author_wrapper.right,
+.review_logo_container.right,
+.review_logo_container.left {
+  display: none!important;
+}
+.responsive_review {
+  display: block;
+  clear: both;
+}
+.clear_review_list {
+  display: none;
+}
+.review_caption, .review_company {
+  font-weight: bold;
+}
+.content_box_arrow {
+  display: none;
+}
+
+}
+
+@media (min-width:750px) {
+//.review_item_author_wrapper.small {
+//  display: none!important;
+//  background-color: red;
+//}
+.responsive_review {
+  display: none;
+}
+
+}
 .review_item_author {
   height: 100px;
   display: table-cell;
@@ -428,6 +491,22 @@ li.services {
   font-size: 16px;
   margin-left: 68px;
 }
+@media (max-width: 530px) {
+  .worker {
+    margin-left: 20px;
+  }
+  .worker_info {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 440px) {
+  .worker {
+    margin-left: 20px;
+  }
+  .worker_info {
+    margin-left: 0px;
+  }
+}
 .worker_attribute_first_name,
 .worker_attribute_last_name,
 .worker_attribute_patronymic,{
@@ -535,6 +614,18 @@ li.services {
 .pickup_delivery_date select {
   width: 110px;
 }
+.text_field.time_start,
+.text_field.time_end{
+  width: 160px!important;
+}
+.text_field.time_end {
+  margin-left: 16px;
+}
+.field_name.time_span {
+  float: left;
+  display: block;
+  width: auto;
+}
 
 .select_field.wide {
   width: 338px;
@@ -546,6 +637,34 @@ li.services {
   padding: 6px 7px!important;
   @include box-sizing(border-box);
 }
+@media(max-width: 500px) {
+.field_name.courier {
+  float:none;
+}
+.text_field.courier {
+  float:none;
+}
+.select_field.courier {
+  float: none;
+}
+.pickup_delivery_date {
+   float: none;
+}
+.pickup_delivery_date select {
+  width: 109px;
+}
+.courier_from {
+  width: 335px;
+}
+.courier_from h3 {
+  line-height: 30px;
+}
+
+}
+
+
+/////////Courier Form////////
+
 
 /////////News/////////////////
 .news.headline {
@@ -594,4 +713,114 @@ li.services {
 
 #habla_window_div {
   margin: 0px 65px!important;
+}
+
+//////////////////Delivery status/////////////////
+.field_container.delivery {
+  margin-top: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.field_container.delivery .field_name {
+  font-size: 14px;
+}
+.delivery .text_field  {
+  font-size: 14px!important;
+}
+.content_text.delivery_header {
+  font-size: 16px;
+}
+.field_container.delivery .field_name {
+  margin-left: 0px;
+  float: none;
+}
+.delivery .text_field {
+  float: none;
+}
+.field_container .text_field{
+  display: block;
+  margin: 0 auto;
+}
+.field_container .field_name {
+  text-align: center;
+}
+.cargo_info {
+  margin: 0 auto;
+  height: 200px;
+  width: 325px;
+}
+.cargo_info h4 {
+  text-align: center;
+}
+
+.invoice_info_container {
+  font-size: 14px;
+}
+
+.invoice_info_container .value{
+  float: right;
+}
+
+
+
+/////////////////Price of delivery//////////////////
+.calculator_container {
+  width: 450px;
+  margin: 40px auto 50px;
+}
+.delivery_price_container {
+  text-align: center;
+  font-size: 18px;
+}
+.checkboxes {
+  text-align: center;
+  font-size: 15px;
+  vertical-align: middle;
+  margin-top: 7px;
+}
+.weight_input input[type="text"] {
+  height: 24px!important;
+  @include border-radius(8px);
+  //padding: 0px!important;
+}
+.checkboxes input[type="radio"] {
+  position: relative;
+  vertical-align: middle;
+  bottom: 3px;
+  margin: 0px!important;
+}
+.checkboxes input[type="checkbox"] {
+  position: relative;
+  vertical-align: middle;
+  bottom: 1px;
+  margin: 0px!important;
+}
+.weight_input {
+  margin-top: 10px;
+  text-align: center;
+}
+@media (max-width: 450px) {
+  .calculator_container {
+    width: auto;
+  }
+  #delivery_country_from {
+    display: block;
+    margin: 0 auto;
+  }
+  #delivery_country_to {
+    display: block;
+    margin: 0 auto;
+  }
+  .calculator_container {
+    text-align: center;
+  }
+  #payment_by_client{
+    display: block;
+  }
+}
+/////////////////Price of delivery//////////////////
+
+
+#topcontrol {
+  bottom: 0px!important;
 }

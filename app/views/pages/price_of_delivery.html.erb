@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="headline">
+      <h3><%= @page.name %></h3>
+    </div>
+    <div class="row-fluid content content_text">
+      <%= raw @page.content %>
+    </div>
+    <div class="calculator_container">
+    <%= render "pages/price_calculator" %>
+    </div>
+  </div>
+</div>

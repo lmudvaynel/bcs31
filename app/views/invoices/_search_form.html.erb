@@ -1,8 +1,9 @@
 <%= form_for Invoice.new, url: search_invoices_path do |f| %>
-  <div class="field">
-    <%= f.label :number, 'Введите номер накладной Major Express Белгород' %>
-    <%= f.text_field :number %>
-  </div>
 
-  <%= f.submit "Отправить" %>
+  <div class="field_container delivery">
+    <%= f.label :number, 'Введите номер накладной Major Express Белгород', class: "field_name" %>
+    <%= f.text_field :number, class: "text_field" %>
+  </div>
+  <%= f.submit "Отправить", class: "submit_button orange" %>
 <% end %>
+

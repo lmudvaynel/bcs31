@@ -25,10 +25,12 @@ Bcs31::Application.routes.draw do
     post :search, on: :collection
   end
 
+  get 'price_of_delivery' => 'pages#price_of_delivery'
+  post 'price_of_delivery' => 'pages#price_of_delivery', constraints: {format: :json}
+
   get 'index' => 'pages#index'
   get 'news_pages/:id' => 'news_pages#show'
   get 'reviews' => 'reviews#index'
   get ':slug' => 'pages#show', :as => :slug
-
   resources :pages
 end
