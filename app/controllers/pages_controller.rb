@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def index
     @news_pages = NewsPage.order('created_at DESC').first(4)
+    @page = Page.find_by_slug("index")
   end
 
   def price_of_delivery
