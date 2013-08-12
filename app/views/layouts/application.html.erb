@@ -9,12 +9,17 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<!--<div class="main container">-->
+<div class="main container">
   <div id="page">
     <%= render 'shared/header' %>
     <%= yield %>
   </div>
-<!--</div>-->
+  <div class="container">
+    <%= render 'pages/index/partners' %>
+  </div>
+
+</div>
 <%= render 'shared/footer' %>
+
 </body>
 </html>

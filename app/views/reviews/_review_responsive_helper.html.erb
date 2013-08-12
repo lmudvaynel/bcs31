@@ -1,0 +1,23 @@
+<div class="responsive_review">
+  <div class="review_item_author_wrapper <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
+    <div class="review_item_author">
+      <div class="review_caption">
+        <%= review.caption %>
+      </div>
+      <% if review.company_name %>
+        <div class="review_company">
+          <%= review.company_name %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="review_logo_container
+     <%= review.logo.to_s.present? ? 'logos': 'nologos'%> left ">
+    <% if review.logo.to_s.present? %>
+      <div class="review_logo">
+        <%= logo_for review %>
+      </div>
+    <% end %>
+  </div>
+</div>

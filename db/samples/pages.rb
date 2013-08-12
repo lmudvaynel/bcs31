@@ -4,11 +4,11 @@ Page.reset_column_information
   about:    'О компании',
   reviews:  'Книга отзывов и предложений',
   contacts: 'Контакты',
-  services: 'Услуги',
-  price_of_delivery: 'Стоимость доставки'
+  services: 'Услуги'
   }.each do |slug, name|
   page = FactoryGirl.create(:page, slug: slug, name: name)
 end
+FactoryGirl.create(:page, slug: :price_of_delivery, name: 'Стоимость доставки', hidden: true)
 
 services = Page.find_by_slug(:services)
 { order:      'Заказ (забор из другого города)',
@@ -19,4 +19,4 @@ services = Page.find_by_slug(:services)
   page = FactoryGirl.create(:page, slug: slug, name: name, parent_id: services.id)
 end
 
-FactoryGirl.create(:page, slug: :price_of_delivery, name: 'Стоимость доставки', hidden: true)
+
