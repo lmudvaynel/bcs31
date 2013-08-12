@@ -1,5 +1,8 @@
 <div class="review_field_container">
   <% if index.odd? %>
+
+    <%= render 'reviews/review_responsive_helper', review: review %>
+
     <div class="review_item_author_wrapper left <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
       <div class="review_item_author">
         <div class="review_caption">
@@ -29,6 +32,7 @@
   <% end %>
 
   <% if index.even? %>
+    <%= render 'reviews/review_responsive_helper', review: review %>
     <div class="review_item_content left <%= review.logo.to_s.present? ? 'logos': 'nologos'%> ">
       <p class="content_text"><%= review.content %></p>
       <div class="content_box_arrow left"></div>
