@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :review do
     first_name    { Faker::Name.first_name }
-    email    { Faker::Internet.email }
+    email         { Faker::Internet.email }
     content       { Faker::HipsterIpsum.paragraph }
 
     factory :filled_review do
