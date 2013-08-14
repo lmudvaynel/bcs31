@@ -6,5 +6,6 @@ FactoryGirl.define do
     image         { Rack::Test::UploadedFile.new(
                       Dir.glob(File.join(Rails.root, 'spec', 'support', 'news_image', '*.jpg')).sample
                   ) }
+    published_at { Time.now }
     end
 end
