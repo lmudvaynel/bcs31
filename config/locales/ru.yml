@@ -117,6 +117,7 @@ ru:
         id: Номер
         content: Содержание
         url: Ссылка
+        image: Картинка
         created_at: Дата создания
         updated_at: Дата обновления
       feedback:
