@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(:version => 20130814091139) do
     t.string   "url"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "image"
   end
 
   create_table "cities", :force => true do |t|
