@@ -1,6 +1,8 @@
 # encoding: utf-8
 class Banner < ActiveRecord::Base
-  attr_accessible :content, :url
+  attr_accessible :content, :url, :image
+
+  mount_uploader :image, BannerImageUploader
 
   validates :content, presence: true
 
