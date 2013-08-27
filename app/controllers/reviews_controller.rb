@@ -14,6 +14,7 @@ class ReviewsController < ApplicationController
       redirect_to reviews_path
     else
       @reviews = Review.moderated
+      @page = Page.find_by_slug("reviews")
       render :index
     end
   end

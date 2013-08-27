@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130814091139) do
+ActiveRecord::Schema.define(:version => 20130814101124) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -190,6 +190,7 @@ ActiveRecord::Schema.define(:version => 20130814091139) do
     t.boolean  "moderated",    :default => false
     t.datetime "created_at",                      :null => false
     t.datetime "updated_at",                      :null => false
+    t.string   "email"
   end
 
   create_table "seos", :force => true do |t|
