@@ -12,6 +12,7 @@ ActiveAdmin.register NewsPage do
     column :title
     column :description
     column :created_at
+    column :published_at
     default_actions
   end
 
@@ -21,6 +22,7 @@ ActiveAdmin.register NewsPage do
       f.input :description
       f.input :content, as: :ckeditor
       f.input :image
+      f.input :published_at
     end
     f.actions
   end
