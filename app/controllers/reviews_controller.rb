@@ -10,6 +10,9 @@ class ReviewsController < ApplicationController
   def create
     @review = Review.new(params[:review])
     if @review.save
+      AdminUser.all.each do |user|
+        ReviewMailer.review_email(user.email, @review).deliver
+      end
       flash[:notice] = 'Ваш отзыв отправлен на модерацию'
       redirect_to reviews_path
     else
