@@ -7,7 +7,9 @@ ActiveAdmin.register NewsPage do
 
   index do
     column :image do |news|
-      image_tag news.image.thumb.url
+      if news.image.thumb.url
+        image_tag news.image.thumb.url
+      end
     end
     column :title
     column :description
