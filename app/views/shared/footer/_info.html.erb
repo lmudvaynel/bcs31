@@ -1,17 +1,21 @@
 <div class="span4 info_footer">
   <ul class="footer_ul main">
-    <li class="footer_li"><a class="footer_li_link" href="">О компании</a></li>
-    <li class="footer_li"> <a class="footer_li_link" href="">Услуги</a>
-      <ul class="footer_ul second">
-        <li class="footer_li"><a class="footer_li_link" href="">Состояние доставки</a></li>
-        <li class="footer_li"><a class="footer_li_link" href="">Стоимость доставки</a></li>
-        <li class="footer_li"><a class="footer_li_link" href="">Правила оказания услуг</a></li>
-        <li class="footer_li"><a class="footer_li_link" href="">Запрещённый грузы</a></li>
-        <li class="footer_li"><a class="footer_li_link" href="">Наши экспресс центры</a></li>
-      </ul>
-    </li>
-    <li class="footer_li"><a class="footer_li_link" href="">Филиалы</a></li>
-    <li class="footer_li"><a class="footer_li_link" href="">Отзывы</a></li>
-    <li class="footer_li"><a class="footer_li_link" href="">Контакты</a></li>
+    <% Page.roots.visible.each do |page| %>
+      <li class="footer_li">
+        <% if page.children.any? %>
+          <%= link_to raw(page.name), (page.slug == 'index') ? '/' : slug_path(page), :class => "footer_li_link" %>
+          <ul class="footer_ul second">
+          <% page.children.each do |child| %>
+            <li class="footer_li">
+              <%= link_to raw(child.name), slug_path(child), :class => "footer_li_link" %>
+            </li>
+          <% end %>
+          </ul>
+        </li>
+        <% else %>
+          <%= link_to raw(page.name), (page.slug == 'index') ? '/' : slug_path(page), :class => "footer_li_link" %>
+        <% end %>
+      </li>
+    <% end %>
   </ul>
 </div>

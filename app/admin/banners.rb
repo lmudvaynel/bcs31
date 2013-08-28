@@ -5,7 +5,9 @@ ActiveAdmin.register Banner do
 
   index do
     column :image do |banners|
-      image_tag banners.image.thumb.url
+      if banners.image.thumb.url
+        image_tag banners.image.thumb.url
+      end
     end
     column :content
     column :url
