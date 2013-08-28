@@ -3,49 +3,47 @@
     <div class="request-control courier_from">
       <h3>Вызов курьера по Белгороду</h3>
       <div class="courier_field_container">
-        <%= f.label "Тип перевозки", class: 'field_name' %>
-        <%= f.select :transportation, OnlineCourier.transportation.options, {}, class: "select_field wide" %>
+        <%= f.label "Тип перевозки", class: 'field_name courier' %>
+        <%= f.select :transportation, OnlineCourier.transportation.options, {}, class: "select_field courier wide" %>
       </div>
       <div class="courier_field_container">
-          <%= f.label :date, class: 'field_name' %>
+          <%= f.label :date, class: 'field_name courier' %>
         <div class="pickup_delivery_date">
           <%= f.date_select :date, as: :date_select,
                             start_year: Time.now.year, end_year: Time.now.year + 5 %>
         </div>
       </div>
       <div class="courier_field_container">
-        <span class="field_name">Временной интервал забора груза</span>
-          <%= f.text_field :time_start, class: 'text_field' %>
-      </div>
-      <div class="courier_field_container">
-        <span class="field_name"> </span>
-        <%= f.text_field :time_end, class: 'text_field' %>
+        <span class="field_name time_span courier">Временной интервал забора груза</span>
+        <%= f.text_field :time_end, placeholder: "До:", class: 'text_field courier time_end' %>
+        <%= f.text_field :time_start, placeholder: "От:", class: 'text_field courier time_start' %>
+
       </div>
       <div class="clear_courier_one"></div>
-      <p class="field_name bold_courier">Информация об отправителе</p>
+      <p class="field_name courier bold_courier">Информация об отправителе</p>
         <%= online_courier_text_field :full_name, f %>
         <%= online_courier_text_field :phone, f %>
         <%= online_courier_text_field :company, f %>
         <%= online_courier_text_field :address, f %>
-      <p class="field_name bold_courier">Информация о грузе и характере оплаты</p>
+      <p class="field_name courier bold_courier">Информация о грузе и характере оплаты</p>
         <%= online_courier_text_field :weight, f %>
         <%= online_courier_text_field :amount, f %>
         <%= online_courier_text_field :size, f %>
         <%= online_courier_text_field :cargo_type, f %>
         <%= online_courier_text_field :city, f %>
       <div class="courier_field_container">
-        <%= f.label 'Тип оплаты', class: 'request_lable field_name' %>
-        <%= f.select :payment, OnlineCourier.payment.options,{} , class: 'select_field wide' %>
+        <%= f.label 'Тип оплаты', class: 'request_lable field_name courier' %>
+        <%= f.select :payment, OnlineCourier.payment.options,{} , class: 'select_field courier wide' %>
       </div>
       <div class="courier_field_container">
-        <%= f.label 'Кто платит', class: 'request_lable field_name' %>
-        <%= f.select :payer, OnlineCourier.payer.options,{} , class: 'select_field wide' %>
+        <%= f.label 'Кто платит', class: 'request_lable field_name courier' %>
+        <%= f.select :payer, OnlineCourier.payer.options,{} , class: 'select_field courier wide' %>
       </div>
       <div>
         <%= online_courier_text_field :payer_number, f %>
         <div class="courier_field_container">
-          <%= f.label "Комментарий", class: "field_name" %>
-          <%= f.text_area :comment, class: "text_field courier_comment" %>
+          <%= f.label "Комментарий", class: "field_name courier" %>
+          <%= f.text_area :comment, class: "text_field courier courier_comment" %>
         </div>
       </div>
       <div class="clear_courier"></div>

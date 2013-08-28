@@ -1,5 +1,6 @@
 <div class="da-slide">
-  <a href="#" class="da-slider_content_link">
+  <%= link_to(banner.url) do %>
+  <div class="da-slider_content_link">
     <div class="slider_paragraph_first slider_banner">
       <h2><i><%= raw banner.paragraph(0) %></i></h2>
     </div>
@@ -11,6 +12,9 @@
     <div class="slider_paragraph_third slider_banner">
       <h2><i><%= raw banner.paragraph(2) %></i></h2>
     </div>
-    <div class="da-img"><%= image_tag("slider_rocket.png", alt: "", class: "slider_rocket") %></div>
-  </a>
+    <% if banner.image.banner.url %>
+      <div class="da-img"><%= image_tag(banner.image.banner.url, alt: "", class: "slider_rocket") %></div>
+    <% end %>
+  </div>
+  <% end %>
 </div>

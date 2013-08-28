@@ -3,21 +3,25 @@
     <h4>Откуда</h4>
     <%= select_tag 'delivery[country_from]', options_for_select([ "Россия" ], "Россия") %>
     <%= select_tag 'delivery[city_from_id]', options_from_collection_for_select(City.all, "id", "name", City.where(affiliate: true).first.id.to_s) %>
-    <%= text_field_tag 'delivery[weight]', '', placeholder: 'Введите вес (кг) посылки' %>
   </div>
   <div class="right">
     <h4>Куда</h4>
     <%= select_tag 'delivery[country_to]', options_for_select([ "Россия" ], "Россия") %>
     <%= select_tag 'delivery[city_to_id]', options_from_collection_for_select(City.all, "id", "name") %>
+    <div class="weight_input">
+      <%= text_field_tag 'delivery[weight]', '', placeholder: 'Введите вес (кг) посылки'%>
+    </div>
 
-    <div>
+    <div class="checkboxes">
       <%= radio_button_tag 'delivery[cargo_kind]', 'document', true %> Документ
       <%= radio_button_tag 'delivery[cargo_kind]', 'goods' %> Не документ
-      <%= check_box_tag 'delivery[pay_in_affiliate]', true, true  %> Оплата заказчиком в Белгороде
+      <div class="payment_by_client">
+        <%= check_box_tag 'delivery[pay_in_affiliate]', true, true  %> Оплата заказчиком в Белгороде
+      </div>
     </div>
     <br/>
   </div>
-  <%= submit_tag 'Рассчитать' %>
+  <%= submit_tag 'Рассчитать', class: "submit_button orange" %>
 <% end %>
 
 <div class="delivery_price_container"></div>

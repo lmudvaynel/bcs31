@@ -15,6 +15,6 @@
     </ul>
     <b class="caret-out"></b>
   <% else %>
-    <%= link_to raw(page.name), slug_path(page), :class => menu_item_state(page) %>
+    <%= link_to raw(page.name), (page.slug == 'index') ? '/' : slug_path(page), :class => menu_item_state(page) %>
   <% end %>
 </li>

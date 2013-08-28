@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def index
     @news_pages = NewsPage.order('created_at DESC').first(4)
+    @page = Page.find_by_slug("index")
   end
 
   def price_of_delivery
@@ -30,6 +31,7 @@ class PagesController < ApplicationController
     
   def show
     @page = Page.find_by_slug(params[:slug]) || Page.find(params[:slug])
+    @parent = ( @page.parent and @page.parent.parent ) ? @page.parent.parent : @page.parent
     render params[:slug] if controller_view_exists?(params[:slug])
   end
 
