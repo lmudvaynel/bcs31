@@ -30,29 +30,19 @@
         <div class="services_content">
           <%= raw @page.content %>
         </div>
-      <% elsif  @parent && @parent.slug == 'services' %>
+      <% elsif @page.parent && @page.parent.slug == 'services' %>
         <div class="headline">
           <h3>Услуги</h3>
         </div>
         <div class="services_padding_div"></div>
         <div class="services_headers">
-          <% @parent.children.each do |child| %>
+          <% @page.parent.children.each do |child| %>
             <li class="services">
               <% if child != @page %>
                 <%= link_to content_tag(:span, child.name), slug_path(child),
                 :class => (menu_item_state(child).to_s + 'hover-effect') %>
               <% else %>
                 <span class="text_bold"> <%= child.name %> </span>
-              <% end %>
-              <% child.children.each do |subchild| %>
-                  <li class="services">
-                    <% if subchild != @page %>
-                      <%= link_to content_tag(:span, subchild.name), slug_path(subchild),
-                      :class => (menu_item_state(subchild).to_s + 'hover-effect') %>
-                    <% else %>
-                      <span class="text_bold"> <%= subchild.name %> </span>
-                    <% end %>
-                  </li>
               <% end %>
             </li>
           <% end %>
