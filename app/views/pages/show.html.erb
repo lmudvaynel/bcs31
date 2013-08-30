@@ -1,10 +1,10 @@
 <div class="wrapper">
   <div class="container">
     <div class="row-fluid content">
-      <% if @parent && @parent.slug == 'services' && ( @page.parent.parent || @page.children.any? ) %>
+      <% if @parent && @parent.slug == 'services' %>
         <div class="headline">
           <h3>
-            <% if @page.parent.parent %>
+            <% if @page.children.empty? %>
               <%= @page.parent.name %>
             <% else %>
               <%= @page.name %>
@@ -31,26 +31,6 @@
                 <% end %>
               </li>
             <% end %>
-          <% end %>
-        </div>
-        <div class="services_content">
-          <%= raw @page.content %>
-        </div>
-      <% elsif @page.parent && @page.parent.slug == 'services' %>
-        <div class="headline">
-          <h3>Услуги</h3>
-        </div>
-        <div class="services_padding_div"></div>
-        <div class="services_headers">
-          <% @page.parent.children.each do |child| %>
-            <li class="services">
-              <% if child != @page %>
-                <%= link_to content_tag(:span, child.name), slug_path(child),
-                :class => (menu_item_state(child).to_s + 'hover-effect') %>
-              <% else %>
-                <span class="text_bold"> <%= child.name %> </span>
-              <% end %>
-            </li>
           <% end %>
         </div>
         <div class="services_content">
