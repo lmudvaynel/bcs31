@@ -31,7 +31,12 @@ class PagesController < ApplicationController
     
   def show
     @page = Page.find_by_slug(params[:slug]) || Page.find(params[:slug])
-    @parent = ( @page.parent and @page.parent.parent ) ? @page.parent.parent : @page.parent
+    @parent = @page.parent
+    if @parent
+      while @parent.parent do
+        @parent = @parent.parent
+      end
+    end
     render params[:slug] if controller_view_exists?(params[:slug])
   end
 
