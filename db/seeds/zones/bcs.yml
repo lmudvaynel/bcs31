@@ -101,3 +101,39 @@ zones:
         price_cents: 108500
         additional_price_cents: 18200
         cargo_kind: goods
+  - name: 0
+    provider: bcs
+    tariffs_attributes:
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 50400
+        cargo_kind: goods
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 60480
+        additional_price_cents: 6048
+        cargo_kind: goods
+  - name: M
+    provider: bcs
+    tariffs_attributes:
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 44352
+        cargo_kind: goods
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 44352
+        additional_price_cents: 2520
+        cargo_kind: goods
+  - name: M3
+    provider: bcs
+    tariffs_attributes:
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 40302
+        cargo_kind: goods
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 40302
+        additional_price_cents: 2520
+        cargo_kind: goods
