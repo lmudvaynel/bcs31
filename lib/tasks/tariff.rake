@@ -12,6 +12,7 @@ namespace :tariffs do
       delivery_city_relation.zones << Zone.find_by_name(relation['zone'])
       delivery_city_relation.delivery_time = relation['delivery_time']
       delivery_city_relation.business_morning = relation['business_morning']
+      delivery_city_relation.save!
     end
   end
 end

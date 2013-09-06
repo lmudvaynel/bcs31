@@ -14,6 +14,7 @@ namespace :tariffs do
         delivery_city_relation.city_to = City.find_by_name(destination['city'])
         delivery_city_relation.zones << Zone.find_by_name(destination['zone_attributes'][i]['zone'])
         delivery_city_relation.delivery_time = destination['zone_attributes'][i]['time']
+        delivery_city_relation.save!
         i += 1
       end
     end
