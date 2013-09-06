@@ -8,10 +8,8 @@ namespace :tariffs do
     destinations = YAML::load_file(yaml_file)['destination']
     destinations.each do |destination|
       i = 0
-      puts City.find_by_name(destination['city']).name
       cities.each do |city|
         delivery_city_relation = DeliveryCityRelation.new
-        puts destination['zone_attributes'][i]['time']
         delivery_city_relation.city_from = City.find_by_name(city['name'])
         delivery_city_relation.city_to = City.find_by_name(destination['city'])
         delivery_city_relation.zones << Zone.find_by_name(destination['zone_attributes'][i]['zone'])
