@@ -9,13 +9,15 @@ namespace :tariffs do
     destinations.each do |destination|
       i = 0
       cities.each do |city|
-        delivery_city_relation = DeliveryCityRelation.new
-        delivery_city_relation.city_from = City.find_by_name(city['name'])
-        delivery_city_relation.city_to = City.find_by_name(destination['city'])
-        delivery_city_relation.zones << Zone.find_by_name(destination['zone_attributes'][i]['zone'])
-        delivery_city_relation.delivery_time = destination['zone_attributes'][i]['time']
-        delivery_city_relation.save!
-        i += 1
+        if city['name'] != 'Белгород'
+          delivery_city_relation = DeliveryCityRelation.new
+          delivery_city_relation.city_from = City.find_by_name(city['name'])
+          delivery_city_relation.city_to = City.find_by_name(destination['city'])
+          delivery_city_relation.zones << Zone.find_by_name_and_provider(destination['zone_attributes'][i]['zone'],'major_express')
+          delivery_city_relation.delivery_time = destination['zone_attributes'][i]['time']
+          delivery_city_relation.save!
+          i += 1
+        end
       end
     end
   end

@@ -39,11 +39,11 @@ delivery_city_relations:
     zone: D
     delivery_time: 3-5
     business_morning: false
-  - city_to: Брянск *
+  - city_to: Брянск
     city_from: Белгород
     zone: A
     delivery_time: 2
-    business_morning: false
+    business_morning: true
   - city_to: Ноябрьск
     city_from: Белгород
     zone: D

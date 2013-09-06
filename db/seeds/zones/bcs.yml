@@ -102,7 +102,7 @@ zones:
         additional_price_cents: 18200
         cargo_kind: goods
   - name: 0
-    provider: bcs
+    provider: major_express
     tariffs_attributes:
       - weight_start: 0
         weight_end: 0.5
@@ -113,8 +113,17 @@ zones:
         price_cents: 60480
         additional_price_cents: 6048
         cargo_kind: goods
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 50400
+        cargo_kind: document
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 60480
+        additional_price_cents: 6048
+        cargo_kind: document
   - name: M
-    provider: bcs
+    provider: major_express
     tariffs_attributes:
       - weight_start: 0
         weight_end: 0.5
@@ -125,8 +134,17 @@ zones:
         price_cents: 44352
         additional_price_cents: 2520
         cargo_kind: goods
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 44352
+        cargo_kind: document
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 44352
+        additional_price_cents: 2520
+        cargo_kind: document
   - name: M3
-    provider: bcs
+    provider: major_express
     tariffs_attributes:
       - weight_start: 0
         weight_end: 0.5
@@ -137,3 +155,117 @@ zones:
         price_cents: 40302
         additional_price_cents: 2520
         cargo_kind: goods
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 40302
+        cargo_kind: document
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 40302
+        additional_price_cents: 2520
+        cargo_kind: document
+  - name: A
+    provider: major_express
+    tariffs_attributes:
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 75600
+        cargo_kind: goods
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 95760
+        additional_price_cents: 13608
+        cargo_kind: goods
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 75600
+        cargo_kind: document
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 95760
+        additional_price_cents: 13608
+        cargo_kind: document
+  - name: B
+    provider: major_express
+    tariffs_attributes:
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 85680
+        cargo_kind: goods
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 110880
+        additional_price_cents: 1512
+        cargo_kind: goods
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 85680
+        cargo_kind: document
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 110880
+        additional_price_cents: 1512
+        cargo_kind: document
+  - name: C
+    provider: major_express
+    tariffs_attributes:
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 95760
+        cargo_kind: goods
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 120960
+        additional_price_cents: 18144
+        cargo_kind: goods
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 95760
+        cargo_kind: document
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 120960
+        additional_price_cents: 18144
+        cargo_kind: document
+  - name: D
+    provider: major_express
+    tariffs_attributes:
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 110880
+        cargo_kind: goods
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 136080
+        additional_price_cents: 21168
+        cargo_kind: goods
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 110880
+        cargo_kind: document
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 136080
+        additional_price_cents: 21168
+        cargo_kind: document
+  - name: E
+    provider: major_express
+    tariffs_attributes:
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 126000
+        cargo_kind: goods
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 156240
+        additional_price_cents: 26208
+        cargo_kind: goods
+      - weight_start: 0
+        weight_end: 0.5
+        price_cents: 126000
+        cargo_kind: document
+      - weight_start: 0.5
+        weight_end: 1
+        price_cents: 156240
+        additional_price_cents: 26208
+        cargo_kind: document
