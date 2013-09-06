@@ -399,7 +399,7 @@ destination:
         time: 5
       - zone: D
         time: 4
-      - zone: СПЕЦЦЕНА
+      - zone: E
         time: 6
       - zone: E
         time: 6
