@@ -32,6 +32,7 @@ class City < ActiveRecord::Base
         if weight > tariff.weight_end
           cents += tariff.additional_price_cents * (weight - tariff.weight_end)
         end
+        cents *= 1.5 if zone.provider != 'bcs'
       end
     end
     cents
