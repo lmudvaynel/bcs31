@@ -31,7 +31,6 @@ body, html {
 }
 
 .welcome_message_background {
-  background:image-url("breadcrumbs.png") repeat;
   @include box-shadow(#dddddd 0 -1px 6px -1px inset);
   margin-bottom: 30px;
   border-top: 1px solid #ddd;
@@ -40,6 +39,7 @@ body, html {
 .welcome_message {
   padding-top: 12px;
   margin-left: 96px;
+  padding-bottom: 15px;
 }
 
 
@@ -47,7 +47,7 @@ body, html {
   font-family:Verdana,Geneva,Kalimati,sans-serif;
   font-size: 34px;
   color: #f7941f;
-  margin-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 @media (max-width: 600px) {
@@ -417,7 +417,6 @@ li.services {
 }
 .services_headers {
   width:270px;
-  height: 130px;
   font-family:Verdana,Geneva,Kalimati,sans-serif;
   font-size: 14px;
   float: left;
@@ -835,12 +834,6 @@ li.services {
   bottom: 0px!important;
 }
 
-#map.belgorod {
-  width: 300px;
-  height: 300px;
-  float: right;
-}
-
 /////////////maps///////////
 .company_info {
   display: table;
@@ -880,3 +873,4 @@ div#map2 {
   width: 560px;
   height: 300px;
 }
+

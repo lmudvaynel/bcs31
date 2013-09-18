@@ -7,11 +7,14 @@ ActiveAdmin.register NewsPage do
 
   index do
     column :image do |news|
-      image_tag news.image.thumb.url
+      if news.image.thumb.url
+        image_tag news.image.thumb.url
+      end
     end
     column :title
     column :description
     column :created_at
+    column :published_at
     default_actions
   end
 
@@ -21,6 +24,7 @@ ActiveAdmin.register NewsPage do
       f.input :description
       f.input :content, as: :ckeditor
       f.input :image
+      f.input :published_at
     end
     f.actions
   end

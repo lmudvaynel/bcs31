@@ -7,6 +7,7 @@ ActiveAdmin.register Review do
     column :name do |review|
       review.name
     end
+    column :email
     column :company_name
     column :city
     column :moderated do |review|

@@ -1,6 +1,6 @@
 <li>
   <% if page.children.any? %>
-    <%= link_to '/order', :class => "dropdown-toggle #{menu_item_state(page)}",
+    <%= link_to slug_path(page), :class => "dropdown-toggle #{menu_item_state(page)}",
                           :'data-toggle' => '' do %>
       <%= raw(page.name) %>
       <b class='caret'></b>
@@ -15,6 +15,6 @@
     </ul>
     <b class="caret-out"></b>
   <% else %>
-    <%= link_to raw(page.name), slug_path(page), :class => menu_item_state(page) %>
+    <%= link_to raw(page.name), (page.slug == 'index') ? '/' : slug_path(page), :class => menu_item_state(page) %>
   <% end %>
 </li>

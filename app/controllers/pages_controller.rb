@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def index
     @news_pages = NewsPage.order('created_at DESC').first(4)
+    @page = Page.find_by_slug("index")
   end
 
   def price_of_delivery
@@ -11,7 +12,7 @@ class PagesController < ApplicationController
     result = if delivery
       city_from = City.find(delivery[:city_from_id])
       city_to = City.find(delivery[:city_to_id])
-      weight = delivery[:weight].to_f
+      weight = delivery[:weight].gsub(',','.').to_f
       cargo_kind = delivery[:cargo_kind]
       pay_in_affiliate = delivery[:pay_in_affiliate]
       price_cents = city_from.delivery_price_to(city_to, weight, cargo_kind, pay_in_affiliate)
@@ -30,6 +31,12 @@ class PagesController < ApplicationController
     
   def show
     @page = Page.find_by_slug(params[:slug]) || Page.find(params[:slug])
+    @parent = @page.parent
+    if @parent
+      while @parent.parent do
+        @parent = @parent.parent
+      end
+    end
     render params[:slug] if controller_view_exists?(params[:slug])
   end
 

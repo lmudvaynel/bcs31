@@ -170,3 +170,17 @@ cities:
     central: true
   - name: Ярославль
     central: true
+  - name: Алматы
+    central: true
+  - name: Астана
+    central: true
+  - name: Грозный
+    central: true
+  - name: Минск
+    central: true
+  - name: Новый Уренгой
+    central: true
+  - name: Усинск
+    central: true
+  - name: Ухта
+    central: true
