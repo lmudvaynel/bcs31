@@ -73,7 +73,7 @@
   &.purple { @include button_free_call($gradient-top-color:#b099af, $gradient-bottom-color:#756474); }
 }
 
-@mixin button_free_call($width:208px, $height:37px, $innershadow-height:-3px, $gradient-top-color:rgba(154,161,176,1), $gradient-bottom-color:rgba(100,105,117,1)){
+@mixin button_free_call($width:268px, $height:50px, $innershadow-height:-3px, $gradient-top-color:rgba(154,161,176,1), $gradient-bottom-color:rgba(100,105,117,1)){
   $dropshadow-color: lighten($gradient-bottom-color, 15%);
   width:$width;
   height:$height;
@@ -107,7 +107,7 @@
   &.purple { @include button_courier($gradient-top-color:#b099af, $gradient-bottom-color:#756474); }
 }
 
-@mixin button_courier($width:210px, $height:37px, $innershadow-height:-3px, $gradient-top-color:rgba(154,161,176,1), $gradient-bottom-color:rgba(100,105,117,1)){
+@mixin button_courier($width:268px, $height:50px, $innershadow-height:-3px, $gradient-top-color:rgba(154,161,176,1), $gradient-bottom-color:rgba(100,105,117,1)){
   $dropshadow-color: lighten($gradient-bottom-color, 15%);
   width:$width;
   height:$height;

@@ -21,6 +21,14 @@ body, html {
   color: #666;
   border-bottom:2px solid #e67e22;
 }
+.da-slider {
+  border-bottom: 1px solid #ddd!important;
+
+}
+.slider_paragraph_first, .slider_paragraph_second,
+.slider_paragraph_third{
+   margin-top: -100px;
+}
 
 .welcome_message_background {
   background:image-url("breadcrumbs.png") repeat;
@@ -465,6 +473,9 @@ li.services {
 .workers_container {
   margin-top: 87px;
   margin-bottom: 110px;
+  width: 600px;
+  background-color: rgba(255, 0, 0, 0.31);
+  float: left;
 }
 .worker {
   list-style-type: none;
@@ -822,4 +833,50 @@ li.services {
 
 #topcontrol {
   bottom: 0px!important;
+}
+
+#map.belgorod {
+  width: 300px;
+  height: 300px;
+  float: right;
+}
+
+/////////////maps///////////
+.company_info {
+  display: table;
+  width: 1140px;
+  //height: 150px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+.first_affiliate {
+  display: table-cell;
+  padding-left: 11px;
+  font-size: 15px;
+  width: 570px;
+}
+.second_affiliate{
+  display: table-cell;
+  padding-left: 12px;
+  font-family: Verdana,Geneva,Kalimati,sans-serif;
+  font-size: 15px;
+  width: 570px;
+}
+ .maps_container {
+  width: 1140px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+div#map1 {
+  float: left;
+  width: 560px;
+  height: 300px;
+}
+div#map2 {
+  //position: relative;
+  float: right;
+  width: 560px;
+  height: 300px;
 }

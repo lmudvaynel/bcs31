@@ -38,7 +38,7 @@
 
 .header_top_phone {
     position: absolute;
-    left: 33%;
+    left: 27%;
     width: 50%;
     height: 76px;
     z-index: 100;
@@ -47,26 +47,28 @@
 .header_top_call_us {
     position: relative;
     top: -5px;
-    left: 83%;
-    width: 16%;
-    height: 76px;
+    left: 79%;
+    width: 270px;
+    height: 78px;
+    //background-color: green;
 
 }
 .header_buttons_container {
   position: relative;
-  height:55px;
-  width: 210px;
+  height:78px;
+  width: 270px;
   overflow: hidden;
-  left: 15px;
-  top: -10px
+  left: 0px;
+  top: -10px;
 }
 
 .courier_button_container {
   position: absolute;
-  top: 32px;
-  height: 23px;
-  width: 210px;
+  top: 42px;
+  height: 36px;
+  width: 270px;
   overflow: hidden;
+  //background-color: yellow;
 }
 
 .button_call_us.reddish {
@@ -97,20 +99,22 @@
 
 .call_us_span {
   position: relative;
-  margin-top: 7px;
-  left: 20px;
+  margin-top: 10px;
+  left: 27px;
+  font-size: 12px;
   //right: 20px;
 }
 .courier_span {
   position: relative;
-  margin-top: 10px;
-  left: 20px;
+  margin-top: 15px;
+  left: 28px;
+  font-size: 12px;
 }
 
 .megaphon_head {
   position: absolute;
   left: 15px;
-  top: 10px;
+  top: 14px;
 }
 .megaphon_handle {
   position: absolute;
