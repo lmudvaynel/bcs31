@@ -25,7 +25,7 @@ class City < ActiveRecord::Base
   def delivery_price_to(city, weight, cargo_kind, pay_in_affiliate)
     zone = self.zone_to(city, pay_in_affiliate)
     cents = 0
-    if zone and !(self.name == 'Белгород' and city.name == 'Белгород')
+    if zone
       tariff = zone.tariff(weight, cargo_kind)
       if tariff
         cents = tariff.price_cents
