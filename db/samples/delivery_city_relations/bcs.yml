@@ -424,3 +424,8 @@ delivery_city_relations:
     zone: A
     business_morning: true
     delivery_time: 2
+  - city_to: Белгород
+    city_from: Белгород
+    zone: belgorod
+    business_morning: true
+    delivery_time: 1

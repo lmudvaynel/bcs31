@@ -101,6 +101,19 @@ zones:
         price_cents: 108500
         additional_price_cents: 18200
         cargo_kind: goods
+  - name: belgorod
+    provider: bcs
+    tariffs_attributes:
+      - weight_start: 0
+        weight_end: 1
+        price_cents: 20000
+        additional_price_cents: 3000
+        cargo_kind: document
+      - weight_start: 0
+        weight_end: 1
+        price_cents: 20000
+        additional_price_cents: 3000
+        cargo_kind: goods
   - name: 0
     provider: major_express
     tariffs_attributes:
