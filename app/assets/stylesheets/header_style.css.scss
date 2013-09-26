@@ -20,6 +20,8 @@
 }
 .header_top{
     position: relative;
+    //background-color: rgba(0, 0, 255, 0.38);
+    height: 78px;
 }
 @media (max-width: 600px) {
   .header_top {
@@ -35,13 +37,16 @@
     margin-top: 10px;
     z-index: 1000;
 }
-
 .header_top_phone {
-    position: absolute;
-    left: 27%;
+    margin-right: 10px;
+    //position: absolute;
+    //left: 27%;
+    position: relative;
+    float: right;
     width: 50%;
     height: 76px;
     z-index: 100;
+    //background-color: yellow;
 }
 
 .header_top_call_us {
@@ -50,14 +55,45 @@
     left: 79%;
     width: 270px;
     height: 78px;
-    //background-color: green;
 
+}
+.header_top_call_us_inside {
+  position: relative;
+  top: -5px;
+  float: right;
+  width: 270px;
+  height: 78px;
+}
+
+@media (max-width: 979px) {
+  .header_top_call_us_inside {
+    display: none;
+  }
+  .header_top_phone {
+    width: 100%;
+  }
+
+}
+.header_top_call_us_outside {
+  margin-right: 65px;
+  float: right;
+  margin-top: -5px;
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .header_top_call_us_inside {
+    display: none;
+  }
+  .header_top_call_us_outside {
+    display: block;
+  }
 }
 .header_buttons_container {
   position: relative;
   height:78px;
   width: 270px;
-  overflow: hidden;
+  //overflow: hidden;
   left: 0px;
   top: -10px;
 }
@@ -90,13 +126,13 @@
   z-index: 1;
 }
 
-.header_top_call_us_resp {
-  position: relative;
-  float: right;
-  top: 80px;
-  z-index: 5000;
-}
 
+.button_call_us_inline {
+  //@include buttons5;
+}
+.button_courier_inline {
+  //@include buttons5;
+}
 .call_us_span {
   position: relative;
   margin-top: 10px;
@@ -104,13 +140,24 @@
   font-size: 12px;
   //right: 20px;
 }
+.call_us_span.inline {
+   margin-top: 3px;
+   left: 0px;
+   font-size: 13px;
+}
 .courier_span {
   position: relative;
   margin-top: 15px;
   left: 28px;
   font-size: 12px;
 }
-
+.courier_span.inline {
+   margin-top: 3px;
+   left: 0px;
+   margin-left:0px;
+   font-size: 13px;
+   float: none ;
+}
 .megaphon_head {
   position: absolute;
   left: 15px;
@@ -123,11 +170,13 @@
 }
 
 .header_top_phone_number  {
-  position: absolute;
+  margin-right: -33px;
+  float: right;
   font-family: Arial, verdana, sans-serif;
   font-size: 30px;
   color: #606060;
-  width: 85%;
+  width: 300px;
+  float: right;
   line-height: 1.6em;
 }
 .header_top_phone_number p {
@@ -153,13 +202,16 @@
 .phone_uninumber {
   margin: 0;
   padding: 0;
-  bottom: 3px;
-  left: 37px;
+  bottom: 16px;
+  right: 77px;
   color: #ff9700;
   font-style: italic;
   font-size: 13px!important;
   position: absolute;
   font-family: Arial, verdana, sans-serif;
+}
+.header_top_call_us_resp {
+  position: absolute;
 }
 
 .header_top_call_us_logo {
@@ -167,31 +219,65 @@
   float: right;
 }
 
-@media (min-width:600px) {
+@media (min-width:979px) {
   .header_top_call_us_resp {
       display: none;
-
+  }
+  .buttons_line_container {
+      display: none;
   }
 }
-
+.buttons_line_container {
+  height: 150px;
+  width: 100%;
+  //background-color: rgba(255, 0, 0, 0.42);
+  position: absolute;
+  left: 18%;
+  width: 73%;
+  z-index: 1;
+}
+.button_one {
+  @include buttons5;
+  z-index: 999999;
+  margin-top: 78px;
+  //position: absolute;
+  bottom:20px;
+  //right: 3%;
+  height: 41px;
+  float: right;
+}
+.button_two {
+  float: right;
+  margin-top: 78px;
+  margin-right: 14px;
+  @include buttons5;
+  z-index: 999999;
+  //position: absolute;
+  //bottom:20px;
+  //right: 43%;
+  height: 41px;
+}
+@media (max-width: 575px) {
+  .button_one {
+    margin-right: 0px;
+    margin-top: 111px;
+  }
+  .button_two {
+    margin-right: -195px;
+  }
+}
 @media (max-width:600px) {
     .logo {
     }
-    .header_top_call_us {
+    .header_top_call_us_inside {
         display: none;
     }
     .navbar .btn-navbar {
         float: left!important;
     }
-    .header_top_phone {
-        position: absolute;
-        float: left;
-        width: 67%;
-        top: 0px;
-    }
     .header_top_phone_number  {
-        position: absolute;
-        left: -70px;
+        margin-top: 12px;
+        width: 200px;
         font-family: Arial, verdana, sans-serif;
         font-size: 20px;
         color: #606060;
@@ -205,66 +291,4 @@
         top: 0px;
     }
 }
-
-@media (min-width:979px) and (max-width:1230px) {
-    .header_top_phone_number {
-        margin-left: -20px;
-    }
-}
-
-@media (min-width:720px) and (max-width:979px) {
-    .header_top_phone_number {
-        margin-left: -30px;
-    }
-}
-
-@media (min-width:600px) and (max-width:720px) {
-    .header_top_phone_number {
-        //top: 10px;
-        margin-left: -35px;
-        font-size: 30px;
-    }
-}
-
-@media (min-width:565px) and (max-width:680px) {
-    .header_top_phone_number {
-        top:5px;
-        margin-left: -40px;
-        font-size: 25px;
-    }
-}
-
-@media (min-width:520px) and (max-width:565px) {
-  .header_top_phone_number {
-    top:5px;
-    margin-left: -25px;
-    font-size: 25px;
-  }
-}
-
-
-@media (min-width:460px) and (max-width:520px) {
-    .header_top_phone_number {
-        top:10px;
-        margin-left: -5px;
-        font-size: 25px;
-    }
-}
-
-@media (min-width:440px) and (max-width:460px) {
-    .header_top_phone_number {
-        margin-left: 20px;
-        font-size: 20px;
-        top: 10px;
-    }
-}
-
-@media (max-width:440px) {
-    .header_top_phone_number {
-        margin-left: 40px;
-        font-size: 18px;
-        top: 10px;
-    }
-}
-
 
