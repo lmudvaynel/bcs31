@@ -134,4 +134,39 @@
   }
 }
 
+@mixin buttons5(){
+  @include call_button;
+  &.yellow { @include call_button($gradient-top-color:#ffe760, $gradient-bottom-color:#f7961f); }
+  &.purple { @include call_button($gradient-top-color:#b099af, $gradient-bottom-color:#756474); }
+}
+
+@mixin call_button($width:193px, $height:35px, $innershadow-height:-3px, $gradient-top-color:rgba(154,161,176,1), $gradient-bottom-color:rgba(100,105,117,1)){
+  $dropshadow-color: lighten($gradient-bottom-color, 15%);
+  width:$width;
+  height:$height;
+  cursor:pointer;
+  margin-bottom:14px;
+  text-align:center;
+  color:#666;
+  font-size:16px;
+  line-height:30px;
+  @include text-shadow(1px 1px 1px rgba(255,255,255,.55));
+  @include background-image(linear-gradient($gradient-top-color, $gradient-bottom-color));
+  @include border-radius(7px);
+  @include box-shadow(0px $innershadow-height 0px 0px darken($gradient-bottom-color, 10%) inset, 0px 1px 0px 0px rgba(255,255,255,.6) inset);
+  border: 1px solid $dropshadow-color;
+  background-color:$dropshadow-color;
+
+  &:hover{
+    @include background-image(linear-gradient(lighten($gradient-top-color, 8%), lighten($gradient-bottom-color, 8%)));
+  }
+
+  &:active{
+    //@include background-image(linear-gradient($gradient-bottom-color, $gradient-top-color));
+    @include box-shadow(0px 1px 0px 0px #fff, inset 0 0 10px rgba(0,0,0,.3));
+  }
+}
+
+
+
 

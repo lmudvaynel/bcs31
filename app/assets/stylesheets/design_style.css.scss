@@ -416,18 +416,36 @@ li.services {
   height: 10px;
 }
 .services_headers {
-  width:270px;
   font-family:Verdana,Geneva,Kalimati,sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   float: left;
   margin-left: 15px;
+  width: 317px;
+}
+.services_headers span {
+   display: inline-block;
+    line-height: 35px;
+}
+.services_headers a {
+  text-decoration: none;
+}
+.text_under {
+  border-bottom: 2px solid #e67e22;
+}
+.clear_div {
+  clear: both;
 }
 .services_content {
   font-family:Verdana,Geneva,Kalimati,sans-serif;
   font-size: 14px;
-  width: 733px;
-  float: left;
-  margin-left: 45px;
+  width: 832px;
+  float: right;
+}
+.intro_services_content {
+  font-family:Verdana,Geneva,Kalimati,sans-serif;
+  font-size: 14px;
+  width: 832px;
+  float: right;
 }
 
 

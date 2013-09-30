@@ -1,7 +1,7 @@
 <div class="logo">
   <%= link_to image_tag("logo.png", alt: ""), "/" %>
 </div><!-- /logo -->
-<div class="header_top_call_us_resp">
+<div class="header_top_call_us_inside">
   <div class="header_buttons_container">
     <%= link_to( "http://www.comtube.com/button.php?hash=TrENcpxKe6OrzyacwbvgTA", alt: "", class: "button_call_us reddish") do %>
       <%= image_tag("megaphone_head.png", class: "megaphon_head")%>
@@ -15,26 +15,24 @@
     </div>
   </div>
 </div>
+
+
 <div class="header_top_phone">
-  <div class="header_top_phone_number">
-    <p>+7 (4722) 20-74-84</p>
-  </div>
-  <div class="header_top_phone_logo">
-    <%= image_tag("phone_handle.png", alt: "", class: "phone_handle") %>
+  <%= image_tag("phone_handle.png", alt: "", class: "phone_handle") %>
+    <span class="header_top_phone_number">+7 (4722) 20-74-84</span>
     <p class="phone_uninumber">единый номер</p>
-  </div>
 </div>
-<div class="header_top_call_us">
-  <div class="header_buttons_container">
-    <%= link_to( "http://www.comtube.com/button.php?hash=TrENcpxKe6OrzyacwbvgTA", alt: "", class: "button_call_us reddish") do %>
-        <%= image_tag("megaphone_head.png", class: "megaphon_head")%>
-        <span class="call_us_span">Позвонить нам бесплатно</span>
-    <% end %>
-    <div class="courier_button_container">
-      <%= link_to(OnlineCourier, alt: "", class: "button_courier yellow") do %>
-      <%= image_tag("megaphone_handle.png", class: "megaphon_handle")%>
-      <span class="courier_span">Вызов курьера</span>
-      <% end %>
-    </div>
-  </div>
+<div class="buttons_line_container">
+
+  <%= link_to(OnlineCourier, alt: "", class: "button_one yellow") do %>
+    <%#= image_tag("megaphone_handle.png", class: "megaphon_handle")%>
+    <span class="courier_span inline">Вызов курьера</span>
+  <% end %>
+
+  <%= link_to( "http://www.comtube.com/button.php?hash=TrENcpxKe6OrzyacwbvgTA", alt: "",
+               class: "button_two yellow") do %>
+    <%#= image_tag("megaphone_head.png", class: "megaphon_head")%>
+    <span class="call_us_span inline">Позвонить нам бесплатно</span>
+  <% end %>
+
 </div>
