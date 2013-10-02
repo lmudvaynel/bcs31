@@ -114,10 +114,12 @@ h1 i, h2 i, h3 i, h4 i, h5 i {
 
 /*Service*/
 .service {
+  margin-top: 10px;
 	margin-bottom:10px;
 	padding:15px 15px 10px;
 }
 .service:hover {
+    margin-top: 10px;
 	border-radius:2px;
 	box-shadow:0 0 8px #ddd;
 	background:#fcfcfc;
@@ -340,11 +342,7 @@ blockquote:hover {
 .clients li img.color-img {
 	top:0;
 	left:0;
-	display:none;
 	position:absolute;
-}
-.clients li:hover img.color-img {
-	display:block;
 }
 .clients li img {
     filter:gray; /* IE6-9 */
@@ -702,6 +700,7 @@ blockquote:hover {
 .slider-inner .da-slider {
 	box-shadow:none;
 	border-bottom:1px solid #000;
+    height: 235px;
 }
 //
 //.slider-inner {

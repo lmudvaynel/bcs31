@@ -1,12 +1,4 @@
 <%= render 'pages/index/header_slider' %>
-<div class="welcome_message_background row-fluid">
-  <div class="container">
-    <div class="welcome_message">
-      <h3 class="welcome_message_header">Мэйджор Экспресс Белгород</h3>
-      <%= raw @page.content %>
-    </div>
-  </div>
-</div>
 <div class="container">
   <div class="row-fluid">
     <div class="span4">
@@ -17,6 +9,8 @@
             <div class="desc_header">
               <h4>Стоимость доставки</h4>
             </div>
+            <!--<p class="desc_content">-->
+            <!--</p>-->
           </div>
         </div>
       </a>
@@ -29,6 +23,9 @@
             <div class="desc_header">
               <h4>Документы</h4>
             </div>
+
+            <!--<p class="desc_content">-->
+            <!--</p>-->
           </div>
         </div>
       </a>
@@ -41,9 +38,19 @@
             <div class="desc_header">
               <h4>Состояние доставки</h4>
             </div>
+            <!--<p class="desc_content">-->
+            <!--</p>-->
           </div>
         </div>
       </a>
+    </div>
+  </div>
+  <div class="welcome_message_background row-fluid">
+    <div class="container">
+      <div class="welcome_message">
+        <h3 class="welcome_message_header">Мэйджор Экспресс Белгород</h3>
+        <%= raw @page.content %>
+      </div>
     </div>
   </div>
   <%= render 'news_pages/list' %>

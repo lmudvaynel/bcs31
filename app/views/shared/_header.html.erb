@@ -1,10 +1,25 @@
 <div class="top"></div>
 <div class="header">
+  <div class="header_top_call_us_outside">
+    <div class="header_buttons_container">
+      <%= link_to( "http://www.comtube.com/button.php?hash=TrENcpxKe6OrzyacwbvgTA", alt: "", class: "button_call_us reddish") do %>
+        <%= image_tag("megaphone_head.png", class: "megaphon_head")%>
+        <span class="call_us_span">Позвонить нам бесплатно</span>
+      <% end %>
+      <div class="courier_button_container">
+        <%= link_to(OnlineCourier, alt: "", class: "button_courier yellow") do %>
+          <%= image_tag("megaphone_handle.png", class: "megaphon_handle")%>
+          <span class="courier_span">Вызов курьера</span>
+        <% end %>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="header_top">
       <%= render 'shared/header_top' %>
     </div>
     <%= render 'shared/menu' %>
   </div>
+
 </div>
 
