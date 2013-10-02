@@ -23,5 +23,6 @@
 //= require respond
 //= require rails.validations
 //= require page
+//= require yandex_maps_init
 //= require_tree .
 

@@ -1,0 +1,431 @@
+delivery_city_relations:
+  - city_to: Абакан (респ. Хакассия)
+    city_from: Белгород
+    zone: C
+    delivery_time: 3-5
+    business_morning: false
+  - city_to: Новокузнецк
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Архангельск
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Новороссийск
+    city_from: Белгород
+    zone: A
+    delivery_time: 2-4
+    business_morning: false
+  - city_to: Астрахань
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Новосибирск
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Барнаул
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Норильск
+    city_from: Белгород
+    zone: D
+    delivery_time: 3-5
+    business_morning: false
+  - city_to: Брянск
+    city_from: Белгород
+    zone: A
+    delivery_time: 2
+    business_morning: true
+  - city_to: Ноябрьск
+    city_from: Белгород
+    zone: D
+    delivery_time: 3-5
+    business_morning: false
+  - city_to: Владивосток
+    city_from: Белгород
+    zone: D
+    delivery_time: 2-4
+    business_morning: false
+  - city_to: Омск
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Владикавказ
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: ОРЕЛ
+    city_from: Белгород
+    zone: СПЕЦЦЕНА
+    delivery_time: 24 ЧАСА
+    business_morning: true
+  - city_to: Владимир
+    city_from: Белгород
+    zone: A
+    delivery_time: 2
+    business_morning: true
+  - city_to: Оренбург
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-4
+    business_morning: false
+  - city_to: Волгоград
+    city_from: Белгород
+    zone: A
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Пенза
+    city_from: Белгород
+    zone: B
+    delivery_time: 2
+    business_morning: true
+  - city_to: Вологда
+    city_from: Белгород
+    zone: A
+    delivery_time: 2
+    business_morning: true
+  - city_to: Пермь
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: ВОРОНЕЖ
+    city_from: Белгород
+    zone: СПЕЦЦЕНА
+    delivery_time: 2
+    business_morning: true
+  - city_to: Петрозаводск
+    city_from: Белгород
+    zone: B
+    delivery_time: 3-5
+    business_morning: false
+  - city_to: Екатеринбург
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Петропавловск-Камчатский
+    city_from: Белгород
+    zone: E
+    delivery_time: 3-5
+    business_morning: false
+  - city_to: Иваново
+    city_from: Белгород
+    zone: A
+    delivery_time: 2
+    business_morning: true
+  - city_to: Псков
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Ижевск
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Ростов-на-Дону
+    city_from: Белгород
+    zone: A
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Иркутск
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-4
+    business_morning: false
+  - city_to: Рязань
+    city_from: Белгород
+    zone: A
+    delivery_time: 2
+    business_morning: true
+  - city_to: Казань
+    city_from: Белгород
+    zone: A
+    delivery_time: 2
+    business_morning: true
+  - city_to: САНКТ-ПЕТЕРБУРГ
+    city_from: Белгород
+    zone: A
+    delivery_time: 2
+    business_morning: true
+  - city_to: Калининград
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Самара
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Калуга
+    city_from: Белгород
+    zone: A
+    delivery_time: 2
+    business_morning: true
+  - city_to: Саранск
+    city_from: Белгород
+    zone: B
+    delivery_time: 2
+    business_morning: true
+  - city_to: Кемерово
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Саратов
+    city_from: Белгород
+    zone: A
+    delivery_time: 2
+    business_morning: true
+  - city_to: Киров
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Смоленск
+    city_from: Белгород
+    zone: A
+    delivery_time: 2
+    business_morning: true
+  - city_to: Когалым
+    city_from: Белгород
+    zone: E
+    delivery_time: 3-6
+    business_morning: false
+  - city_to: Сочи
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-4
+    business_morning: false
+  - city_to: Кострома
+    city_from: Белгород
+    zone: A
+    delivery_time: 2
+    business_morning: true
+  - city_to: Ставрополь
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Краснодар
+    city_from: Белгород
+    zone: A
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Салехард
+    city_from: Белгород
+    zone: E
+    delivery_time: 3-5
+    business_morning: false
+  - city_to: Красноярск
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Сургут
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Курган
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-5
+    business_morning: false
+  - city_to: Сыктывкар
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: КУРСК
+    city_from: Белгород
+    zone: СПЕЦЦЕНА
+    delivery_time: 24 ЧАСА
+    business_morning: true
+  - city_to: Тамбов
+    city_from: Белгород
+    zone: B
+    delivery_time: 2
+    business_morning: true
+  - city_to: Липецк
+    city_from: Белгород
+    zone: A
+    delivery_time: 2
+    business_morning: true
+  - city_to: Тверь
+    city_from: Белгород
+    zone: A
+    delivery_time: 2
+    business_morning: true
+  - city_to: Магадан
+    city_from: Белгород
+    zone: E
+    delivery_time: 3-5
+    business_morning: false
+  - city_to: Тольятти
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Магнитогорск
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Томск
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Махачкала
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: ТУЛА
+    city_from: Белгород
+    zone: СПЕЦЦЕНА
+    delivery_time: 24 ЧАСА
+    business_morning: true
+  - city_to: Мирный, Респ. Саха
+    city_from: Белгород
+    zone: E
+    delivery_time: 5-8
+    business_morning: false
+  - city_to: Тюмень
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: МОСКВА
+    city_from: Белгород
+    zone: СПЕЦЦЕНА
+    delivery_time: 24 ЧАСА
+    business_morning: true
+  - city_to: Улан-Удэ
+    city_from: Белгород
+    zone: D
+    delivery_time: 2-4
+    business_morning: false
+  - city_to: Мурманск
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Ульяновск
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Набережные Челны
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Уфа
+    city_from: Белгород
+    zone: A
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Надым
+    city_from: Белгород
+    zone: E
+    delivery_time: 3-5
+    business_morning: false
+  - city_to: Хабаровск
+    city_from: Белгород
+    zone: D
+    delivery_time: 2-4
+    business_morning: false
+  - city_to: Новый Уренгой
+    city_from: Белгород
+    zone: D
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Ханты-Мансийск
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Нерюнгри
+    city_from: Белгород
+    zone: E
+    delivery_time: 3-5
+    business_morning: false
+  - city_to: Череповец
+    city_from: Белгород
+    zone: B
+    delivery_time: 2
+    business_morning: true
+  - city_to: Нефтеюганск
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-4
+    business_morning: false
+  - city_to: Чебоксары
+    city_from: Белгород
+    zone: B
+    delivery_time: 2
+    business_morning: true
+  - city_to: Нижневартовск
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Челябинск
+    city_from: Белгород
+    zone: C
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Нижнекамск
+    city_from: Белгород
+    zone: B
+    delivery_time: 2-3
+    business_morning: false
+  - city_to: Чита
+    city_from: Белгород
+    zone: D
+    delivery_time: 3-5
+    business_morning: false
+  - city_to: Нижний Новгород
+    city_from: Белгород
+    zone: A
+    delivery_time: 2
+    business_morning: true
+  - city_to: Южно-Сахалинск
+    city_from: Белгород
+    zone: E
+    delivery_time: 3-5
+    business_morning: false
+  - city_to: Новгород Великий
+    city_from: Белгород
+    zone: B
+    delivery_time: 2
+    business_morning: true
+  - city_to: Якутск
+    city_from: Белгород
+    zone: E
+    delivery_time: 2-4
+    business_morning: false
+  - city_to: Ярославль
+    city_from: Белгород
+    zone: A
+    business_morning: true
+    delivery_time: 2
+  - city_to: Белгород
+    city_from: Белгород
+    zone: belgorod
+    business_morning: true
+    delivery_time: 1

@@ -10,12 +10,12 @@ class City < ActiveRecord::Base
 
   validates :name, presence: true, uniqueness: true
 
-  def provider_for(pay_in_affiliate)
-    (self.affiliate? and pay_in_affiliate) ? :bcs : :major_express
+  def provider_for(city, pay_in_affiliate)
+    (self.affiliate? or city.affiliate? and pay_in_affiliate) ? :bcs : :major_express
   end
   
   def zone_to(city, pay_in_affiliate)
-    provider = provider_for(pay_in_affiliate)
+    provider = provider_for(city, pay_in_affiliate)
     zones = delivery_city_relations.where(city_to_id: city.id).first.try(:zones)
     if zones
       zones.with_provider(provider).first
@@ -32,6 +32,7 @@ class City < ActiveRecord::Base
         if weight > tariff.weight_end
           cents += tariff.additional_price_cents * (weight - tariff.weight_end)
         end
+        cents *= 1.5 if zone.provider == 'bcs' and !self.affiliate?
       end
     end
     cents

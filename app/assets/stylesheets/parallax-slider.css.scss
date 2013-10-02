@@ -18,7 +18,6 @@
 .da-slide{
   position: absolute;
   overflow: hidden;
-
   width: 100%;
   height: 100%;
   top: 0px;
@@ -144,10 +143,11 @@
   position: absolute;
   text-align: center;
   left: 0px;
+  //bottom: 15px;
    bottom: 5px ;
+  z-index: 5000;
   -moz-user-select: none;
   -webkit-user-select: none;
-  z-index: 3000;
 }
 .da-dots span{
   display: inline-block;

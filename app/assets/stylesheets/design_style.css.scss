@@ -21,6 +21,14 @@ body, html {
   color: #666;
   border-bottom:2px solid #e67e22;
 }
+.da-slider {
+  border-bottom: 1px solid #ddd!important;
+
+}
+.slider_paragraph_first, .slider_paragraph_second,
+.slider_paragraph_third{
+   margin-top: -100px;
+}
 
 .welcome_message_background {
   @include box-shadow(#dddddd 0 -1px 6px -1px inset);
@@ -411,16 +419,35 @@ li.services {
   width:270px;
   min-height: 240px;
   font-family:Verdana,Geneva,Kalimati,sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   float: left;
   margin-left: 15px;
+  width: 317px;
+}
+.services_headers span {
+   display: inline-block;
+    line-height: 35px;
+}
+.services_headers a {
+  text-decoration: none;
+}
+.text_under {
+  border-bottom: 2px solid #e67e22;
+}
+.clear_div {
+  clear: both;
 }
 .services_content {
   font-family:Verdana,Geneva,Kalimati,sans-serif;
   font-size: 14px;
-  width: 733px;
-  float: left;
-  margin-left: 45px;
+  width: 832px;
+  float: right;
+}
+.intro_services_content {
+  font-family:Verdana,Geneva,Kalimati,sans-serif;
+  font-size: 14px;
+  width: 832px;
+  float: right;
 }
 
 
@@ -465,6 +492,8 @@ li.services {
 .workers_container {
   margin-top: 87px;
   margin-bottom: 110px;
+  width: 600px;
+  float: left;
 }
 .worker {
   list-style-type: none;
@@ -822,4 +851,47 @@ li.services {
 
 #topcontrol {
   bottom: 0px!important;
+}
+
+/////////////maps///////////
+.company_info {
+  display: table;
+  width: 1140px;
+  //height: 150px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+.first_affiliate {
+  display: table-cell;
+  padding-left: 11px;
+  font-size: 15px;
+  width: 570px;
+}
+.second_affiliate{
+  display: table-cell;
+  padding-left: 12px;
+  font-family: Verdana,Geneva,Kalimati,sans-serif;
+  font-size: 15px;
+  width: 570px;
+}
+ .maps_container {
+  width: 1140px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+div#map1 {
+  float: left;
+  width: 560px;
+  height: 300px;
+}
+div#map2 {
+  //position: relative;
+  float: right;
+  width: 560px;
+  height: 300px;
+}
+.form_margin {
+    height: 30px;
 }

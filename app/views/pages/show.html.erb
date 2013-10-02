@@ -27,15 +27,17 @@
                   <%= link_to content_tag(:span, child.name), slug_path(child),
                   :class => (menu_item_state(child).to_s + 'hover-effect') %>
                 <% else %>
-                  <span class="text_bold"> <%= child.name %> </span>
+                  <span class="text_under"> <%= child.name %> </span>
                 <% end %>
               </li>
             <% end %>
           <% end %>
         </div>
+
         <div class="services_content">
           <%= raw @page.content %>
         </div>
+
       <% elsif @page.slug == 'services' %>
         <div class="headline">
           <h3> <%= raw @page.name %></h3>
@@ -49,7 +51,7 @@
             </li>
           <% end %>
         </div>
-        <div class="row-fluid content content_text">
+        <div class="intro_services_content row-fluid content content_text">
           <%= raw @page.content %>
         </div>
       <% else %>
