@@ -46,8 +46,11 @@ ru:
   activerecord:
     models:
       admin_user:
+        zero:  Администраторов
         one:   Администратор
-        other: Администраторы
+        few:   Администраторa
+        many:  Администраторов
+        other: Адинистраторы
       banner:
         zero:  Баннеров
         one:   Баннер
