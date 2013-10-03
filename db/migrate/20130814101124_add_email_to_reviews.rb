@@ -3,3 +3,4 @@ class AddEmailToReviews < ActiveRecord::Migration
     add_column :reviews, :email, :string
   end
 end
+
