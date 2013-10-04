@@ -893,3 +893,36 @@ div#map2 {
 .form_margin {
     height: 30px;
 }
+
+////////////////tracking iframe////////////////////////
+
+#tracking_iframe_div {
+  width    : 530px;
+  height   : 400px;
+  overflow : hidden;
+  position : relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#tracking_iframe {
+  position : absolute;
+  width    : 1280px;
+  height   : 1280px;
+  border   : none;
+  left     : -332px;
+  top      : -116px;
+}
+
+
+.iframe_wrapper  {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width  : 600px;
+  height : 500px;
+  overflow: hidden;
+
+}
