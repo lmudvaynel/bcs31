@@ -928,3 +928,23 @@ div#map2 {
   overflow: hidden;
 
 }
+///////////////////////////////////////////////////////////////////
+.iframe_container {
+  top: 150px;
+  margin: 0 auto;
+  position: relative;
+  //background-color: red;
+  width: 400px;
+  height: 349px;
+  display: none;
+}
+
+
+.closing_cross {
+  position: absolute;
+  width: 27px;
+  top: 7px;
+  right: 7px;
+  z-index: 10000;
+  display: none;
+}
