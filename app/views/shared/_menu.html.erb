@@ -9,6 +9,7 @@
       <ul class="nav top-2">
         <% Page.roots.visible.each do |page| %>
           <%= render 'shared/menu/item', page: page %>
+          <span class="pipe">|</span>
         <% end %>
       </ul>
     </div>

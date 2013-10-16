@@ -14,7 +14,9 @@
         <div class="services_padding_div"></div>
         <div class="services_headers">
           <% if @page.children.any? %>
+            <ul>
             <% @page.children.each do |child| %>
+
               <li class="services">
                 <%= link_to content_tag(:span, child.name), slug_path(child),
                 :class => (menu_item_state(child).to_s + 'hover-effect') %>

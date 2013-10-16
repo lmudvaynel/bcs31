@@ -1,21 +1,32 @@
 <%= render 'pages/index/header_slider' %>
 <div class="container">
   <div class="row-fluid">
-    <div class="span4">
+    <div class="span3">
       <a class="service_link" href="<%= slug_path('price_of_delivery') %>">
         <div class="service clearfix">
           <div class="service_icon"><%= image_tag('open_box.png') %></div>
           <div class="desc">
             <div class="desc_header">
-              <h4>Стоимость доставки</h4>
+              <h4>Калькулятор</h4>
             </div>
-            <!--<p class="desc_content">-->
-            <!--</p>-->
           </div>
         </div>
       </a>
     </div>
-    <div class="span4">
+    <div class="span3">
+      <a class="service_link indexes" href="http://индексы-россии.рф/"
+         target="go_indexes_iframe">
+        <div class="service clearfix">
+          <div class="service_icon postmark"><%= image_tag('postmark.png') %></div>
+          <div class="desc">
+            <div class="desc_header">
+              <h4 class="indexes_margin">Индексы</h4>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="span3">
       <a class="service_link" href="<%= slug_path('documents') %>">
         <div class="service clearfix">
           <div class="service_icon"><%= image_tag('archive.png') %></div>
@@ -23,23 +34,19 @@
             <div class="desc_header">
               <h4>Документы</h4>
             </div>
-
-            <!--<p class="desc_content">-->
-            <!--</p>-->
           </div>
         </div>
       </a>
     </div>
-    <div class="span4">
+    <div class="span3">
       <a class="service_link" href="<%= slug_path('invoices') %>">
         <div class="service clearfix">
           <div class="service_icon"><%= image_tag('zoom.png') %></div>
           <div class="desc">
             <div class="desc_header">
-              <h4>Состояние доставки</h4>
+              <h4>Состояние</h4>
+              <h4 class="deliv_header">доставки</h4>
             </div>
-            <!--<p class="desc_content">-->
-            <!--</p>-->
           </div>
         </div>
       </a>
@@ -54,3 +61,9 @@
   </div>
   <%= render 'news_pages/list' %>
 </div>
+    <div class="indexes_wrapper">
+      <div class="indexes_iframe_container">
+        <%= link_to(image_tag("close-42928_150.png",  class: "closing_cross")) %>
+        <iframe src="" name="go_indexes_iframe" class="indexes_iframe"></iframe>
+      </div>
+    </div>
