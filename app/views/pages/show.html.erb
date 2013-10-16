@@ -4,17 +4,13 @@
       <% if @parent && @parent.slug == 'services' %>
         <div class="headline">
           <h3>
-            <% if @page.children.empty? %>
-              <%= @page.parent.name %>
-            <% else %>
-              <%= @page.name %>
-            <% end %>
+          <%= title(@page) %>
           </h3>
         </div>
         <div class="services_padding_div"></div>
         <div class="services_headers">
           <% if @page.children.any? %>
-            <ul>
+
             <% @page.children.each do |child| %>
 
               <li class="services">
