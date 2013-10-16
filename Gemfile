@@ -19,6 +19,8 @@ gem 'acts_as_list'
 gem 'activeadmin-sortable'
 gem "font-awesome-rails"
 gem 'enumerize', github: 'brainspec/enumerize'
+gem "recaptcha", :require => "recaptcha/rails"
+
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
