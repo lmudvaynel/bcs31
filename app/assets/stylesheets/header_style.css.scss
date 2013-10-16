@@ -292,3 +292,19 @@
     }
 }
 
+.callus_iframe {
+    position: absolute;
+    width: 401px;
+    height: 350px;
+    scrolling: "no";
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    z-index: 9999;
+    display:none;
+    @include box-shadow(grey 0px 0px 15px 1px);
+
+
+}

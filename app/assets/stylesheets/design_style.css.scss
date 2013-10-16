@@ -416,6 +416,8 @@ li.services {
   height: 10px;
 }
 .services_headers {
+  width:270px;
+  min-height: 240px;
   font-family:Verdana,Geneva,Kalimati,sans-serif;
   font-size: 16px;
   float: left;
@@ -893,6 +895,59 @@ div#map2 {
 .form_margin {
     height: 30px;
 }
+
 .form_error {
   color: red;
+}
+////////////////tracking iframe////////////////////////
+
+#tracking_iframe_div {
+  width    : 530px;
+  height   : 400px;
+  overflow : hidden;
+  position : relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#tracking_iframe {
+  position : absolute;
+  width    : 1280px;
+  height   : 1280px;
+  border   : none;
+  left     : -332px;
+  top      : -116px;
+}
+
+
+.iframe_wrapper  {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width  : 600px;
+  height : 500px;
+  overflow: hidden;
+
+}
+///////////////////////////////////////////////////////////////////
+.iframe_container {
+  top: 150px;
+  margin: 0 auto;
+  position: relative;
+  //background-color: red;
+  width: 400px;
+  height: 349px;
+  display: none;
+}
+
+
+.closing_cross {
+  position: absolute;
+  width: 27px;
+  top: 7px;
+  right: 7px;
+  z-index: 10000;
+  display: none;
 }
