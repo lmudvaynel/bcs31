@@ -1,12 +1,18 @@
 # encoding: utf-8
 ActiveAdmin.register Worker do
   menu priority: 8
+  config.batch_actions = false
+  config.sort_order = 'position_asc'
+
+  sortable
 
     index do
+      sortable_handle_column
+      column :id
+      column :position, :sortable => :position
       column :name do |worker|
         worker.name
       end
-      column :patronymic
       column :job
       column :phone
 

@@ -192,7 +192,7 @@ ru:
         created_at:     Дата создания
         updated_at:     Дата обновления
       worker:
-        name:         Фамилия и Имя
+        name:         ФИО
         first_name:   Имя
         last_name:    Фамилия
         patronymic:   Отчество

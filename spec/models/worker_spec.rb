@@ -19,11 +19,4 @@ describe Worker do
       @worker.should be_valid
     end
   end
-
-  describe '#full name' do
-    it 'should have full name' do
-      @worker.patronymic = ''
-      @worker.should be_invalid
-    end
-  end
 end

@@ -490,7 +490,7 @@ li.services {
 .workers_container {
   margin-top: 87px;
   margin-bottom: 110px;
-  width: 600px;
+  width: 1000px;
   float: left;
 }
 .worker {
@@ -499,6 +499,8 @@ li.services {
 }
 .worker_attribute_photo {
   float: left;
+  width: 155px;
+  height: 115px;
 }
 .worker_info {
   float: left;
