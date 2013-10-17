@@ -20,7 +20,7 @@ gem 'activeadmin-sortable'
 gem "font-awesome-rails"
 gem 'enumerize', github: 'brainspec/enumerize'
 gem "recaptcha", :require => "recaptcha/rails"
-
+gem 'activeadmin-sortable'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

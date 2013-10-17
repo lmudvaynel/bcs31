@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131016095549) do
+ActiveRecord::Schema.define(:version => 20131017070330) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -235,7 +235,10 @@ ActiveRecord::Schema.define(:version => 20131016095549) do
     t.string   "job"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "position"
   end
+
+  add_index "workers", ["position"], :name => "index_workers_on_position"
 
   create_table "zone_delivery_relations", :force => true do |t|
     t.integer  "zone_id"
