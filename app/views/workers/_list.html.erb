@@ -1,10 +1,10 @@
 <% @workers.each do |worker| %>
   <ul class="worker">
-    <% if worker.photo.thumb.url %>
-      <li class="worker_attribute_photo">
+    <li class="worker_attribute_photo">
+      <% if worker.photo.thumb.url %>
         <%= image_tag worker.photo.thumb.url, class: "worker_photo" %>
-      </li>
-    <% end %>
+      <% end %>
+    </li>
     <div class="worker_info">
       <li class="worker_attribute_first_name">
         <%= worker.last_name %>
