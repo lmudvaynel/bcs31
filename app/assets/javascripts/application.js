@@ -16,6 +16,7 @@
 //= require bootstrap-modal
 //= require shared/global
 //= require shared/eco
+//= require ckeditor/init
 //= require flexslider/jquery.flexslider
 //= require parallax-slider/modernizr
 //= require parallax-slider/jquery.cslider
