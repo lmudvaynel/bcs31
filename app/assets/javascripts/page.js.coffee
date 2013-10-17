@@ -19,9 +19,9 @@ $(document).ready ->
       $("#new_review_form_wrapper").slideUp 300
       $(".review_buffer").slideDown 200
 
-  if !$("#new_review_form_wrapper .field_with_errors").length > 0
+  if !$("#new_review_form_wrapper .field_with_errors").length > 0 and !$("#new_review_form_wrapper .form_error").length > 0
     $("#new_review_form_wrapper").hide()
-
+    
   $(".dropdown-toggle").bind 'mouseenter', (event) ->
     $(".dropdown-menu").css "display", "block"
   $(".dropdown-menu").parent().bind 'mouseleave', (event) ->
