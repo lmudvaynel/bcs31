@@ -78,19 +78,38 @@ body, html {
 
 .service_icon {
   float: left;
-  width: 20%;
+  width: 30%;
+}
+.service_icon.zoomer{
+  width:27%;
+}
+.service_icon.postmark {
+  width:41%;
+  margin-top: -1px;
+}
+h4.indexes_margin {
+  margin-left: 8px;
 }
 
 .service .desc {
-  min-width: 77%;
+  min-width: 62%;
+  //display: inline-block;
+}
+.desc_header.indexes {
+  float: right;
+  margin-right: 9px;
 }
 
 .desc_header {
-  height: 55px;
+  height: 59px;
   overflow: hidden;
+  //float: right;
+  //display: inline-block;
 }
 .desc_header h4 {
   margin-top: 0px;
+}
+.service.clearfix {
 }
 .thumbnail-style a.btn-more {
   font-family:Verdana,Geneva,Kalimati,sans-serif;
@@ -492,7 +511,7 @@ li.services {
 .workers_container {
   margin-top: 87px;
   margin-bottom: 110px;
-  width: 600px;
+  width: auto;
   float: left;
 }
 .worker {
@@ -598,6 +617,20 @@ li.services {
 /////////feedback form////////
 
 /////////Courier Form////////
+
+.courier_asterisk {
+  position: relative;
+  font-size: 32px;
+  color: #FF0000;
+  top: -10px;
+}
+
+.courier_attention {
+  display: block;
+  top: -48px;
+  position: relative;
+  text-align: center;
+}
 .courier_from {
   width: 700px;
   margin: 0 auto;
@@ -921,26 +954,85 @@ div#map2 {
   top      : -116px;
 }
 
-
-.iframe_wrapper  {
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width  : 600px;
-  height : 500px;
-  overflow: hidden;
-
-}
 ///////////////////////////////////////////////////////////////////
-.iframe_container {
+.iframe_container_callus {
   top: 150px;
   margin: 0 auto;
   position: relative;
-  //background-color: red;
-  width: 400px;
-  height: 349px;
+  width: 401px;
+  height: 350px;
   display: none;
 }
+.callus_iframe {
+  position: absolute;
+  width: 401px;
+  height: 350px;
+  scrolling: "no";
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  z-index: 9999;
+  display:none;
+  @include box-shadow(grey 0px 0px 15px 1px);
+
+
+}
+.indexes_iframe_container{
+    position: relative;
+    margin-top: -949px;
+    width: 866px;
+    height: 1178px;
+    scrolling: "no";
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    z-index: 999999;
+    display:none;
+    @include box-shadow(grey 0px 0px 15px 1px);;
+}
+.indexes_iframe {
+    top: -139px;
+    right: -568px;
+    margin-left: 1000px;
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    scrolling: "no";
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    z-index: 9999;
+    display:none;
+    @include box-shadow(grey 0px 0px 15px 1px);
+}
+
+#tracking_iframe_div {
+  width    : 530px;
+  height   : 400px;
+  overflow : hidden;
+  position : relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#indexes_iframe_container iframe {
+  position : absolute;
+  width    : 1280px;
+  height   : 1280px;
+  border   : none;
+  left     : -332px;
+  top      : -116px;
+}
+
+
+
 
 
 .closing_cross {
@@ -951,3 +1043,7 @@ div#map2 {
   z-index: 10000;
   display: none;
 }
+
+//.courier_guy {
+//  width: ;
+//}

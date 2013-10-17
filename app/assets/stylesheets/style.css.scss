@@ -148,14 +148,16 @@ h1 i, h2 i, h3 i, h4 i, h5 i {
 	font-size:37px;
 }
 .service .desc {
-	width:75%;
-	float:right;
+	//float:right;
 }
 .service .desc h4 {
 	line-height:25px;
     font-family:Verdana,Geneva,Kalimati,sans-serif;
     font-size: 24px;
     color: #666;
+}
+h4.deliv_header {
+    line-height: 10px!important;
 }
 
 .ie7 .service .circle i  {
