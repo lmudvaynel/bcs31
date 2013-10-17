@@ -2,6 +2,11 @@
   <div class="" id="request">
     <div class="request-control courier_from">
       <h3>Вызов курьера по Белгороду</h3>
+      <span class="courier_asterisk" style="font-size: 32px; color: #FF0000">&#42;</span>
+      <span class="courier_attention">Внимание, временной интервал на вызов курьера должен быть не менее 3х часов.
+        Вызовы
+        на текущий день
+        принимаются до 15.00 по г.Белгород, до 12.00 по Белгородскому району</span>
       <div class="courier_field_container">
         <%= f.label "Тип перевозки", class: 'field_name courier' %>
         <%= f.select :transportation, OnlineCourier.transportation.options, {}, class: "select_field courier wide" %>

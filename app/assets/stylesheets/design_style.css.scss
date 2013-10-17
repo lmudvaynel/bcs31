@@ -617,6 +617,20 @@ li.services {
 /////////feedback form////////
 
 /////////Courier Form////////
+
+.courier_asterisk {
+  position: relative;
+  font-size: 32px;
+  color: #FF0000;
+  top: -10px;
+}
+
+.courier_attention {
+  display: block;
+  top: -48px;
+  position: relative;
+  text-align: center;
+}
 .courier_from {
   width: 700px;
   margin: 0 auto;
