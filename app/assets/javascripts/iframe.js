@@ -1,6 +1,6 @@
 $(window).load(function() {
      //////////////////
-    $(".button_call_us.reddish").on('click', function(){
+    $(".button_call_us.reddish, .call_us_span").on('click', function(){
         $('.iframe_container_callus').css("display" , "block");
         $('.callus_iframe').css("display" , "block");
         $('.closing_cross').css("display" , "block");

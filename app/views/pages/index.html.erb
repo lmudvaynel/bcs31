@@ -7,7 +7,8 @@
           <div class="service_icon"><%= image_tag('open_box.png') %></div>
           <div class="desc">
             <div class="desc_header">
-              <h4>Калькулятор</h4>
+              <h4>Расчёт</h4>
+              <h4 class="deliv_header">стоимости</h4>
             </div>
           </div>
         </div>
@@ -19,8 +20,9 @@
         <div class="service clearfix">
           <div class="service_icon postmark"><%= image_tag('postmark.png') %></div>
           <div class="desc">
-            <div class="desc_header">
-              <h4 class="indexes_margin">Индексы</h4>
+            <div class="desc_header indexes">
+              <h4>Почтовые</h4>
+              <h4 class="deliv_header">индексы</h4>
             </div>
           </div>
         </div>
@@ -32,7 +34,8 @@
           <div class="service_icon"><%= image_tag('archive.png') %></div>
           <div class="desc">
             <div class="desc_header">
-              <h4>Документы</h4>
+              <h4>Основные</h4>
+              <h4 class="deliv_header">документы</h4>
             </div>
           </div>
         </div>
@@ -41,7 +44,7 @@
     <div class="span3">
       <a class="service_link" href="<%= slug_path('invoices') %>">
         <div class="service clearfix">
-          <div class="service_icon"><%= image_tag('zoom.png') %></div>
+          <div class="service_icon zoomer"><%= image_tag('zoom.png') %></div>
           <div class="desc">
             <div class="desc_header">
               <h4>Состояние</h4>

@@ -103,7 +103,7 @@
 
 @mixin buttons4(){
   @include button_courier;
-  &.yellow { @include button_courier($gradient-top-color:#f4e156, $gradient-bottom-color:#ecae29); }
+  &.yellow { @include button_courier($gradient-top-color: #ff7464, $gradient-bottom-color:#ff5219); }
   &.purple { @include button_courier($gradient-top-color:#b099af, $gradient-bottom-color:#756474); }
 }
 
@@ -114,10 +114,10 @@
   cursor:pointer;
   margin-bottom:14px;
   text-align:center;
-  color:#666;
+  color: #000000;
   font-size:16px;
   line-height:30px;
-  @include text-shadow(1px 1px 1px rgba(255,255,255,.55));
+  @include text-shadow(rgba(255,255,255,1) 1px 1px 20px );
   @include background-image(linear-gradient($gradient-top-color, $gradient-bottom-color));
   @include border-radius(7px);
   @include box-shadow(0px $innershadow-height 0px 0px darken($gradient-bottom-color, 10%) inset, 0px 1px 0px 0px rgba(255,255,255,.6) inset);

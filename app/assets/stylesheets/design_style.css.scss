@@ -80,8 +80,11 @@ body, html {
   float: left;
   width: 30%;
 }
+.service_icon.zoomer{
+  width:27%;
+}
 .service_icon.postmark {
-  width:35%;
+  width:41%;
   margin-top: -1px;
 }
 h4.indexes_margin {
@@ -91,6 +94,10 @@ h4.indexes_margin {
 .service .desc {
   min-width: 62%;
   //display: inline-block;
+}
+.desc_header.indexes {
+  float: right;
+  margin-right: 9px;
 }
 
 .desc_header {
@@ -504,7 +511,7 @@ li.services {
 .workers_container {
   margin-top: 87px;
   margin-bottom: 110px;
-  width: 600px;
+  width: auto;
   float: left;
 }
 .worker {
@@ -1019,3 +1026,7 @@ div#map2 {
   z-index: 10000;
   display: none;
 }
+
+//.courier_guy {
+//  width: ;
+//}

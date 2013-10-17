@@ -1,4 +1,4 @@
-<li>
+<li class="<%= 'active' if page.slug == @page.slug %>">
   <% if page.children.any? %>
     <%= link_to slug_path(page), :class => "dropdown-toggle #{menu_item_state(page)}",
                           :'data-toggle' => '' do %>
