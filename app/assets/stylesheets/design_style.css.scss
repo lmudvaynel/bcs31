@@ -529,20 +529,24 @@ li.services {
   margin-left: 15px;
 }
 .workers_container {
-  margin-top: 87px;
+  margin-top: 40px;
   margin-bottom: 110px;
   width: auto;
   float: left;
 }
+.individual_worker {
+  float: left;
+  width: 585px;
+  height: 162px;
+}
 .worker {
   list-style-type: none;
-  margin-left: 94px;
+  //margin-left: 94px;
 }
 .worker_attribute_photo {
   float: left;
 }
 .worker_info {
-  float: left;
 }
 .clear_workers {
   height: 27px;

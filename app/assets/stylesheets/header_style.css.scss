@@ -145,10 +145,16 @@
    font-size: 13px;
 }
 .courier_span {
+  color: #ffffff;
+  text-shadow:
+      -2px -2px 0 rgba(255, 0, 0, 0.50),
+      2px -2px 0 rgba(255, 0, 0, 0.52),
+      -2px 2px 0 rgba(255, 0, 0, 0.50),
+    2px 2px 0 rgba(255, 0, 0, 0.51);
   position: relative;
   margin-top: 15px;
   left: 28px;
-  font-size: 13px;
+  font-size: 14px;
 }
 .courier_span.inline {
    margin-top: 3px;
