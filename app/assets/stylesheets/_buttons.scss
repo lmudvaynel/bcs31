@@ -103,7 +103,7 @@
 
 @mixin buttons4(){
   @include button_courier;
-  &.yellow { @include button_courier($gradient-top-color: #ff7464, $gradient-bottom-color:#ff5219); }
+  &.yellow { @include button_courier($gradient-top-color: #ff7464, $gradient-bottom-color: #ff7711); }
   &.purple { @include button_courier($gradient-top-color:#b099af, $gradient-bottom-color:#756474); }
 }
 
