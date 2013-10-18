@@ -87,6 +87,26 @@ body, html {
   width:41%;
   margin-top: -1px;
 }
+
+a.service_link.indexes{
+  text-decoration:none;
+  color: #000;
+  //border-bottom: 1px solid green;
+}
+a.service_link.indexes:hover h4{
+  color: #EA8023;
+  text-decoration: underline;
+}
+a.service_link.indexes h4 span {
+  color: #666;
+}
+.postal_link {
+  color: #000;
+}
+.service_link {
+  text-decoration: none;
+  color: #000000;
+}
 h4.indexes_margin {
   margin-left: 8px;
 }
@@ -509,14 +529,19 @@ li.services {
   margin-left: 15px;
 }
 .workers_container {
-  margin-top: 87px;
+  margin-top: 40px;
   margin-bottom: 110px;
   width: auto;
   float: left;
 }
+.individual_worker {
+  float: left;
+  width: 585px;
+  height: 162px;
+}
 .worker {
   list-style-type: none;
-  margin-left: 94px;
+  //margin-left: 94px;
 }
 .worker_attribute_photo {
   float: left;
@@ -524,7 +549,6 @@ li.services {
   height: 115px;
 }
 .worker_info {
-  float: left;
 }
 .clear_workers {
   height: 27px;
@@ -1045,7 +1069,3 @@ div#map2 {
   z-index: 10000;
   display: none;
 }
-
-//.courier_guy {
-//  width: ;
-//}
