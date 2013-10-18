@@ -87,6 +87,26 @@ body, html {
   width:41%;
   margin-top: -1px;
 }
+
+a.service_link.indexes{
+  text-decoration:none;
+  color: #000;
+  //border-bottom: 1px solid green;
+}
+a.service_link.indexes:hover h4{
+  color: #EA8023;
+  text-decoration: underline;
+}
+a.service_link.indexes h4 span {
+  color: #666;
+}
+.postal_link {
+  color: #000;
+}
+.service_link {
+  text-decoration: none;
+  color: #000000;
+}
 h4.indexes_margin {
   margin-left: 8px;
 }
@@ -1041,6 +1061,9 @@ div#map2 {
   display: none;
 }
 
-//.courier_guy {
-//  width: ;
+//.under_link:focus,
+//.under_link:hover,
+//.under_link:active {
+//  text-decoration: underline;
 //}
+
