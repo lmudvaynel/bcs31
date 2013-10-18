@@ -20,6 +20,10 @@
       <%= f.label :content, class: "field_name" %>
       <%= f.text_area :content, class: "text_field area" %>
     </div>
+    <div class="field_container">
+      <%= recaptcha_tags %>
+      <%= errors_for(@review, :base) %>
+    </div>
     <div class="submit_container">
       <%= f.submit "Отправить", class: "submit_button orange" %>
     </div>

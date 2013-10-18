@@ -4,33 +4,34 @@
       <% if @parent && @parent.slug == 'services' %>
         <div class="headline">
           <h3>
-            <% if @page.children.empty? %>
-              <%= @page.parent.name %>
-            <% else %>
-              <%= @page.name %>
-            <% end %>
+          <%= title(@page) %>
           </h3>
         </div>
         <div class="services_padding_div"></div>
         <div class="services_headers">
           <% if @page.children.any? %>
+              <ul>
             <% @page.children.each do |child| %>
-              <li class="services">
+
+                <li class="services">
                 <%= link_to content_tag(:span, child.name), slug_path(child),
                 :class => (menu_item_state(child).to_s + 'hover-effect') %>
-              </li>
+                </li>
+              </ul>
             <% end %>
           <% else %>
-            <% @page.parent.children.each do |child| %>
-              <li class="services">
-                <% if child != @page %>
-                  <%= link_to content_tag(:span, child.name), slug_path(child),
-                  :class => (menu_item_state(child).to_s + 'hover-effect') %>
-                <% else %>
-                  <span class="text_under"> <%= child.name %> </span>
-                <% end %>
-              </li>
-            <% end %>
+            <ul>
+              <% @page.parent.children.each do |child| %>
+                <li class="services">
+                  <% if child != @page %>
+                    <%= link_to content_tag(:span, child.name), slug_path(child),
+                    :class => (menu_item_state(child).to_s + 'hover-effect') %>
+                  <% else %>
+                    <span class="text_under"> <%= child.name %> </span>
+                 <% end %>
+                  </li>
+              <% end %>
+            </ul>
           <% end %>
         </div>
 
@@ -44,12 +45,15 @@
         </div>
         <div class="services_padding_div"></div>
         <div class="services_headers">
-          <% @page.children.each do |child| %>
-            <li class="services">
-              <%= link_to content_tag(:span, child.name), slug_path(child),
-              :class => (menu_item_state(child).to_s + 'hover-effect') %>
-            </li>
+          <ul>
+            <% @page.children.each do |child| %>
+              <li class="services">
+                <%= link_to content_tag(:span, child.name), slug_path(child),
+                :class => (menu_item_state(child).to_s + 'hover-effect') %>
+              </li>
           <% end %>
+          </ul>
+
         </div>
         <div class="intro_services_content row-fluid content content_text">
           <%= raw @page.content %>

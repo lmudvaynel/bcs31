@@ -7,8 +7,11 @@
     </a><!-- /nav-collapse -->
     <div class="nav-collapse collapse">
       <ul class="nav top-2">
-        <% Page.roots.visible.each do |page| %>
+        <% Page.roots.visible.each do |page| %> 
           <%= render 'shared/menu/item', page: page %>
+           <% if Page.roots.visible.last != page %> 
+             <span class="pipe">|</span>
+           <% end %>
         <% end %>
       </ul>
     </div>

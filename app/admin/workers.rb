@@ -8,7 +8,6 @@ ActiveAdmin.register Worker do
 
     index do
       sortable_handle_column
-      column :id
       column :position, :sortable => :position
       column :name do |worker|
         worker.name

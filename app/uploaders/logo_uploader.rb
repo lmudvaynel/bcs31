@@ -12,7 +12,7 @@ class LogoUploader < CarrierWave::Uploader::Base
   end
 
   version :thumb do
-    process :resize_to_fill => [130, 130]
+    process :resize_to_fit => [130, 130]
     version :gray do
       process :convert_to_grayscale
     end
@@ -25,7 +25,7 @@ class LogoUploader < CarrierWave::Uploader::Base
   def convert_to_grayscale
     manipulate! do |img|
       img.colorspace("Gray")
-      img.brightness_contrast("+10x0")
+      #img.brightness_contrast("+10x0")
       img = yield(img) if block_given?
       img
     end
