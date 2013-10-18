@@ -9,7 +9,8 @@ class ReviewsController < ApplicationController
 
   def create
     @review = Review.new(params[:review])
-    if @review.save
+     @review.valid?
+     if verify_recaptcha(:model => @review, :message => "Неверно введен код.") && @review.save
       AdminUser.all.each do |user|
         ReviewMailer.review_email(user.email, @review).deliver
       end
@@ -19,7 +20,7 @@ class ReviewsController < ApplicationController
       @reviews = Review.moderated
       @page = Page.find_by_slug("reviews")
       render :index
-    end
+    end    
   end
 
 end

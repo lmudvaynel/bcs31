@@ -126,18 +126,17 @@
   z-index: 1;
 }
 
-
-.button_call_us_inline {
-  //@include buttons5;
-}
-.button_courier_inline {
-  //@include buttons5;
+.courier_call{
+  position: absolute;
+  left: 17px;
+  top: 16px;
+  width: 32px;
 }
 .call_us_span {
   position: relative;
   margin-top: 10px;
   left: 27px;
-  font-size: 12px;
+  font-size: 13px;
   //right: 20px;
 }
 .call_us_span.inline {
@@ -149,7 +148,7 @@
   position: relative;
   margin-top: 15px;
   left: 28px;
-  font-size: 12px;
+  font-size: 13px;
 }
 .courier_span.inline {
    margin-top: 3px;
@@ -158,15 +157,16 @@
    font-size: 13px;
    float: none ;
 }
-.megaphon_head {
+.freecall {
   position: absolute;
-  left: 15px;
-  top: 14px;
+  left: 8px;
+  top: 1px;
 }
-.megaphon_handle {
+.courier_call {
   position: absolute;
-  left: 33px;
-  top: 19px;
+  left: 17px;
+  top: 15px;
+
 }
 
 .header_top_phone_number  {
@@ -292,19 +292,4 @@
     }
 }
 
-.callus_iframe {
-    position: absolute;
-    width: 401px;
-    height: 350px;
-    scrolling: "no";
-    overflow: hidden;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-    z-index: 9999;
-    display:none;
-    @include box-shadow(grey 0px 0px 15px 1px);
 
-
-}
