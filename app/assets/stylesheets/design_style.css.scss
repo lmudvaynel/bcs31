@@ -548,7 +548,14 @@ li.services {
   width: 155px;
   height: 115px;
 }
+.worker_attribute_phone {
+  width: 423px;
+}
 .worker_info {
+  position: relative;
+  width: 560px;
+  left: 25px;
+  top: -8px;
 }
 .clear_workers {
   height: 27px;
@@ -591,7 +598,7 @@ li.services {
 .worker_attribute_patronymic,
 .worker_attribute_job,
 .worker_attribute_phone{
-  line-height: 37px;
+  line-height: 32px;
 }
 
 ////////FEEDBACK FORM////////////
