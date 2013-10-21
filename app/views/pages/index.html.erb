@@ -21,8 +21,8 @@
           <div class="service_icon postmark"><%= image_tag('postmark.png') %></div>
           <div class="desc">
             <div class="desc_header indexes">
-              <h4>Почтовые</h4>
-              <h4 class="deliv_header">индексы</h4>
+                <h4 class="postal_link indexes"><span>Почтовые</span></h4>
+                <h4 class="postal_link deliv_header"><span>индексы</span></h4>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@
           <div class="desc">
             <div class="desc_header">
               <h4>Основные</h4>
-              <h4 class="deliv_header">документы</h4>
+              <h4 class="under_link deliv_header">документы</h4>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@
   </div>
   <%= render 'news_pages/list' %>
 </div>
-    <div class="indexes_wrapper">
+    <div class="indexes_wrapper container">
       <div class="indexes_iframe_container">
         <%= link_to(image_tag("close-42928_150.png",  class: "closing_cross")) %>
         <iframe src="" name="go_indexes_iframe" class="indexes_iframe"></iframe>

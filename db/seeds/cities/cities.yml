@@ -1,4 +1,8 @@
 cities:
+  - name: МОСКВА
+    central: true
+  - name: САНКТ-ПЕТЕРБУРГ
+    central: true
   - name: Абакан (респ. Хакассия)
     central: true
   - name: Архангельск
@@ -62,8 +66,6 @@ cities:
     central: true
   - name: Мирный, Респ. Саха
     central: true
-  - name: МОСКВА
-    central: true
   - name: Мурманск
     central: true
   - name: Набережные Челны
@@ -113,8 +115,6 @@ cities:
   - name: Ростов-на-Дону
     central: true
   - name: Рязань
-    central: true
-  - name: САНКТ-ПЕТЕРБУРГ
     central: true
   - name: Самара
     central: true

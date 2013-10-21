@@ -11,14 +11,13 @@
         <div class="services_headers">
           <% if @page.children.any? %>
               <ul>
-            <% @page.children.each do |child| %>
-
-                <li class="services">
-                <%= link_to content_tag(:span, child.name), slug_path(child),
-                :class => (menu_item_state(child).to_s + 'hover-effect') %>
-                </li>
-              </ul>
-            <% end %>
+                <% @page.children.each do |child| %>
+                    <li class="services">
+                    <%= link_to content_tag(:span, child.name), slug_path(child),
+                    :class => (menu_item_state(child).to_s + 'hover-effect') %>
+                    </li>
+                <% end %>
+               </ul>
           <% else %>
             <ul>
               <% @page.parent.children.each do |child| %>
@@ -28,8 +27,8 @@
                     :class => (menu_item_state(child).to_s + 'hover-effect') %>
                   <% else %>
                     <span class="text_under"> <%= child.name %> </span>
-                 <% end %>
-                  </li>
+                  <% end %>
+                 </li>
               <% end %>
             </ul>
           <% end %>
