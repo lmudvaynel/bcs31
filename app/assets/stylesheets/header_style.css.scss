@@ -135,15 +135,22 @@
 .call_us_span {
   position: relative;
   margin-top: 10px;
-  left: 27px;
+  left: 29px;
   font-size: 14px;
   margin-left: 28px!important;
   //right: 20px;
 }
-.call_us_span.inline {
-   margin-top: 3px;
-   left: 0px;
-   font-size: 13px;
+.call_us_span_inline {
+  position: relative;
+  margin-top: 3px;
+  font-size: 14px;
+  margin-left: 10px !important;
+}
+
+@media (max-width: 768px) {
+  .call_us_span_inline {
+      margin-left: 0px!important;
+  }
 }
 .courier_span {
   color: #ffffff;
