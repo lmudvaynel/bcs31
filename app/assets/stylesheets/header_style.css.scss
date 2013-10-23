@@ -21,7 +21,7 @@
 .header_top{
     position: relative;
     //background-color: rgba(0, 0, 255, 0.38);
-    height: 78px;
+    height: 118px;
 }
 @media (max-width: 600px) {
   .header_top {
@@ -137,6 +137,7 @@
   margin-top: 10px;
   left: 27px;
   font-size: 14px;
+  margin-left: 28px!important;
   //right: 20px;
 }
 .call_us_span.inline {
@@ -162,6 +163,9 @@
    margin-left:0px;
    font-size: 13px;
    float: none ;
+}
+.buttons_line_container a:hover {
+  text-decoration: none;
 }
 .freecall {
   position: absolute;
@@ -240,7 +244,8 @@
   position: absolute;
   left: 18%;
   width: 73%;
-  z-index: 1;
+  z-index: 2000;
+  top: 39px;
 }
 .button_one {
   @include buttons5;
@@ -270,6 +275,9 @@
   }
   .button_two {
     margin-right: -195px;
+  }
+  .buttons_line_container {
+    top: -21px;
   }
 }
 @media (max-width:600px) {
