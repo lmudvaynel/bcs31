@@ -34,7 +34,7 @@ ru:
         kinsman:    родственник
     online_courier:
       transportation:
-        cash:                 Наличный расчет
+        composite:            Сборные грузы
         express_delivery:     Экспресс доставка
       payment:
         cash:                 Наличный расчет
