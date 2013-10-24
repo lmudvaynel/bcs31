@@ -4,9 +4,10 @@ class OnlineCourierMailer < ActionMailer::Base
   default from: "noreply@me31.ru"
 
   def order_of_courier(online_courier)
-    @address = online_courier.address
-    @city = online_courier.city
-    @date = online_courier.date
+    @online_courier = online_courier
+    #@address = online_courier.address
+    #@city = online_courier.city
+    #@date = online_courier.date
 
     mail :to => AdminUser.all.map(&:email),
          :subject => "Вызов курьера"

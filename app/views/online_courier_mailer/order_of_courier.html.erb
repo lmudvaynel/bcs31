@@ -1,13 +1,60 @@
 <html>
   <body>
     <div>
-      Город: <%= @city %>
+      <strong>
+      Начало временного промежутка:<%= @online_courier.time_start %>
+
+     <%= @online_courier.end %>
+     <%= @online_courier.full_name %>
+     <%= @online_courier.phone %>
+    time_end:       Конец промежутка
+    full_name:      Контактное лицо
+    phone:          Контактный телефон
+    company:        Организация отправителя
+    address:        Адрес отправителя
+    weight:         Вес(кг)
+    amount:         Количество мест
+    size:           Габариты
+    cargo_type:     Характер груза
+    city:           Город получения
+    payment:        Тип оплаты
+    payer:          Кто платит
+    payer_number:   № плательщика
+    comment:        Комментарии
+    title:          Заголовок
+    keywords:       Ключевые слова
+    description:    Описание
+    created_at:     Дата создания
+    updated_at:     Дата обновления
+
+
+    <div>
+      Тип перевозки: <%= @online_courier.transportation %>
     </div>
     <div>
-      Адрес: <%= @address %>
+      Дата исполнения заказа: <%= @online_courier.date %>
+    </div>
+    <span class="field_name time_span courier">Временной интервал забора груза</span>
+    <div>
+      Начало временного промежутка: <%= @online_courier.time_start %>
     </div>
     <div>
-      Дата заказа: <%= @date %>
+      Конец промежутка: <%= @online_courier.time_end %>
     </div>
+    <p class="field_name courier bold_courier">Информация об отправителе</p>
+    <%= @online_courier.full_name %>
+    <%= @online_courier.phone %>
+    <%= @online_courier.company %>
+    <%= @online_courier.address %>
+    <p class="field_name courier bold_courier">Информация о грузе и характере оплаты</p>
+    <%= @online_courier.weight %>
+    <%= @online_courier.amount %>
+    <%= @online_courier.size %>
+    <%= @online_courier.cargo_type %>
+    <%= @online_courier.city %>
+    <%= @online_courier.payment %>
+    <%= @online_courier.payer %>
+    <%= @online_courier.payer_number %>
+    <%= @online_courier.comment %>
   </body>
 </html>

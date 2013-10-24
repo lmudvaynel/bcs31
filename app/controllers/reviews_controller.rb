@@ -2,7 +2,7 @@
 class ReviewsController < ApplicationController
 
   def index
-    @reviews = Review.moderated
+    @reviews = Review.moderated.order("created_at DESC")
     @review = Review.new
     @page = Page.find_by_slug("reviews")
   end
