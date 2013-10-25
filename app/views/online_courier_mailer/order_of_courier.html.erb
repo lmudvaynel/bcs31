@@ -13,7 +13,7 @@
     </div>
     <div>
       Конец промежутка:
-      <%= (@online_courier.time_end == "") ? "клиент не указал" : @online_courier.time_end %>
+      <%= @online_courier.time_end.empty? ? "клиент не указал" : @online_courier.time_end %>
     </div>
     <br />
     <strong>Информация об отправителе</strong>
@@ -25,7 +25,7 @@
      </div>
     <div>
       Организация отправителя:
-      <%= (@online_courier.company == "") ? "клиент не указал" : @online_courier.company %>
+      <%= @online_courier.company.empty? ? "клиент не указал" : @online_courier.company %>
      </div>
     <div>
       Адрес отправителя: <%= @online_courier.address %>
@@ -40,7 +40,7 @@
     </div>
     <div>
       Габариты:
-      <%= (@online_courier.size == "") ? "клиент не указал" : @online_courier.size %>
+      <%= @online_courier.size.empty? ? "клиент не указал" : @online_courier.size %>
     </div>
     <div>
       Характер груза: <%= @online_courier.cargo_type %>
@@ -56,11 +56,11 @@
     </div>
     <div>
       № плательщика:
-      <%= (@online_courier.payer_number == "") ?  "клиент не указал" : @online_courier.payer_number %>
+      <%= @online_courier.payer_number.empty? ?  "клиент не указал" : @online_courier.payer_number %>
     </div>
     <div>
       Комментарии:
-      <%= (@online_courier.comment == "") ? "клиент не указал" : @online_courier.comment %>
+      <%= @online_courier.comment.empty? ? "клиент не указал" : @online_courier.comment %>
     </div>
   </body>
 </html>
