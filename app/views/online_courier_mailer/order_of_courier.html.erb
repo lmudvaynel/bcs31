@@ -1,60 +1,66 @@
 <html>
   <body>
     <div>
-      <strong>
-      Начало временного промежутка:<%= @online_courier.time_start %>
-
-     <%= @online_courier.end %>
-     <%= @online_courier.full_name %>
-     <%= @online_courier.phone %>
-    time_end:       Конец промежутка
-    full_name:      Контактное лицо
-    phone:          Контактный телефон
-    company:        Организация отправителя
-    address:        Адрес отправителя
-    weight:         Вес(кг)
-    amount:         Количество мест
-    size:           Габариты
-    cargo_type:     Характер груза
-    city:           Город получения
-    payment:        Тип оплаты
-    payer:          Кто платит
-    payer_number:   № плательщика
-    comment:        Комментарии
-    title:          Заголовок
-    keywords:       Ключевые слова
-    description:    Описание
-    created_at:     Дата создания
-    updated_at:     Дата обновления
-
-
-    <div>
-      Тип перевозки: <%= @online_courier.transportation %>
+      Тип перевозки: <%= @online_courier.transportation_text %>
     </div>
     <div>
-      Дата исполнения заказа: <%= @online_courier.date %>
+      Дата исполнения заказа: <%= @online_courier.date.strftime("%d.%m.%Y") %>
     </div>
-    <span class="field_name time_span courier">Временной интервал забора груза</span>
+    <br />
+    <strong>Временной интервал забора груза</strong>
     <div>
       Начало временного промежутка: <%= @online_courier.time_start %>
     </div>
     <div>
-      Конец промежутка: <%= @online_courier.time_end %>
+      Конец промежутка:
+      <%= (@online_courier.time_end == "") ? "клиент не указал" : @online_courier.time_end %>
     </div>
-    <p class="field_name courier bold_courier">Информация об отправителе</p>
-    <%= @online_courier.full_name %>
-    <%= @online_courier.phone %>
-    <%= @online_courier.company %>
-    <%= @online_courier.address %>
-    <p class="field_name courier bold_courier">Информация о грузе и характере оплаты</p>
-    <%= @online_courier.weight %>
-    <%= @online_courier.amount %>
-    <%= @online_courier.size %>
-    <%= @online_courier.cargo_type %>
-    <%= @online_courier.city %>
-    <%= @online_courier.payment %>
-    <%= @online_courier.payer %>
-    <%= @online_courier.payer_number %>
-    <%= @online_courier.comment %>
+    <br />
+    <strong>Информация об отправителе</strong>
+    <div>
+      Контактное лицо: <%= @online_courier.full_name %>
+    </div>
+    <div>
+      Контактный телефон: <%= @online_courier.phone %>
+     </div>
+    <div>
+      Организация отправителя:
+      <%= (@online_courier.company == "") ? "клиент не указал" : @online_courier.company %>
+     </div>
+    <div>
+      Адрес отправителя: <%= @online_courier.address %>
+    </div>
+    <br />
+    <strong>Информация о грузе и характере оплаты</strong>
+    <div>
+      Вес(кг): <%= @online_courier.weight %>
+    </div>
+    <div>
+      Количество мест: <%= @online_courier.amount %>
+    </div>
+    <div>
+      Габариты:
+      <%= (@online_courier.size == "") ? "клиент не указал" : @online_courier.size %>
+    </div>
+    <div>
+      Характер груза: <%= @online_courier.cargo_type %>
+    </div>
+    <div>
+      Город получения: <%= @online_courier.city %>
+    </div>
+    <div>
+      Тип оплаты: <%= @online_courier.payment_text %>
+    </div>
+    <div>
+      Кто платит: <%= @online_courier.payer_text %>
+    </div>
+    <div>
+      № плательщика:
+      <%= (@online_courier.payer_number == "") ?  "клиент не указал" : @online_courier.payer_number %>
+    </div>
+    <div>
+      Комментарии:
+      <%= (@online_courier.comment == "") ? "клиент не указал" : @online_courier.comment %>
+    </div>
   </body>
 </html>
