@@ -208,7 +208,7 @@ zones:
       - weight_start: 0.5
         weight_end: 1
         price_cents: 110880
-        additional_price_cents: 1512
+        additional_price_cents: 15120
         cargo_kind: goods
       - weight_start: 0
         weight_end: 0.5
@@ -217,7 +217,7 @@ zones:
       - weight_start: 0.5
         weight_end: 1
         price_cents: 110880
-        additional_price_cents: 1512
+        additional_price_cents: 15120
         cargo_kind: document
   - name: C
     provider: major_express

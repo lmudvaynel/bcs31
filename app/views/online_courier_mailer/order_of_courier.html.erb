@@ -1,13 +1,66 @@
 <html>
   <body>
     <div>
-      Город: <%= @city %>
+      Тип перевозки: <%= @online_courier.transportation_text %>
     </div>
     <div>
-      Адрес: <%= @address %>
+      Дата исполнения заказа: <%= @online_courier.date.strftime("%d.%m.%Y") %>
+    </div>
+    <br />
+    <strong>Временной интервал забора груза</strong>
+    <div>
+      Начало временного промежутка: <%= @online_courier.time_start %>
     </div>
     <div>
-      Дата заказа: <%= @date %>
+      Конец промежутка:
+      <%= @online_courier.time_end.blank? ? "клиент не указал" : @online_courier.time_end %>
+    </div>
+    <br />
+    <strong>Информация об отправителе</strong>
+    <div>
+      Контактное лицо: <%= @online_courier.full_name %>
+    </div>
+    <div>
+      Контактный телефон: <%= @online_courier.phone %>
+     </div>
+    <div>
+      Организация отправителя:
+      <%= @online_courier.company.blank? ? "клиент не указал" : @online_courier.company %>
+     </div>
+    <div>
+      Адрес отправителя: <%= @online_courier.address %>
+    </div>
+    <br />
+    <strong>Информация о грузе и характере оплаты</strong>
+    <div>
+      Вес(кг): <%= @online_courier.weight %>
+    </div>
+    <div>
+      Количество мест: <%= @online_courier.amount %>
+    </div>
+    <div>
+      Габариты:
+      <%= @online_courier.size.blank? ? "клиент не указал" : @online_courier.size %>
+    </div>
+    <div>
+      Характер груза: <%= @online_courier.cargo_type %>
+    </div>
+    <div>
+      Город получения: <%= @online_courier.city %>
+    </div>
+    <div>
+      Тип оплаты: <%= @online_courier.payment_text %>
+    </div>
+    <div>
+      Кто платит: <%= @online_courier.payer_text %>
+    </div>
+    <div>
+      № плательщика:
+      <%= @online_courier.payer_number.blank? ?  "клиент не указал" : @online_courier.payer_number %>
+    </div>
+    <div>
+      Комментарии:
+      <%= @online_courier.comment.blank? ? "клиент не указал" : @online_courier.comment %>
     </div>
   </body>
 </html>
