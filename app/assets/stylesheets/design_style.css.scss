@@ -1020,7 +1020,7 @@ div#map2 {
     height: 1178px;
     scrolling: "no";
     overflow: hidden;
-    overflow-y: visible;
+    //overflow-y: visible;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -1028,7 +1028,7 @@ div#map2 {
     z-index: 999999;
     display:none;
     @include box-shadow(grey 0px 0px 15px 1px);;
-}
+}                                                                                s
 .indexes_iframe {
     top: -139px;
     right: -568px;
