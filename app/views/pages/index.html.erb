@@ -15,7 +15,8 @@
       </a>
     </div>
     <div class="span3">
-      <a class="service_link indexes"  href="<%= slug_path('postal_codes') %>">
+      <a class="service_link indexes" href="http://индексы-россии.рф/"
+         target="go_indexes_iframe">
         <div class="service clearfix">
           <div class="service_icon postmark"><%= image_tag('postmark.png') %></div>
           <div class="desc">
@@ -63,4 +64,9 @@
   </div>
   <%= render 'news_pages/list' %>
 </div>
-
+    <div class="indexes_wrapper container">
+      <div class="indexes_iframe_container">
+        <%= link_to(image_tag("close-42928_150.png",  class: "closing_cross")) %>
+        <iframe src="" name="go_indexes_iframe" class="indexes_iframe"></iframe>
+      </div>
+    </div>

@@ -1013,36 +1013,37 @@ div#map2 {
 
 }
 .indexes_iframe_container{
+    //position: absolute;
     position: relative;
-    margin-top: 0px;
-    width: 1024px;
-    height: 1690px;
+    margin-top: -1361px;
+    width: 879px;
+    height: 1178px;
     scrolling: "no";
-    overflow-x: hidden;
+    overflow: hidden;
+    overflow-y: visible;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border: none;
     z-index: 999999;
-    display:block;
-    //@include box-shadow(grey 0px 0px 15px 1px);;
+    display:none;
+    @include box-shadow(grey 0px 0px 15px 1px);;
 }
 .indexes_iframe {
-    //top: -139px;
-    //right: -568px;
-    //margin-left: 1000px;
-    //position: absolute;
-    width: 1024px;
-    height: 100%;
+    top: -139px;
+    right: -568px;
+    margin-left: 1000px;
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    scrolling: "no";
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
-    //scrolling: "no";
-    //overflow: hidden;
-    //margin-left: auto;
-    //margin-right: auto;
-    //border: none;
-    //z-index: 9999;
-    //display:none;
-    //@include box-shadow(grey 0px 0px 15px 1px);
+    z-index: 9999;
+    display:none;
+    @include box-shadow(grey 0px 0px 15px 1px);
 }
 
 #tracking_iframe_div {
