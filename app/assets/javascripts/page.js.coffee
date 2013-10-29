@@ -26,3 +26,9 @@ $(document).ready ->
     $(".dropdown-menu").css "display", "block"
   $(".dropdown-menu").parent().bind 'mouseleave', (event) ->
     $(".dropdown-menu").css "display", "none"
+
+  $("form").submit ->
+    if $("#delivery_weight").val().length is 0
+      alert "Введите вес посылки"
+      return false
+    return
