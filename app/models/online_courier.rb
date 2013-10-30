@@ -11,7 +11,7 @@ class OnlineCourier < ActiveRecord::Base
   validates :time_start, presence: true, length: { maximum: 5 }
   validates :time_end, length: {maximum: 5}, :allow_blank => true
 
-  enumerize :transportation, in: [:composite, :express_delivery]
+  enumerize :transportation, in: [:express_delivery, :composite]
   enumerize :payment, in: [:cash, :cashless]
   enumerize :payer, in: [:sender, :recipient, :dark_side]
 end

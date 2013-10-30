@@ -1014,11 +1014,12 @@ div#map2 {
 }
 .indexes_iframe_container{
     position: relative;
-    margin-top: -949px;
+    margin-top: -1361px;
     width: 866px;
     height: 1178px;
     scrolling: "no";
     overflow: hidden;
+    overflow-y: visible;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -1032,7 +1033,7 @@ div#map2 {
     right: -568px;
     margin-left: 1000px;
     position: absolute;
-    width: 2000px;
+    width: 1982px;
     height: 2000px;
     scrolling: "no";
     overflow: hidden;
@@ -1075,4 +1076,10 @@ div#map2 {
   right: 7px;
   z-index: 10000;
   display: none;
+}
+
+
+yandex_metrics_display {
+  position: relative;
+  margin-left: -117;
 }
