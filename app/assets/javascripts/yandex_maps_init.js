@@ -68,6 +68,9 @@ function init() {
         // Опция: не показываем кнопку закрытия.
         closeButton: true
     });
+    MyMaps.Events.observe(map,map.Events.Click, function () {
+        alert("Щелк!");
+    });
 
 
     // Добавление метки на карту
@@ -93,8 +96,6 @@ function init() {
         .add(new ymaps.control.MiniMap({
             type: 'yandex#publicMap'
         }));
-
-
 
 }
     function init2() {
@@ -147,7 +148,11 @@ function init() {
         // Стиль обводки.
         strokeStyle: 'shortdash'
     });
-
+        // Открываем балун на карте (без привязки к геообъекту).
+        myMap.balloon.open([51.307, 37.868885], 'Старый Оскол, ул Прядченко, д.118 оф 34', {
+            // Опция: не показываем кнопку закрытия.
+            closeButton: true
+        });
 
     // Добавляем многоугольник на карту.
     myMap.geoObjects.add(myGeoObject);
@@ -159,11 +164,6 @@ function init() {
                 balloonContent: 'Старый Оскол, ул Прядченко, д.118 оф 34'
             }
         );
-        // Открываем балун на карте (без привязки к геообъекту).
-        myMap.balloon.open([51.307, 37.868885], 'Старый Оскол, ул Прядченко, д.118 оф 34', {
-            // Опция: не показываем кнопку закрытия.
-            closeButton: true
-        });
 
         // Добавление метки на карту
         myMap.geoObjects.add(myPlacemark);
