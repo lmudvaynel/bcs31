@@ -966,18 +966,14 @@ div#map2 {
   color: red;
 }
 ////////////////tracking iframe////////////////////////
-
 #tracking_iframe_div {
-  width    : 530px;
+  width    : 540px;
   height   : 400px;
   overflow : hidden;
   position : relative;
   margin-left: auto;
   margin-right: auto;
 }
-
-
-
 #tracking_iframe {
   position : absolute;
   width    : 1280px;
@@ -987,7 +983,7 @@ div#map2 {
   top      : -116px;
 }
 
-///////////////////////////////////////////////////////////////////
+////////////////////////// POSTAL CODES IFRAME
 .iframe_container_callus {
   top: 150px;
   margin: 0 auto;
@@ -1010,12 +1006,11 @@ div#map2 {
   display:none;
   @include box-shadow(grey 0px 0px 15px 1px);
 
-
 }
 .indexes_iframe_container{
     position: relative;
-    margin-top: -1361px;
-    width: 866px;
+    margin-top: -1360px;
+    width: 880px;
     height: 1178px;
     scrolling: "no";
     overflow: hidden;
@@ -1028,14 +1023,10 @@ div#map2 {
     display:none;
     @include box-shadow(grey 0px 0px 15px 1px);;
 }
-.indexes_iframe {
+#indexes_iframe {
     top: -139px;
-    right: -568px;
-    margin-left: 1000px;
     position: absolute;
-    width: 1982px;
-    height: 2000px;
-    scrolling: "no";
+    width: 958px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -1044,17 +1035,6 @@ div#map2 {
     display:none;
     @include box-shadow(grey 0px 0px 15px 1px);
 }
-
-#tracking_iframe_div {
-  width    : 530px;
-  height   : 400px;
-  overflow : hidden;
-  position : relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
 
 #indexes_iframe_container iframe {
   position : absolute;
@@ -1066,9 +1046,6 @@ div#map2 {
 }
 
 
-
-
-
 .closing_cross {
   position: absolute;
   width: 27px;
@@ -1077,7 +1054,6 @@ div#map2 {
   z-index: 10000;
   display: none;
 }
-
 
 yandex_metrics_display {
   position: relative;
