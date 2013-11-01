@@ -24,4 +24,5 @@
  *= require online_requests
  *= require_tree .
  *= require bootstrap
+ *= require pace/themes/pace-theme-barber-shop
  */

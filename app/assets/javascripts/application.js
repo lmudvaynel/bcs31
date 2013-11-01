@@ -25,5 +25,6 @@
 //= require rails.validations
 //= require page
 //= require yandex_maps_init
+//= require insertionQ/insQ
 //= require_tree .
 

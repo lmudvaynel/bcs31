@@ -987,7 +987,7 @@ div#map2 {
   top      : -116px;
 }
 
-///////////////////////////////////////////////////////////////////
+////////////////////////// POSTAL CODES IFRAME
 .iframe_container_callus {
   top: 150px;
   margin: 0 auto;
@@ -1010,12 +1010,11 @@ div#map2 {
   display:none;
   @include box-shadow(grey 0px 0px 15px 1px);
 
-
 }
 .indexes_iframe_container{
     position: relative;
-    margin-top: -1361px;
-    width: 866px;
+    margin-top: -1360px;
+    width: 880px;
     height: 1178px;
     scrolling: "no";
     overflow: hidden;
@@ -1028,14 +1027,10 @@ div#map2 {
     display:none;
     @include box-shadow(grey 0px 0px 15px 1px);;
 }
-.indexes_iframe {
+#indexes_iframe {
     top: -139px;
-    right: -568px;
-    margin-left: 1000px;
     position: absolute;
-    width: 1982px;
-    height: 2000px;
-    scrolling: "no";
+    width: 958px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -1066,9 +1061,6 @@ div#map2 {
 }
 
 
-
-
-
 .closing_cross {
   position: absolute;
   width: 27px;
@@ -1077,6 +1069,22 @@ div#map2 {
   z-index: 10000;
   display: none;
 }
+
+//#progressBar {
+//  width: 400px;
+//  height: 22px;
+//  border: 1px solid #111;
+//  background-color: #292929;
+//}
+//
+//#progressBar div {
+//  height: 100%;
+//  color: #fff;
+//  text-align: right;
+//  line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+//  width: 0;
+//  background-color: #0099ff;
+//}
 
 
 yandex_metrics_display {
