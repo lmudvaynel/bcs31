@@ -966,18 +966,14 @@ div#map2 {
   color: red;
 }
 ////////////////tracking iframe////////////////////////
-
 #tracking_iframe_div {
-  width    : 530px;
+  width    : 540px;
   height   : 400px;
   overflow : hidden;
   position : relative;
   margin-left: auto;
   margin-right: auto;
 }
-
-
-
 #tracking_iframe {
   position : absolute;
   width    : 1280px;
@@ -1040,17 +1036,6 @@ div#map2 {
     @include box-shadow(grey 0px 0px 15px 1px);
 }
 
-#tracking_iframe_div {
-  width    : 530px;
-  height   : 400px;
-  overflow : hidden;
-  position : relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-
 #indexes_iframe_container iframe {
   position : absolute;
   width    : 1280px;
@@ -1069,23 +1054,6 @@ div#map2 {
   z-index: 10000;
   display: none;
 }
-
-//#progressBar {
-//  width: 400px;
-//  height: 22px;
-//  border: 1px solid #111;
-//  background-color: #292929;
-//}
-//
-//#progressBar div {
-//  height: 100%;
-//  color: #fff;
-//  text-align: right;
-//  line-height: 22px; /* same as #progressBar height if we want text middle aligned */
-//  width: 0;
-//  background-color: #0099ff;
-//}
-
 
 yandex_metrics_display {
   position: relative;
