@@ -10,14 +10,17 @@
     <p class="footer_contact_paragraph">тел: +7(4725) 41-54-54
     <div class="footer_contact_images_container">
       <a class="footer_facebook" href="#">
-        <%= image_tag ("facebook_truck.png"),class: "contact_image" , alt: "" %>
+        <%= link_to image_tag("facebook_truck.png", class: "contact_image" , alt: ""),
+                    "https://www.facebook.com/pages/Major-Express/512701895437742?fref=ts"  %>
       </a>
       <a class="footer_vk" href="#">
-        <%= image_tag ("vk_truck.png"), class: "contact_image" , alt: "" %>
+        <%= link_to image_tag("vk_truck.png", class: "contact_image" , alt: ""), "http://vk.com/club48370166"  %>
       </a>
       <a class="footer_odniklass" href="#">
-        <%= image_tag ("odnoklass_truck.png"), class: "contact_image" , alt: "" %>
+        <%= link_to image_tag("odnoklass_truck.png", class: "contact_image" , alt: ""),
+              "http://www.odnoklassniki.ru/group/52771321938153?st.cmd=altGroupMain&st.groupId=onfmwgpdsqkdlgiaww0raojphdlssjudoacyw&st._aid=UserGroups_MiniList_GroupPic1page" %>
       </a>
     </div>
   </div>
+
 </div>

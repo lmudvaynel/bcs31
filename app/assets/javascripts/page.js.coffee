@@ -9,7 +9,7 @@ $(document).ready ->
   $(".menu_item").bind 'mouseleave', (event) ->
     $links = $(this).find('.nested_links')
     $links.addClass('hidden')
-
+#//////////review form//////////
   $("#show_new_review_form").bind "click", (event) ->
     event.preventDefault()
     if !$("#new_review_form_wrapper").is(":visible")
@@ -21,14 +21,18 @@ $(document).ready ->
 
   if !$("#new_review_form_wrapper .field_with_errors").length > 0 and !$("#new_review_form_wrapper .form_error").length > 0
     $("#new_review_form_wrapper").hide()
-    
+#/////////////////menu////////////////
   $(".dropdown-toggle").bind 'mouseenter', (event) ->
-    $(".dropdown-menu").css "display", "block"
-  $(".dropdown-menu").parent().bind 'mouseleave', (event) ->
-    $(".dropdown-menu").css "display", "none"
+    $(this).next().css "display", "block"
+
+  $("ul.nav.top-2>li").bind 'mouseleave', (event) ->
+    $(this).children('ul').css "display", "none"
+
 
   $("form").submit ->
     if $("#delivery_weight").val().length is 0
       alert "Введите вес посылки"
       return false
     return
+
+#//////////////progressbar/////////

@@ -42,7 +42,7 @@
       </a>
     </div>
     <div class="span3">
-      <a class="service_link" href="<%= slug_path('invoices') %>">
+      <a class="service_link tracking" href="http://www.major-express.ru/trace.asp" target="go_tracking_iframe">
         <div class="service clearfix">
           <div class="service_icon zoomer"><%= image_tag('zoom.png') %></div>
           <div class="desc">
@@ -66,7 +66,18 @@
 </div>
     <div class="indexes_wrapper container">
       <div class="indexes_iframe_container">
-        <%= link_to(image_tag("close-42928_150.png",  class: "closing_cross")) %>
-        <iframe src="" name="go_indexes_iframe" class="indexes_iframe"></iframe>
+        <%= link_to(image_tag("close-42928_150.png",  class: "closing_cross indexes")) %>
+        <iframe src="" name="go_indexes_iframe" id="indexes_iframe" style="overflow: scroll;"></iframe>
       </div>
     </div>
+    <div class="tracking_wrapper container">
+      <div class="tracking_iframe_container" style="overflow-y: scroll;">
+        <%= link_to(image_tag("close-42928_150.png",  class: "closing_cross tracking")) %>
+        <iframe src="" name="go_tracking_iframe" id="tracking_iframe" style="overflow:scroll;
+          clip:
+          rect(0px,
+          1270px, 850px, 0px) "  ></iframe>
+      </div>
+    </div>
+<!--style="position: absolute;-->
+<!--clip: rect(0px, 1000px, 850px, 0px);">-->

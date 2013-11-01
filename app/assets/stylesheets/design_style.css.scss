@@ -965,20 +965,84 @@ div#map2 {
 .form_error {
   color: red;
 }
-////////////////tracking iframe////////////////////////
+//////////////////tracking iframe////////////////////////
+////#tracking_iframe_div {
+////  width    : 540px;
+////  height   : 400px;
+////  overflow : hidden;
+////  position : relative;
+////  margin-left: auto;
+////  margin-right: auto;
+////}
+////#tracking_iframe {
+////  position : absolute;
+////  width    : 1280px;
+////  height   : 1280px;
+////  border   : none;
+////  left     : -332px;
+////  top      : -116px;
+////}
+//.tracking_iframe container{
+//  background-color: red;
+//  position: relative;
+//  //margin-top: -1360px;
+//  width: 880px;
+//  height: 1178px;
+//  //scrolling: "no";
+//  overflow: hidden;
+//  overflow-y: visible;
+//  display: block;
+//  margin-left: auto;
+//  margin-right: auto;
+//  border: none;
+//  z-index: 999999;
+//  //display:none;
+//  @include box-shadow(grey 0px 0px 15px 1px);;
+//}
+/////////////////////////////////////////  warning
+//.tracking_wrapper.container{
+//  position: absolute;
+//  top: 10px;
+//  background-color: red;
+//  margin-left: auto;
+//  margin-right: auto;
+//  width: 500px;
+//  height: 500px;
 
-#tracking_iframe_div {
-  width    : 530px;
-  height   : 400px;
-  overflow : hidden;
-  position : relative;
-  margin-left: auto;
-  margin-right: auto;
-}
+//}
+//#indexes_iframe {
+//  top: -139px;
+//  position: absolute;
+//  width: 958px;
+//  overflow: hidden;
+//  margin-left: auto;
+//  margin-right: auto;
+//  border: none;
+//  z-index: 9999;
+//  display:none;
+//  @include box-shadow(grey 0px 0px 15px 1px);
+//}
+//
+//.tracking_iframe_container{
+//  background-color: red;
+//  position: relative;
+//  margin-top: -1360px;
+//  width: 880px;
+//  height: 1178px;
+//  scrolling: "no";
+//  overflow: hidden;
+//  overflow-y: visible;
+//  display: block;
+//  margin-left: auto;
+//  margin-right: auto;
+//  border: none;
+//  z-index: 999999;
+//  //display:none;
+//  @include box-shadow(grey 0px 0px 15px 1px);;
+//}
 
 
-
-#tracking_iframe {
+#indexes_iframe_container iframe {
   position : absolute;
   width    : 1280px;
   height   : 1280px;
@@ -987,7 +1051,18 @@ div#map2 {
   top      : -116px;
 }
 
-///////////////////////////////////////////////////////////////////
+
+.closing_cross {
+  position: absolute;
+  width: 27px;
+  top: 7px;
+  right: 7px;
+  z-index: 10000;
+  display: none;
+}
+//////////////////////////////////////
+
+////////////////////////// POSTAL CODES IFRAME
 .iframe_container_callus {
   top: 150px;
   margin: 0 auto;
@@ -1010,15 +1085,19 @@ div#map2 {
   display:none;
   @include box-shadow(grey 0px 0px 15px 1px);
 
-
+}
+///////////////postal code popup//////////////////
+.tracking_wrapper.container {
+  marging-top: 14px;
 }
 .indexes_iframe_container{
     position: relative;
-    margin-top: -949px;
-    width: 866px;
+    margin-top: -1360px;
+    width: 880px;
     height: 1178px;
     scrolling: "no";
     overflow: hidden;
+    overflow-y: visible;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -1027,14 +1106,10 @@ div#map2 {
     display:none;
     @include box-shadow(grey 0px 0px 15px 1px);;
 }
-.indexes_iframe {
+#indexes_iframe {
     top: -139px;
-    right: -568px;
-    margin-left: 1000px;
     position: absolute;
-    width: 2000px;
-    height: 2000px;
-    scrolling: "no";
+    width: 958px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -1043,17 +1118,6 @@ div#map2 {
     display:none;
     @include box-shadow(grey 0px 0px 15px 1px);
 }
-
-#tracking_iframe_div {
-  width    : 530px;
-  height   : 400px;
-  overflow : hidden;
-  position : relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
 
 #indexes_iframe_container iframe {
   position : absolute;
@@ -1065,7 +1129,53 @@ div#map2 {
 }
 
 
+.closing_cross {
+  position: absolute;
+  width: 27px;
+  top: 7px;
+  right: 7px;
+  z-index: 10000;
+  display: none;
+}
+//////////////////tracking//////////////
+.tracking_iframe_container{
+  position: relative;
+  margin-top: -1350px;
+  width: 545px;
+  height: 1178px;
+  scrolling: "no";
+  overflow: hidden;
+  overflow-y: visible;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  z-index: 999999;
+  display:none;
+  @include box-shadow(grey 0px 0px 15px 1px);;
+}
+#tracking_iframe {
+  left:-723px;
+  top: -69px;
+  position: absolute;
+  width: 2085px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  z-index: 9999;
+  display:none;
+  @include box-shadow(grey 0px 0px 15px 1px);
+}
 
+//.tracking_iframe_container iframe {
+//  position : absolute;
+//  width    : 1280px;
+//  height   : 1280px;
+//  border   : none;
+//  left     : -332px;
+//  top      : -116px;
+//}
 
 
 .closing_cross {
@@ -1075,4 +1185,11 @@ div#map2 {
   right: 7px;
   z-index: 10000;
   display: none;
+}
+
+
+///////////////////////////////////////
+yandex_metrics_display {
+  position: relative;
+  margin-left: -117;
 }
