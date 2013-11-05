@@ -1,6 +1,6 @@
 $(window).load(function() {
     var v_port;
-    alert('ready');
+//    alert('ready');
      //////////////////  callus ifra,e
     $(".button_call_us.redish, .call_us_span").on('click', function(){
         $('.iframe_container_callus').css("display" , "block");
