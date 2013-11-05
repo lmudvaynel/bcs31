@@ -50,7 +50,11 @@
           <%= f.label "Комментарий", class: "field_name courier" %>
           <%= f.text_area :comment, class: "text_field courier courier_comment" %>
         </div>
-      </div>
+      </div> 
+    <div class="courier_field_container">
+      <%= recaptcha_tags %>
+      <%= errors_for(@online_courier, :base) %>
+    </div>
       <div class="clear_courier"></div>
         <%= f.submit 'Отправить', class: 'feedback-btn submit_button orange'%>
     </div>
