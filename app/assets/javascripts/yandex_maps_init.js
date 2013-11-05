@@ -68,10 +68,6 @@ function init() {
         // Опция: не показываем кнопку закрытия.
         closeButton: true
     });
-    MyMaps.Events.observe(map,map.Events.Click, function () {
-        alert("Щелк!");
-    });
-
 
     // Добавление метки на карту
     myMap.geoObjects.add(myPlacemark);

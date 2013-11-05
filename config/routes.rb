@@ -33,4 +33,6 @@ Bcs31::Application.routes.draw do
   get 'reviews' => 'reviews#index'
   get ':slug' => 'pages#show', :as => :slug
   resources :pages
+
+  match '*path' => redirect('/')
 end

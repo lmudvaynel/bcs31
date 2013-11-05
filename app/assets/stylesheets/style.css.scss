@@ -158,9 +158,19 @@ h1 i, h2 i, h3 i, h4 i, h5 i {
 .service .desc h4 {
 	line-height:25px;
     font-family:Verdana,Geneva,Kalimati,sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     color: #666;
 }
+@media (min-width: 1200px) {
+    .service .desc h4  {
+      font-size: 24px;
+    }
+}
+.desc_header {
+  margin-right: 1px;
+  //background-color: rgba(255, 0, 0, 0.29);
+}
+
 h4.deliv_header {
     line-height: 10px!important;
 }
