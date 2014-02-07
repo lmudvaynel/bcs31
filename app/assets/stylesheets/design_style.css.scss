@@ -441,6 +441,8 @@ h4.indexes_margin {
 
 li.services {
   list-style-type: none;
+  margin-right: 5px;
+  line-height: 0px;
 }
 .flash_notice {
   font-family:Verdana,Geneva,Kalimati,sans-serif;
@@ -472,8 +474,28 @@ li.services {
 .services_headers a {
   text-decoration: none;
 }
+.services_headers ul {
+  margin: 0px 30px 10px 0px;
+  border-right: 2px solid #e67e22;
+}
+.services a {
+  padding: 6px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+li.services{
+  border: 1px solid #fff;
+}
+li.services:hover {
+  border: 1px solid #e67e22;
+  box-shadow: 0 0 20px #ddd;
+}
+
 .text_under {
-  border-bottom: 2px solid #e67e22;
+  color: #e67e22;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-left: 6px;
 }
 .clear_div {
   clear: both;
@@ -1089,8 +1111,11 @@ div#map2 {
 
 }
 ///////////////postal code popup//////////////////
-.tracking_wrapper.container {
-  marging-top: 14px;
+.tracking_wrapper {
+  margin-top: 100px;
+}
+.indexes_wrapper {
+  margin-top: 100px;
 }
 .indexes_iframe_container{
     position: relative;
