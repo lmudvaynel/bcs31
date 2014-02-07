@@ -1,0 +1,11 @@
+<%= semantic_form_for [:admin, resource] do |f| %>
+  <%= f.inputs "Основное" do %>
+    <%= f.input :zone_id, as: :select,
+                collection: Hash[Zone.all.map{|page| ["#{page.name}-#{page.provider}", page.id]}] %>
+    <%= f.input :weight_start %>
+    <%= f.input :weight_end %>
+    <%= f.input :price_cents %>
+    <%= f.input :additional_price_cents %>
+  <% end %>
+  <%= f.actions %>
+<% end %>
