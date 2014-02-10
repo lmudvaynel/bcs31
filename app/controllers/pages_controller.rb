@@ -13,9 +13,8 @@ class PagesController < ApplicationController
       city_from = City.find(delivery[:city_from_id])
       city_to = City.find(delivery[:city_to_id])
       weight = delivery[:weight].gsub(',','.').to_f
-      cargo_kind = delivery[:cargo_kind]
       pay_in_affiliate = delivery[:pay_in_affiliate]
-      price_cents = city_from.delivery_price_to(city_to, weight, cargo_kind, pay_in_affiliate)
+      price_cents = city_from.delivery_price_to(city_to, weight, pay_in_affiliate)
       { delivery_price: price_cents.to_f / 100 }
     else
       {}
