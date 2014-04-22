@@ -1168,7 +1168,7 @@ div#map2 {
 .tracking_iframe_container{
   position: relative;
   margin-top: -1355px;
-  width: 545px;
+  width: 940px;
   height: 1178px;
   scrolling: "no";
   overflow: hidden;
@@ -1184,8 +1184,8 @@ div#map2 {
 }
 #tracking_iframe {
   height: 2000px;
-  left:-731px;
-  top: -69px;
+  left:-565px;
+  top: -169px;
   position: absolute;
   width: 2085px;
   overflow: hidden;
@@ -1194,7 +1194,7 @@ div#map2 {
   border: none;
   z-index: 9999;
   display:none;
-  clip:rect(0px,1280px, 767px, 0px);
+  clip:rect(0px,1500px, 760px, 0px);
   @include box-shadow(grey 0px 0px 15px 1px);
 }
 
