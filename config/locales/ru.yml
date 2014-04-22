@@ -103,6 +103,13 @@ ru:
         few:    Накладных
         many:   Накладных
         other:  Накладные
+      tariff:
+        zero: Тарифов
+        one: Тариф
+        few: Тарифов
+        many: Тарифов
+        other: Тарифы
+
     attributes:
       admin_user:
         id: Номер
@@ -210,3 +217,12 @@ ru:
         delivered_at:       Дата доставки
         created_at:         Дата создания
         updated_at:         Дата обновления
+      tariff:
+        id:             Номер
+        zone_id:        Зона
+        weight_start:   Минимальный вес
+        weight_end:     Максимальный вес
+        price_cents:    Цена за первый КГ
+        additional_price_cents: Цена за дальнейшие КГ
+        created_at:     Дата создания
+        updated_at:     Дата обновления
