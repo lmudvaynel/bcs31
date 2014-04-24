@@ -1156,11 +1156,11 @@ div#map2 {
 }
 
 
-.closing_cross {
+.closing_cross-t {
   position: absolute;
-  width: 27px;
-  top: 7px;
-  right: 7px;
+  width: 68px;
+  top: 0;
+  right: 0;
   z-index: 10000;
   display: none;
 }
@@ -1169,7 +1169,7 @@ div#map2 {
   position: relative;
   margin-top: -1355px;
   width: 940px;
-  height: 1178px;
+  height: 50%;
   scrolling: "no";
   overflow: hidden;
   overflow-y: scroll;
@@ -1194,7 +1194,7 @@ div#map2 {
   border: none;
   z-index: 9999;
   display:none;
-  clip:rect(0px,1500px, 760px, 0px);
+  clip:rect(0px,11500px, 2100px, 0px);
   @include box-shadow(grey 0px 0px 15px 1px);
 }
 

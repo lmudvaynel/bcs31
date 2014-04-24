@@ -33,16 +33,15 @@ $(window).load(function() {
     $("a.service_link.tracking").on('click', function(){
         v_port = $(window).height();
         console.log("hit");
-        $('.tracking_iframe_container').css({'height': v_port - 250 + "px", 'display': 'block'});
-        $('#tracking_iframe').css({'height': v_port + 0 + "px", 'display': 'block'});
+        $('.tracking_iframe_container').css({'height': v_port / 2, 'display': 'block'});
+        $('#tracking_iframe').css({'height': v_port / 1.2, 'display': 'block'});
 //        $('#indexes_iframe').css("display" , "block");
-        $('.closing_cross').css("display" , "block");
-//        console.log(v_port);
+        $('.closing_cross-t').css("display" , "block");
     });
-    $('.closing_cross.tracking').on('click', function(evt){
+    $('.closing_cross-t.tracking').on('click', function(evt){
         evt.preventDefault();
         $('#tracking_iframe').css("display" , "none");
-        $('.closing_cross').css("display" , "none");
+        $('.closing_cross-t').css("display" , "none");
         $('.tracking_iframe_container').css("display" , "none");
     });
 
