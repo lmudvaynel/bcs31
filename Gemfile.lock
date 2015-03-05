@@ -166,7 +166,7 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     colored (1.2)
-    columnize (0.3.6)
+    columnize (0.9.0)
     compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
@@ -194,12 +194,10 @@ GEM
     daemons (1.1.9)
     database_cleaner (1.1.1)
     debug_inspector (0.0.2)
-    debugger (1.6.1)
+    debugger-linecache (1.2.0)
+    debugger2 (1.0.0.beta2)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.2.0)
-      debugger-ruby_core_source (~> 1.2.3)
-    debugger-linecache (1.2.0)
-    debugger-ruby_core_source (1.2.3)
     devise (3.0.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -476,7 +474,7 @@ DEPENDENCIES
   cucumber-websteps
   cucumber_factory
   database_cleaner
-  debugger
+  debugger2
   eco
   email_spec
   email_validator
