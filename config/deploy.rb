@@ -34,7 +34,7 @@ after 'deploy:restart', 'unicorn:restart','delayed_job:restart'  # app preloaded
 after 'deploy:restart', 'nginx:update_site_config'
 after 'nginx:update_site_config', 'nginx:reload'
 
-after 'deploy:restart', 'deploy:cleanup','delayed_job:restart' #remove old releases
+after 'deploy:restart', 'deploy:cleanup' #remove old releases
 
 require 'rvm/capistrano'
 require 'capistrano-unicorn'
