@@ -10,7 +10,7 @@ require 'capistrano/ext/multistage'
 set :application, "bcstest" #write app name there
 
 set :scm, :git
-set :repository,  "git@github.com:lmudvaynel/bcstest.git" #place your repo there
+set :repository,  "git@github.com:lmudvaynel/bcs31.git" #place your repo there
 
 set :deploy_via, :remote_cache
 
