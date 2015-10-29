@@ -4,6 +4,7 @@ require 'bundler/capistrano'
 require 'capistrano-helpers/privates'
 require "delayed/recipes"  
 
+set :rails_env, "production" #added for delayed job  
 set :stages, %w(production staging)
 set :default_stage, "staging"
 require 'capistrano/ext/multistage'
