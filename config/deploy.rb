@@ -7,14 +7,14 @@ set :stages, %w(production staging)
 set :default_stage, "staging"
 require 'capistrano/ext/multistage'
 
-set :application, "bcs31" #write app name there
+set :application, "bcstest" #write app name there
 
 set :scm, :git
-set :repository,  "git@github.com:balticit/bcs31.git" #place your repo there
+set :repository,  "git@github.com:lmudvaynel/bcstest.git" #place your repo there
 
 set :deploy_via, :remote_cache
 
-set :user, "rvm_user"
+set :user, "root"
 set :use_sudo, false
 
 set :rvm_type, :system 

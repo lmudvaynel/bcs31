@@ -87,10 +87,4 @@ group :development do
   gem 'rails_best_practices', github: 'railsbp/rails_best_practices', require: false
 end
 
-group :development, :test do
-  gem 'debugger2'
-  gem 'rspec-rails'
-  gem 'cucumber-rails', :require => false
-end
-
 gem 'rename' # For rename project with one comand "rails g rename:app_to New-Name"
