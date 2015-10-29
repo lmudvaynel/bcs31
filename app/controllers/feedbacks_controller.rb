@@ -5,7 +5,7 @@ class FeedbacksController < ApplicationController
       @feedback = Feedback.new(params[:feedback])
       if @feedback.save
         AdminUser.all.each do |user|
-          FeedbackMailer.feedback_email(user.email, @feedback).deliver
+          FeedbackMailer.delay.feedback_email(user.email, @feedback)
         end
         render json: {}, status: :ok
       else
