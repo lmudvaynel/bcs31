@@ -456,6 +456,7 @@ DEPENDENCIES
   cucumber
   cucumber-websteps
   cucumber_factory
+  daemons
   database_cleaner
   delayed_job_active_record
   eco
