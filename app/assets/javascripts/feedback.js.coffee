@@ -13,6 +13,8 @@ jQuery ->
   $('form#new_feedback').on 'ajax:success', ->
     noty 
       text: 'Ваше сообщение успешно отправлено'
+    $('#feedback_email').val('')
+    $('#feedback_message').val('')
   $('form#new_feedback').on 'ajax:error', ->
     noty
       text: 'Произошла ошибка'
