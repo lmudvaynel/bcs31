@@ -2,6 +2,7 @@ require 'bundler/capistrano'
 #require 'capistrano-helpers/migrations'
 #require 'capistrano-helpers/shared'
 require 'capistrano-helpers/privates'
+require "delayed/recipes"  
 
 set :stages, %w(production staging)
 set :default_stage, "staging"
@@ -27,12 +28,12 @@ set :base_directory, '/var/www/apps'
 before 'deploy:setup', 'rvm:install_rvm'
 before 'deploy:setup', 'rvm:install_ruby'
 
-after 'deploy:restart', 'unicorn:restart'  # app preloaded
+after 'deploy:restart', 'unicorn:restart','delayed_job:restart'  # app preloaded
 
 after 'deploy:restart', 'nginx:update_site_config'
 after 'nginx:update_site_config', 'nginx:reload'
 
-after 'deploy:restart', 'deploy:cleanup' #remove old releases
+after 'deploy:restart', 'deploy:cleanup','delayed_job:restart' #remove old releases
 
 require 'rvm/capistrano'
 require 'capistrano-unicorn'
