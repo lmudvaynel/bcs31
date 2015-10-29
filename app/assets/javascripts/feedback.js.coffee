@@ -11,7 +11,8 @@ jQuery ->
         type: 'error'
       return false
   $('form#new_feedback').on 'ajax:success', ->
-    noty text: 'Ваше сообщение успешно отправлено'
+    noty 
+      text: 'Ваше сообщение успешно отправлено'
   $('form#new_feedback').on 'ajax:error', ->
     noty
       text: 'Произошла ошибка'
