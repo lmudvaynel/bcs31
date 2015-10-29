@@ -5,6 +5,7 @@ gem 'rails', '3.2.13'
 gem 'mysql2'
 
 gem 'delayed_job_active_record'
+gem 'daemons'
 
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'carrierwave'
