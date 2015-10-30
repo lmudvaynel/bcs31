@@ -9,17 +9,12 @@
     3-й этаж</p>
     <p class="footer_contact_paragraph">тел: +7(4725) 41-54-54
     <div class="footer_contact_images_container">
-      <a class="footer_facebook" href="#">
-        <%= link_to image_tag("facebook_truck.png", class: "contact_image" , alt: ""),
-                    "https://www.facebook.com/pages/Major-Express/512701895437742?fref=ts"  %>
-      </a>
-      <a class="footer_vk" href="#">
-        <%= link_to image_tag("vk_truck.png", class: "contact_image" , alt: ""), "http://vk.com/club48370166"  %>
-      </a>
-      <a class="footer_odniklass" href="#">
-        <%= link_to image_tag("odnoklass_truck.png", class: "contact_image" , alt: ""),
-              "http://www.odnoklassniki.ru/group/52771321938153?st.cmd=altGroupMain&st.groupId=onfmwgpdsqkdlgiaww0raojphdlssjudoacyw&st._aid=UserGroups_MiniList_GroupPic1page" %>
-      </a>
+      <% SocialNetwork.visible.each do |soc_net| %>
+        <a class="footer_<%=soc_net.name.downcase  %>" href="#">
+          <%= link_to image_tag("#{soc_net.logo}", class: "contact_image" , alt: ""),
+                      "#{soc_net.url}", target:"_blank" %>
+        </a>
+      <% end %>
     </div>
   </div>
 

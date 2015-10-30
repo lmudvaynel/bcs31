@@ -1,0 +1,13 @@
+<% layouts = Dir.entries(Rails.root.join("app", "views", "layouts")).keep_if { |i| i =~ /.html.erb$/ }.each{|i| i.slice! ".html.erb"} %>
+<%= semantic_form_for [:admin, resource] do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :name %>
+    <%= f.input :url %>
+    <%= f.input :logo %>
+    <%= f.input :hidden, label: 'Скрыть соц сеть?' %>
+
+    <%= image_tag resource.logo.url if resource.logo.url.present? %>
+  <% end %>
+
+  <%= f.actions %>
+<% end %>

@@ -65,6 +65,12 @@ ru:
         few:   Страницы
         many:  Страниц
         other: Страницы
+      social_network:
+        zero:  Социальных сетей
+        one:   Социальная сеть
+        few:   Социальных сетей
+        many:  Социальных сетей
+        other: Социльные сети
       news_page:
         zero:  Новостей
         one:   Новость
@@ -206,6 +212,12 @@ ru:
         phone:        Телефон
         job:          Должность
         photo:        Фото
+      social_network:
+        name:         Наименование
+        url:          Ссылка
+        logo:         Логотип
+        position:     Позиция
+        hidden:       Скрыта
       invoice:
         id:                 Номер
         status:             Статус
