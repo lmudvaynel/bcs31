@@ -15,7 +15,7 @@
       </a>
     </div>
     <div class="span3">
-      <a class="service_link indexes" href="http://indexp.ru/"
+      <a class="service_link indexes" href="<%= @indexframe.url if @indexframe %>"
          target="go_indexes_iframe">
         <div class="service clearfix">
           <div class="service_icon postmark"><%= image_tag('postmark.png') %></div>
@@ -64,12 +64,14 @@
   </div>
   <%= render 'news_pages/list' %>
 </div>
+    <% if @indexframe %>
     <div class="indexes_wrapper container" style="height:<%= @indexframe.height %>; width:<%= @indexframe.width %>; top:<%= @indexframe.top %>">
       <div class="indexes_iframe_container" style="height:<%= @indexframe.height %>; width:<%= @indexframe.width %>; top:<%= @indexframe.top %>" >
         <%= link_to(image_tag("close-42928_150.png",  class: "closing_cross indexes")) %>
         <iframe src="" name="go_indexes_iframe" id="indexes_iframe" style="overflow: scroll; height:<%= @indexframe.height %>; width:<%= @indexframe.width %>; top:<%= @indexframe.top %>"></iframe>
       </div>
     </div>
+    <% end %>
     <div class="tracking_wrapper container">
       <div class="tracking_iframe_container">
         <%= link_to(image_tag("cross.png",  class: "closing_cross-t tracking")) %>
