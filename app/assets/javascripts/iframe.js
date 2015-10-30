@@ -17,15 +17,17 @@ $(window).load(function() {
     $("a.service_link.indexes").on('click', function(){
         v_port = $(window).height();
         console.log("hit");
+        $('.indexes_wrapper').css("display" , "block");
         $('.indexes_iframe_container').css({'display': 'block'});
         $('#indexes_iframe').css({'display': 'block'});
 //        $('#indexes_iframe').css("display" , "block");
         $('.closing_cross').css("display" , "block");
-        $('.indexes_wrapper').css("display" , "block");
+
 //        console.log(v_port);
     });
     $('.closing_cross.indexes').on('click', function(evt){
         evt.preventDefault();
+        $('.indexes_wrapper').css("display" , "none");
         $('#indexes_iframe').css("display" , "none");
         $('.closing_cross').css("display" , "none");
         $('.indexes_iframe_container').css("display" , "none");
