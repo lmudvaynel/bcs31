@@ -10,7 +10,7 @@ set :stages, %w(production staging)
 set :default_stage, "staging"
 require 'capistrano/ext/multistage'
 
-set :application, "bcstest" #write app name there
+set :application, "bcs31" #write app name there
 
 set :scm, :git
 set :repository,  "git@github.com:lmudvaynel/bcs31.git" #place your repo there
