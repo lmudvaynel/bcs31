@@ -15,7 +15,7 @@
       </a>
     </div>
     <div class="span3">
-      <a class="service_link indexes" href="http://www.vinfo.russianpost.ru/servlet/department"
+      <a class="service_link indexes" href="http://indexp.ru/"
          target="go_indexes_iframe">
         <div class="service clearfix">
           <div class="service_icon postmark"><%= image_tag('postmark.png') %></div>
@@ -64,10 +64,10 @@
   </div>
   <%= render 'news_pages/list' %>
 </div>
-    <div class="indexes_wrapper container">
-      <div class="indexes_iframe_container">
+    <div class="indexes_wrapper container" style="height:<%= @indexframe.height %>; width:<%= @indexframe.width %>; top:<%= @indexframe.top %>">
+      <div class="indexes_iframe_container" style="height:<%= @indexframe.height %>; width:<%= @indexframe.width %>; top:<%= @indexframe.top %>" >
         <%= link_to(image_tag("close-42928_150.png",  class: "closing_cross indexes")) %>
-        <iframe src="" name="go_indexes_iframe" id="indexes_iframe" style="overflow: scroll;"></iframe>
+        <iframe src="" name="go_indexes_iframe" id="indexes_iframe" style="overflow: scroll; height:<%= @indexframe.height %>; width:<%= @indexframe.width %>; top:<%= @indexframe.top %>"></iframe>
       </div>
     </div>
     <div class="tracking_wrapper container">
