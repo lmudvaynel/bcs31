@@ -21,6 +21,7 @@ $(window).load(function() {
         $('#indexes_iframe').css({'display': 'block'});
 //        $('#indexes_iframe').css("display" , "block");
         $('.closing_cross').css("display" , "block");
+        $('.indexes_wrapper').css("display" , "block");
 //        console.log(v_port);
     });
     $('.closing_cross.indexes').on('click', function(evt){
