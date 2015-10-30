@@ -1,4 +1,4 @@
-app_dir = "/var/www/apps/bcstest_production"
+app_dir = "/var/www/apps/bcs31_production"
 
 # Set unicorn options
 worker_processes 4
