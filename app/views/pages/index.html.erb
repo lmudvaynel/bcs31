@@ -72,7 +72,7 @@
       </div>
     </div>
     <% end %>
-    <div class="tracking_wrapper container">
+    <div class="tracking_wrapper container" style="margin-top:<%= @indexframe.top %>;">
       <div class="tracking_iframe_container">
         <%= link_to(image_tag("cross.png",  class: "closing_cross-t tracking")) %>
         <iframe src="" name="go_tracking_iframe" id="tracking_iframe"></iframe>
