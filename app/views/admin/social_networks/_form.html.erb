@@ -1,4 +1,3 @@
-<% layouts = Dir.entries(Rails.root.join("app", "views", "layouts")).keep_if { |i| i =~ /.html.erb$/ }.each{|i| i.slice! ".html.erb"} %>
 <%= semantic_form_for [:admin, resource] do |f| %>
   <%= f.inputs do %>
     <%= f.input :name %>
