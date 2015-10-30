@@ -8,7 +8,7 @@ class OnlineCouriersController < ApplicationController
   def create
     @online_courier = OnlineCourier.new(params[:online_courier])
     if verify_recaptcha(:model => @online_courier, :message => "Неверно введен код.") && @online_courier.save
-      OnlineCourierMailer.order_of_courier(@online_courier).deliver
+      OnlineCourierMailer.delay.order_of_courier(@online_courier)
       redirect_to thanks_path(courier_id: @online_courier.id)
     else
       @page = Page.find_by_slug('online_couriers')

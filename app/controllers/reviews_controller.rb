@@ -12,7 +12,7 @@ class ReviewsController < ApplicationController
      @review.valid?
      if verify_recaptcha(:model => @review, :message => "Неверно введен код.") && @review.save
       AdminUser.all.each do |user|
-        ReviewMailer.review_email(user.email, @review).deliver
+        ReviewMailer.delay.review_email(user.email, @review)
       end
       flash[:notice] = 'Ваш отзыв отправлен на модерацию'
       redirect_to reviews_path
