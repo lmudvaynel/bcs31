@@ -8,8 +8,8 @@ ActiveAdmin.setup do |config|
   #
   config.namespace :admin do |admin|
     admin.build_menu do |menu|
-      menu.add label: 'Контент'  priority: 1
-      menu.add label: 'Обратная связь'  priority: 2
+      menu.add label: 'Контент',  priority: 1
+      menu.add label: 'Обратная связь',  priority: 2
       menu.add label: 'Расчет суммы', priority: 99
     end
   end
