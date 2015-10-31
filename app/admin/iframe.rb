@@ -1,4 +1,6 @@
+# encoding: utf-8
 ActiveAdmin.register Iframe do
+  menu parent: 'Контент'
   index do
     column :name
     column :url

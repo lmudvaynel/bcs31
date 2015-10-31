@@ -1,3 +1,4 @@
+#encoding: utf-8
 class PagesController < ApplicationController
   layout :layout
 
@@ -8,6 +9,9 @@ class PagesController < ApplicationController
   end
 
   def price_of_delivery
+    @cities=City.order('name ASC').where('name  NOT IN (?)', ['МОСКВА','САНКТ-ПЕТЕРБУРГ'] )
+    @msk=City.first(2)
+    @msk += @cities
     @page = Page.find_by_slug(:price_of_delivery)
     delivery = params[:delivery]
     result = if delivery

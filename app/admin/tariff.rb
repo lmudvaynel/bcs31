@@ -1,4 +1,6 @@
+# encoding: utf-8
 ActiveAdmin.register Tariff do
+menu parent: 'Расчет суммы'
 config.sort_order = 'id_asc'
   index do
    	column "Zone" do |i| 

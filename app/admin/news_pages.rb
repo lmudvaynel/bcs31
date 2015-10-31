@@ -1,6 +1,6 @@
 # encoding: utf-8
 ActiveAdmin.register NewsPage do
-  menu priority: 4
+  menu parent: 'Контент'
   config.batch_actions = false
 
   sortable

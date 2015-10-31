@@ -1,3 +1,4 @@
+#encoding: utf-8
 ActiveAdmin.setup do |config|
 
   # == Site Title
@@ -5,6 +6,14 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
+  config.namespace :admin do |admin|
+    admin.build_menu do |menu|
+      menu.add label: 'Контент'  priority: 1
+      menu.add label: 'Обратная связь'  priority: 2
+      menu.add label: 'Расчет суммы', priority: 99
+    end
+  end
+
   config.site_title = "Bcs31"
   config.register_javascript 'ckeditor/init.js'
   # Set the link url for the title. For example, to take

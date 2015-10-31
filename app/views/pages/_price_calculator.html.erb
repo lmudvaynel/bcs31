@@ -2,12 +2,12 @@
   <div class="left">
     <h4>Откуда</h4>
     <%= select_tag 'delivery[country_from]', options_for_select([ "Россия" ], "Россия") %>
-    <%= select_tag 'delivery[city_from_id]', options_from_collection_for_select(City.all, "id", "name", City.where(affiliate: true).first.id.to_s) %>
+    <%= select_tag 'delivery[city_from_id]', options_from_collection_for_select(@msk, "id", "name", City.where(affiliate: true).first.id.to_s) %>
   </div>
   <div class="right">
     <h4>Куда</h4>
     <%= select_tag 'delivery[country_to]', options_for_select([ "Россия" ], "Россия") %>
-    <%= select_tag 'delivery[city_to_id]', options_from_collection_for_select(City.all, "id", "name", City.find_by_name("МОСКВА").id.to_s) %>
+    <%= select_tag 'delivery[city_to_id]', options_from_collection_for_select(@msk, "id", "name", City.find_by_name("МОСКВА").id.to_s) %>
     <div class="weight_input">
       <%= text_field_tag 'delivery[weight]', '', placeholder: 'Введите вес (кг) посылки'%>
     </div>

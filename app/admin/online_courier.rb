@@ -1,6 +1,6 @@
-# Encoding: utf-8
+# encoding: utf-8
 ActiveAdmin.register OnlineCourier do
-
+  menu parent: 'Обратная связь'
   index do
     column :transportation, :as => :select, :collection => ["наличный расчет", "экспресс-доставка"]
     column :date, as: :date_select,

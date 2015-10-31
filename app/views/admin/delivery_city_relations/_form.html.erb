@@ -1,0 +1,15 @@
+<%= semantic_form_for [:admin, resource] do |f| %>
+  <%= f.inputs "Основное" do %>
+    <%= f.input :city_from_id, as: :select,
+                collection: Hash[City.all.map{|city| ["#{city.name}", city.id]}] %>
+    <%= f.input :city_to_id, as: :select,
+                collection: Hash[City.all.map{|city| ["#{city.name}", city.id]}] %>
+    <%= f.input :delivery_time %>
+    <%= f.semantic_fields_for :zones do |j| %>
+      <%= j.input : %>
+      <%= j.input :%>
+      <%= j.input :%>
+    <% end %>
+  <% end %>
+  <%= f.actions %>
+<% end %>

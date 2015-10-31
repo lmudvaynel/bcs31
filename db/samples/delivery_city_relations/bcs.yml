@@ -429,3 +429,13 @@ delivery_city_relations:
     zone: belgorod
     business_morning: true
     delivery_time: 1
+  - city_to: Белгород
+    city_from: Симферополь
+    zone: B
+    business_morning: false
+    delivery_time: 2-4
+  - city_to: Симферополь
+    city_from: Белгород
+    zone: B
+    business_morning: false
+    delivery_time: 2-4

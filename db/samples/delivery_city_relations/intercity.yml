@@ -90,6 +90,7 @@ cities:
   - name: Ярославль
   - name: Нефтеюганск
   - name: Набережные Челны
+  - name: Симферополь
 destination:
   - city: Абакан (респ. Хакассия)
     zone_attributes:
@@ -275,6 +276,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Алматы
     zone_attributes:
       - zone: E
@@ -459,6 +462,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Архангельск
     zone_attributes:
       - zone: E
@@ -643,6 +648,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Астана
     zone_attributes:
       - zone: E
@@ -827,6 +834,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Астрахань
     zone_attributes:
       - zone: E
@@ -1011,6 +1020,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Барнаул
     zone_attributes:
       - zone: E
@@ -1195,6 +1206,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Белгород
     zone_attributes:
       - zone: D
@@ -1379,6 +1392,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Брянск
     zone_attributes:
       - zone: D
@@ -1563,6 +1578,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Владивосток
     zone_attributes:
       - zone: E
@@ -1747,6 +1764,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Владикавказ
     zone_attributes:
       - zone: E
@@ -1931,6 +1950,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Владимир
     zone_attributes:
       - zone: D
@@ -2115,6 +2136,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Волгоград
     zone_attributes:
       - zone: E
@@ -2299,6 +2322,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Вологда
     zone_attributes:
       - zone: D
@@ -2483,6 +2508,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: ВОРОНЕЖ
     zone_attributes:
       - zone: D
@@ -2667,6 +2694,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Грозный
     zone_attributes:
       - zone: E
@@ -2851,6 +2880,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Екатеринбург
     zone_attributes:
       - zone: E
@@ -3035,6 +3066,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Иваново
     zone_attributes:
       - zone: D
@@ -3219,6 +3252,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Ижевск
     zone_attributes:
       - zone: E
@@ -3403,6 +3438,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Иркутск
     zone_attributes:
       - zone: E
@@ -3587,6 +3624,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Казань
     zone_attributes:
       - zone: D
@@ -3771,6 +3810,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Калининград
     zone_attributes:
       - zone: E
@@ -3955,6 +3996,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Калуга
     zone_attributes:
       - zone: D
@@ -4139,6 +4182,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Кемерово
     zone_attributes:
       - zone: E
@@ -4323,6 +4368,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Киров
     zone_attributes:
       - zone: E
@@ -4507,6 +4554,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Когалым
     zone_attributes:
       - zone: E
@@ -4691,6 +4740,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Кострома
     zone_attributes:
       - zone: D
@@ -4875,6 +4926,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Краснодар
     zone_attributes:
       - zone: E
@@ -5059,6 +5112,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Красноярск
     zone_attributes:
       - zone: C
@@ -5243,6 +5298,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Курган
     zone_attributes:
       - zone: E
@@ -5427,6 +5484,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: КУРСК
     zone_attributes:
       - zone: D
@@ -5611,6 +5670,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Липецк
     zone_attributes:
       - zone: D
@@ -5795,6 +5856,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Магадан
     zone_attributes:
       - zone: E
@@ -5979,6 +6042,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Магнитогорск
     zone_attributes:
       - zone: E
@@ -6163,6 +6228,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Махачкала
     zone_attributes:
       - zone: E
@@ -6347,6 +6414,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Минск
     zone_attributes:
       - zone: E
@@ -6531,6 +6600,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: МОСКВА
     zone_attributes:
       - zone: C
@@ -6715,6 +6786,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Мурманск
     zone_attributes:
       - zone: E
@@ -6899,6 +6972,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Надым
     zone_attributes:
       - zone: E
@@ -7083,6 +7158,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Нерюнгри
     zone_attributes:
       - zone: E
@@ -7267,6 +7344,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Нижневартовск
     zone_attributes:
       - zone: E
@@ -7451,6 +7530,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Нижнекамск
     zone_attributes:
       - zone: D
@@ -7635,6 +7716,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Нижний Новгород
     zone_attributes:
       - zone: D
@@ -7819,6 +7902,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Новгород Великий
     zone_attributes:
       - zone: D
@@ -8003,6 +8088,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Новокузнецк
     zone_attributes:
       - zone: E
@@ -8187,6 +8274,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Новороссийск
     zone_attributes:
       - zone: E
@@ -8371,6 +8460,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Новосибирск
     zone_attributes:
       - zone: E
@@ -8555,6 +8646,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Новый Уренгой
     zone_attributes:
       - zone: E
@@ -8739,6 +8832,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Норильск
     zone_attributes:
       - zone: E
@@ -8923,6 +9018,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Ноябрьск
     zone_attributes:
       - zone: E
@@ -9107,6 +9204,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Омск
     zone_attributes:
       - zone: E
@@ -9291,6 +9390,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: ОРЕЛ
     zone_attributes:
       - zone: D
@@ -9475,6 +9576,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Оренбург
     zone_attributes:
       - zone: E
@@ -9659,6 +9762,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Пенза
     zone_attributes:
       - zone: D
@@ -9843,6 +9948,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Пермь
     zone_attributes:
       - zone: D
@@ -10027,6 +10134,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Петрозаводск
     zone_attributes:
       - zone: E
@@ -10211,6 +10320,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Петропавловск-Камчатский
     zone_attributes:
       - zone: E
@@ -10395,6 +10506,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Псков
     zone_attributes:
       - zone: E
@@ -10579,6 +10692,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Ростов-на-Дону
     zone_attributes:
       - zone: E
@@ -10763,6 +10878,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Рязань
     zone_attributes:
       - zone: D
@@ -10947,6 +11064,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Салехард
     zone_attributes:
       - zone: E
@@ -11131,6 +11250,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Самара
     zone_attributes:
       - zone: E
@@ -11315,6 +11436,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: САНКТ-ПЕТЕРБУРГ
     zone_attributes:
       - zone: D
@@ -11499,6 +11622,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Саранск
     zone_attributes:
       - zone: D
@@ -11683,6 +11808,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Саратов
     zone_attributes:
       - zone: D
@@ -11867,6 +11994,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Смоленск
     zone_attributes:
       - zone: D
@@ -12051,6 +12180,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Сочи
     zone_attributes:
       - zone: E
@@ -12235,6 +12366,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Ставрополь
     zone_attributes:
       - zone: E
@@ -12419,6 +12552,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Сургут
     zone_attributes:
       - zone: E
@@ -12603,6 +12738,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Сыктывкар
     zone_attributes:
       - zone: E
@@ -12787,6 +12924,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Тамбов
     zone_attributes:
       - zone: E
@@ -12971,6 +13110,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Тверь
     zone_attributes:
       - zone: D
@@ -13155,6 +13296,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Томск
     zone_attributes:
       - zone: E
@@ -13339,6 +13482,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Тольятти
     zone_attributes:
       - zone: E
@@ -13523,6 +13668,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: ТУЛА
     zone_attributes:
       - zone: D
@@ -13707,6 +13854,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Тюмень
     zone_attributes:
       - zone: E
@@ -13891,6 +14040,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Улан-Удэ
     zone_attributes:
       - zone: E
@@ -14075,6 +14226,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Ульяновск
     zone_attributes:
       - zone: E
@@ -14259,6 +14412,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Усинск
     zone_attributes:
       - zone: E
@@ -14443,6 +14598,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Уфа
     zone_attributes:
       - zone: E
@@ -14627,6 +14784,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time: 
   - city: Ухта
     zone_attributes:
       - zone: E
@@ -14811,6 +14970,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Хабаровск
     zone_attributes:
       - zone: E
@@ -14995,6 +15156,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Ханты-Мансийск
     zone_attributes:
       - zone: E
@@ -15179,6 +15342,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Чебоксары
     zone_attributes:
       - zone: D
@@ -15363,6 +15528,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Челябинск
     zone_attributes:
       - zone: D
@@ -15547,6 +15714,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Череповец
     zone_attributes:
       - zone: D
@@ -15731,6 +15900,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Чита
     zone_attributes:
       - zone: E
@@ -15915,6 +16086,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Южно-Сахалинск
     zone_attributes:
       - zone: E
@@ -16099,6 +16272,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Якутск
     zone_attributes:
       - zone: E
@@ -16283,6 +16458,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Ярославль
     zone_attributes:
       - zone: D
@@ -16467,6 +16644,8 @@ destination:
         time: 5
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Нефтеюганск
     zone_attributes:
       - zone: C
@@ -16651,6 +16830,8 @@ destination:
         time: 1
       - zone: B
         time: 5
+      - zone: 
+        time:
   - city: Набережные Челны
     zone_attributes:
       - zone: B
@@ -16835,3 +17016,191 @@ destination:
         time: 1
       - zone: M3
         time: 5
+      - zone: 
+        time:
+  - city: Симферополь
+    zone_attributes:
+      - zone: M3
+        time: 1
+      - zone: D
+        time: 5
+      - zone: C
+        time: 7
+      - zone: D
+        time: 7
+      - zone: D
+        time: 6
+      - zone: D
+        time: 6
+      - zone: C
+        time: 5
+      - zone: D
+        time: 6
+      - zone: E
+        time: 7
+      - zone: D
+        time: 7
+      - zone: C
+        time: 5
+      - zone: C
+        time: 5
+      - zone: D
+        time: 5
+      - zone: D
+        time: 5
+      - zone: D
+        time: 7
+      - zone: E
+        time: 5
+      - zone: C
+        time: 6
+      - zone: C
+        time: 5
+      - zone: D
+        time: 7
+      - zone: C
+        time: 5
+      - zone: D
+        time: 5
+      - zone: C
+        time: 5
+      - zone: D
+        time: 7
+      - zone: C
+        time: 4
+      - zone: E
+        time: 8
+      - zone: C
+        time: 5
+      - zone: D
+        time: 7
+      - zone: 0
+        time: 7
+      - zone: D
+        time: 8
+      - zone: C
+        time: 6
+      - zone: C
+        time: 5
+      - zone: E
+        time: 9
+      - zone: D
+        time: 5
+      - zone: C
+        time: 6
+      - zone: E
+        time: 7
+      - zone: C
+        time: 4
+      - zone: C
+        time: 7
+      - zone: E
+        time: 9
+      - zone: E
+        time: 8
+      - zone: D
+        time: 5
+      - zone: D
+        time: 5
+      - zone: C
+        time: 5
+      - zone: D
+        time: 5
+      - zone: C
+        time: 7
+      - zone: D
+        time: 7
+      - zone: D
+        time: 6
+      - zone: E
+        time: 7
+      - zone: E
+        time: 8
+      - zone: E
+        time: 8
+      - zone: D
+        time: 6
+      - zone: C
+        time: 5
+      - zone: C
+        time: 7
+      - zone: C
+        time: 6
+      - zone: D
+        time: 7
+      - zone: D
+        time: 7
+      - zone: E
+        time: 7
+      - zone: C
+        time: 6
+      - zone: D
+        time: 6
+      - zone: C
+        time: 5
+      - zone: E
+        time: 9
+      - zone: D
+        time: 5
+      - zone: C
+        time: 5
+      - zone: D
+        time: 5
+      - zone: C
+        time: 5
+      - zone: D
+        time: 5
+      - zone: D
+        time: 7
+      - zone: D
+        time: 6
+      - zone: D
+        time: 7
+      - zone: D
+        time: 5
+      - zone: C
+        time: 5
+      - zone: D
+        time: 5
+      - zone: B
+        time: 7
+      - zone: C
+        time: 5
+      - zone: C
+        time: 5
+      - zone: D
+        time: 6
+      - zone: C
+        time: 7
+      - zone: C
+        time: 5
+      - zone: E
+        time: 6
+      - zone: C
+        time: 4
+      - zone: D
+        time: 5
+      - zone: E
+        time: 7
+      - zone: D
+        time: 7
+      - zone: C
+        time: 4
+      - zone: D
+        time: 5
+      - zone: D
+        time: 5
+      - zone: E
+        time: 8
+      - zone: E
+        time: 8
+      - zone: E
+        time: 8
+      - zone: D
+        time: 6
+      - zone: C
+        time: 5
+      - zone: B
+        time: 5
+      - zone: M3
+        time: 1

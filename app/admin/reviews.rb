@@ -1,6 +1,6 @@
 # encoding: utf-8
 ActiveAdmin.register Review do
-  menu priority: 6
+  menu parent: 'Обратная связь' 
   config.batch_actions = false
 
   index do

@@ -1,5 +1,6 @@
 # encoding: utf-8
 ActiveAdmin.register SocialNetwork do
+  menu parent: 'Контент'
   config.batch_actions = false
   config.sort_order = 'position_asc'
 

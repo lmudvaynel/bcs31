@@ -1,5 +1,6 @@
+# encoding: utf-8
 ActiveAdmin.register Banner do
-  menu priority: 2
+  menu parent: 'Контент'
 
   sortable
 

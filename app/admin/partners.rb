@@ -1,6 +1,6 @@
 # encoding: utf-8
 ActiveAdmin.register Partner do
-  menu priority: 7
+  menu parent: 'Контент'
 
   index do
     column :url
