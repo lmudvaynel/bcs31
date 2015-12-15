@@ -1,13 +1,223 @@
-<div class="slider-inner">
-  <div id="da-slider" class="da-slider">
+<style type="text/css">
+@keyframes slider_text_anim {
+    0%   {right:6px; opacity: 0;}
+    8%  {right:38px; opacity: 1;}
+    52%  {right:38px; opacity: 1;}
+    60% {right:6px; opacity: 0;}
+    76% {right:6px; opacity: 0;}
+    100% {right:6px; opacity: 0;}
+}
+@-webkit-keyframes slider_text_anim {
+    0%   {right:6px; opacity: 0;}
+    8%  {right:38px; opacity: 1;}
+    52%  {right:38px; opacity: 1;}
+    60% {right:6px; opacity: 0;}
+    76% {right:6px; opacity: 0;}
+    100% {right:6px; opacity: 0;}
+}
 
-    <% Banner.all.each do |banner| %>
-      <%= render 'pages/index/slide', banner: banner %>
-    <% end %>
+@keyframes slider_site_anim {
+    0%   {right:124px; opacity: 0;}
+    8%   {right:124px; opacity: 0;}
+    16%  {right:83px; opacity: 1;}
+    60%  {right:83px; opacity: 1;}
+    68%  {right:124px; opacity: 0;}
+    76%  {right:124px; opacity: 0;}
+    100% {right:124px; opacity: 0;}
+}
+@-webkit-keyframes slider_site_anim {
+    0%   {right:124px; opacity: 0;}
+    8%   {right:124px; opacity: 0;}
+    16%  {right:83px; opacity: 1;}
+    60%  {right:83px; opacity: 1;}
+    68%  {right:124px; opacity: 0;}
+    76%  {right:124px; opacity: 0;}
+    100% {right:124px; opacity: 0;}
+}
 
-    <nav class="da-arrows">
-      <span class="da-arrows-prev"></span>
-      <span class="da-arrows-next"></span>
-    </nav>
-  </div>
+@keyframes slider_logo_anim {
+    0%   {left:18px; opacity: 0;}
+    8%   {left:18px; opacity: 0;}
+    16%  {left:50px; opacity: 1;}
+    60%  {left:50px; opacity: 1;}
+    68%  {left:18px; opacity: 0;}
+    76%  {left:18px; opacity: 0;}
+    100% {left:18px; opacity: 0;}
+}
+@-webkit-keyframes slider_logo_anim {
+    0%   {left:18px; opacity: 0;}
+    8%   {left:18px; opacity: 0;}
+    16%  {left:50px; opacity: 1;}
+    60%  {left:50px; opacity: 1;}
+    68%  {left:18px; opacity: 0;}
+    76%  {left:18px; opacity: 0;}
+    100% {left:18px; opacity: 0;}
+}
+
+@keyframes express_anim {
+    0%   {right:11px; opacity: 0;}
+    16%  {right:11px; opacity: 0;}
+    24%  {right:83px; opacity: 1;}
+    68%  {right:83px; opacity: 1;}
+    76%  {right:11px; opacity: 0;}
+    100% {right:11px; opacity: 0;}
+}
+@-webkit-keyframes express_anim {
+    0%   {right:11px; opacity: 0;}
+    16%  {right:11px; opacity: 0;}
+    24%  {right:83px; opacity: 1;}
+    68%  {right:83px; opacity: 1;}
+    76%  {right:11px; opacity: 0;}
+    100% {right:11px; opacity: 0;}
+}
+ .slider_ny_1 {
+    background-image: url(/assets/slider.png);
+    width: 1060px;
+    margin: auto;
+    height: 427px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-size: contain;
+ }
+ .slider_ny_2 {
+  background-image: url(/assets/slider_ny.png);
+  width: 1060px;
+  margin: auto;
+  height: 638px;
+  background-repeat: no-repeat;
+  background-size: contain;
+ }
+ .slider_text {
+  background-image: url(/assets/descr.png);
+  width: 411px;
+  height: 181px;
+  right:6px; 
+  opacity: 0;
+  position: absolute;
+  margin-top: 156px;
+  background-size: contain;
+  width: 361px;
+  background-repeat: no-repeat;
+  -webkit-animation-name: slider_text_anim;
+  -webkit-animation-duration: 26s;
+  -webkit-animation-delay: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: slider_text_anim;
+  animation-duration: 26s;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+} 
+  .slider_site {
+    position: absolute;
+    right: 124px;
+    background-image: url(/assets/me31.png);
+    height: 36px;
+    width: 274px;
+    bottom: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    -webkit-animation-name: slider_site_anim;
+    -webkit-animation-duration: 26s;
+    -webkit-animation-delay: 6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: slider_site_anim;
+    animation-duration: 26s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+  }
+  .logo_ny {
+    position: absolute;
+    background-image: url(/assets/me31_logo_ny.png);
+    width: 307px;
+    height: 114px;
+    left: 18px;
+    top: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+    -webkit-animation-name: slider_logo_anim;
+    -webkit-animation-duration: 26s;
+    -webkit-animation-delay: 6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: slider_logo_anim;
+    animation-duration: 26s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+  }
+  .express {
+    position: absolute;
+    background-image: url(/assets/express.png);
+    height: 117px;
+    width: 200px;
+    top: 29px;
+    right: 11px;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-animation-name: express_anim;
+    -webkit-animation-duration: 26s;
+    -webkit-animation-delay: 6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: express_anim;
+    animation-duration: 26s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+  }
+ }
+</style>
+<div class='slider_ny_1'>
+  <div class='logo_ny'></div>
+  <div class='express'></div>
+  <div class='slider_text'></div>
+  <div class='slider_site'></div>
 </div>
+<!--
+<script type="text/javascript">
+function slide_in () {
+  setTimeout(function(){
+    $('.slider_text').animate({
+      right: '38px',
+      opacity: 1
+      },2000, function() {
+      $('.logo_ny').animate({
+        left: '50px',
+        opacity: 1
+      },2000)
+      $('.slider_site').animate({
+        right: '83px',
+        opacity: 1
+      },2000,function(){
+        $('.express').animate({
+          right: '72px',
+          opacity: 1
+      },2000,function(){slide_out()})
+      })
+    })}, 6000)
+}
+function slide_out () {
+  setTimeout(function(){
+    $('.slider_text').animate({
+      right: '6px',
+      opacity: 0
+      },2000, function() {
+      $('.logo_ny').animate({
+        left: '18px',
+        opacity: 0
+      },2000)
+      $('.slider_site').animate({
+        right: '124px',
+        opacity: 0
+      },2000,function(){
+        $('.express').animate({
+          right: '11px',
+          opacity: 0
+      },2000,function(){slide_in()})
+      })
+    })}, 6000)
+}
+$(document).ready(function(){
+    slide_in()
+})
+</script> -->

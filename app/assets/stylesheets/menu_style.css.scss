@@ -15,6 +15,7 @@
 .nav,
 .navbar-inverse {
     background:#fff;
+    background: transparent;
     filter:none;
     border:none;
     padding:0;
@@ -46,7 +47,7 @@
     color: #687074;
     text-shadow:none;
     padding:9px 15px;
-    border-bottom:solid 2px #eee;
+    border-bottom:solid 2px transparent;
     font-family:Verdana,Geneva,Kalimati,sans-serif;
     -webkit-transition:all 0.4s ease-in-out;
     -moz-transition:all 0.4s ease-in-out;

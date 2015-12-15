@@ -6,16 +6,18 @@
 .header {
     z-index:999;
     position:relative;
-    border-bottom:solid 2px #eee;
     //min-height: 126px;
 }
 .header .container {
     position:relative;
+    background: url(/assets/header_ny.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 1200px) {
   .header .container {
-    width: 1070px;
+    width: 1060px;
   }
 }
 .header_top{
@@ -36,6 +38,7 @@
     height: 1px;
     margin-top: 10px;
     z-index: 1000;
+    margin-left: 32px;
 }
 .header_top_phone {
     margin-right: 10px;
