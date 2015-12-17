@@ -1,4 +1,22 @@
 <style type="text/css">
+
+@keyframes monkey_anim {
+    0%    {width: 307px;height: 176px;left: 731px;top: 161px;}
+    8%  { width: 352px;height: 424px;left: 330px;top: 22px;}
+    82%  { width: 352px;height: 424px;left: 330px;top: 22px;opacity: 1;}
+    88%  {width: 352px;height: 424px;left: 282px;top: 72px;opacity: 0;}
+    92%  {width: 307px;height: 176px;left: 731px;top: 161px;opacity: 0;}
+    100%  {width: 307px;height: 176px;left: 731px;top: 161px;opacity: 1}
+}   
+@-webkit-keyframes monkey_anim {
+    0%    {width: 307px;height: 176px;left: 731px;top: 161px;}
+    8%  { width: 352px;height: 424px;left: 338px;top: 22px;}
+    82%  { width: 352px;height: 424px;left: 338px;top: 22px;opacity: 1;}
+    88%  {width: 352px;height: 424px;left: 282px;top: 72px;opacity: 0;}
+    92%  {width: 307px;height: 176px;left: 731px;top: 161px;opacity: 0;}
+    100%  {width: 307px;height: 176px;left: 731px;top: 161px;opacity: 1}
+}   
+
 @keyframes slider_text_anim {
     0%   {right:6px; opacity: 0;}
     8%  {right:38px; opacity: 1;}
@@ -14,6 +32,23 @@
     60% {right:6px; opacity: 0;}
     76% {right:6px; opacity: 0;}
     100% {right:6px; opacity: 0;}
+}
+
+@keyframes gifts_anim {
+    0%   {opacity: 0;}
+    8%  {opacity: 1;}
+    52%  {opacity: 1;}
+    60% {opacity: 0;}
+    76% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes gifts_anim {
+    0%   {opacity: 0;}
+    8%  {opacity: 1;}
+    52%  {opacity: 1;}
+    60% {opacity: 0;}
+    76% {opacity: 0;}
+    100% {opacity: 0;}
 }
 
 @keyframes slider_site_anim {
@@ -71,14 +106,14 @@
     100% {right:11px; opacity: 0;}
 }
  .slider_ny_1 {
-    background-image: url(/assets/slider.png);
-    width: 1060px;
-    margin: auto;
-    height: 427px;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    background-size: contain;
+  background-image: url(/assets/slider.png);
+  width: 1060px;
+  margin: auto;
+  height: 446px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-size: contain;
  }
  .slider_ny_2 {
   background-image: url(/assets/slider_ny.png);
@@ -101,11 +136,11 @@
   background-repeat: no-repeat;
   -webkit-animation-name: slider_text_anim;
   -webkit-animation-duration: 26s;
-  -webkit-animation-delay: 6s;
+  -webkit-animation-delay: 7s;
   -webkit-animation-iteration-count: infinite;
   animation-name: slider_text_anim;
   animation-duration: 26s;
-  animation-delay: 6s;
+  animation-delay: 7s;
   animation-iteration-count: infinite;
 } 
   .slider_site {
@@ -120,11 +155,11 @@
     opacity: 0;
     -webkit-animation-name: slider_site_anim;
     -webkit-animation-duration: 26s;
-    -webkit-animation-delay: 6s;
+    -webkit-animation-delay: 7s;
     -webkit-animation-iteration-count: infinite;
     animation-name: slider_site_anim;
     animation-duration: 26s;
-    animation-delay: 6s;
+    animation-delay: 7s;
     animation-iteration-count: infinite;
   }
   .logo_ny {
@@ -139,11 +174,46 @@
     opacity: 0;
     -webkit-animation-name: slider_logo_anim;
     -webkit-animation-duration: 26s;
-    -webkit-animation-delay: 6s;
+    -webkit-animation-delay: 7s;
     -webkit-animation-iteration-count: infinite;
     animation-name: slider_logo_anim;
     animation-duration: 26s;
-    animation-delay: 6s;
+    animation-delay: 7s;
+    animation-iteration-count: infinite;
+  }
+  .monkey {
+    position: absolute;
+    background-image: url(/assets/monkey.png);
+    width: 307px;height: 176px;left: 731px;top: 161px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-animation-name: monkey_anim;
+    -webkit-animation-duration: 26s;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: monkey_anim;
+    animation-duration: 26s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+  }
+  .gifts {
+    background-image: url(/assets/gifts.png);
+    width: 411px;
+    height: 279px;
+    left: 84px;
+    opacity: 1;
+    position: absolute;
+    margin-top: 156px;
+    background-size: contain;
+    width: 361px;
+    background-repeat: no-repeat;
+    -webkit-animation-name: gifts_anim;
+    -webkit-animation-duration: 26s;
+    -webkit-animation-delay: 7s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: gifts_anim;
+    animation-duration: 26s;
+    animation-delay: 7s;
     animation-iteration-count: infinite;
   }
   .express {
@@ -158,16 +228,18 @@
     background-size: contain;
     -webkit-animation-name: express_anim;
     -webkit-animation-duration: 26s;
-    -webkit-animation-delay: 6s;
+    -webkit-animation-delay: 7s;
     -webkit-animation-iteration-count: infinite;
     animation-name: express_anim;
     animation-duration: 26s;
-    animation-delay: 6s;
+    animation-delay: 7s;
     animation-iteration-count: infinite;
   }
  }
 </style>
 <div class='slider_ny_1'>
+  <div class='monkey'></div>
+  <div class='gifts'></div>
   <div class='logo_ny'></div>
   <div class='express'></div>
   <div class='slider_text'></div>
