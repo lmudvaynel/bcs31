@@ -1,5 +1,432 @@
 <style type="text/css">
 
+@keyframes monkey_anim {    
+    0%    {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    4%    {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    8%  { width: 33%;height: 94%;left: 31%;top: 5%;opacity: 1;}
+    82%  { width: 33%;height: 94%;left: 31%;top: 5%;opacity: 1;}
+    88%  {width: 33%;height: 94%;left: 31%;top: 5%;opacity: 0;}
+    92%  {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    100%  {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+  }
+@-webkit-keyframes monkey_anim {    
+    0%    {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    4%    {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    8%  { width: 33%;height: 94%;left: 31%;top: 5%;opacity: 1;}
+    82%  { width: 33%;height: 94%;left: 31%;top: 5%;opacity: 1;}
+    88%  {width: 33%;height: 94%;left: 31%;top: 5%;opacity: 0;}
+    92%  {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    100%  {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    }
+@-ms-keyframes monkey_anim {    
+    0%    {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    4%    {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    8%  { width: 33%;height: 94%;left: 31%;top: 5%;opacity: 1;}
+    82%  { width: 33%;height: 94%;left: 31%;top: 5%;opacity: 1;}
+    88%  {width: 33%;height: 94%;left: 31%;top: 5%;opacity: 0;}
+    92%  {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    100%  {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    }
+@-moz-keyframes monkey_anim {    
+    0%    {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    4%    {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    8%  { width: 33%;height: 94%;left: 31%;top: 5%;opacity: 1;}
+    82%  { width: 33%;height: 94%;left: 31%;top: 5%;opacity: 1;}
+    88%  {width: 33%;height: 94%;left: 31%;top: 5%;opacity: 0;}
+    92%  {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    100%  {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    }
+@-o-keyframes monkey_anim {    
+    0%    {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    4%    {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    8%  { width: 33%;height: 94%;left: 31%;top: 5%;opacity: 1;}
+    82%  { width: 33%;height: 94%;left: 31%;top: 5%;opacity: 1;}
+    88%  {width: 33%;height: 94%;left: 31%;top: 5%;opacity: 0;}
+    92%  {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    100%  {width: 14%;    height: 40%;    left: 69%;    top: 37%;}
+    }
+
+
+@keyframes slider_text_anim {
+    0%   {right: 0%; opacity: 0;}
+    8%  {right: 4%; opacity: 1;}
+    52%  {right: 4%; opacity: 1;}
+    60% {right: 0%; opacity: 0;}
+    76% {right: 0%; opacity: 0;}
+    100% {right: 0%;opacity: 0;}
+}
+@-webkit-keyframes slider_text_anim {
+    0%   {right: 0%; opacity: 0;}
+    8%  {right: 4%; opacity: 1;}
+    52%  {right: 4%; opacity: 1;}
+    60% {right: 0%; opacity: 0;}
+    76% {right: 0%; opacity: 0;}
+    100% {right: 0%;opacity: 0;}
+}
+@-moz-keyframes slider_text_anim {
+    0%   {right: 0%; opacity: 0;}
+    8%  {right: 4%; opacity: 1;}
+    52%  {right: 4%; opacity: 1;}
+    60% {right: 0%; opacity: 0;}
+    76% {right: 0%; opacity: 0;}
+    100% {right: 0%;opacity: 0;}
+}
+@-ms-keyframes slider_text_anim {
+    0%   {right: 0%; opacity: 0;}
+    8%  {right: 4%; opacity: 1;}
+    52%  {right: 4%; opacity: 1;}
+    60% {right: 0%; opacity: 0;}
+    76% {right: 0%; opacity: 0;}
+    100% {right: 0%;opacity: 0;}
+}
+@-o-keyframes slider_text_anim {
+    0%   {right: 0%; opacity: 0;}
+    8%  {right: 4%; opacity: 1;}
+    52%  {right: 4%; opacity: 1;}
+    60% {right: 0%; opacity: 0;}
+    76% {right: 0%; opacity: 0;}
+    100% {right: 0%;opacity: 0;}
+}
+
+@keyframes gifts_anim {
+    0%   {opacity: 0;}
+    8%  {opacity: 1;}
+    52%  {opacity: 1;}
+    60% {opacity: 0;}
+    76% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes gifts_anim {
+    0%   {opacity: 0;}
+    8%  {opacity: 1;}
+    52%  {opacity: 1;}
+    60% {opacity: 0;}
+    76% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@-moz-keyframes gifts_anim {
+    0%   {opacity: 0;}
+    8%  {opacity: 1;}
+    52%  {opacity: 1;}
+    60% {opacity: 0;}
+    76% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@-ms-keyframes gifts_anim {
+    0%   {opacity: 0;}
+    8%  {opacity: 1;}
+    52%  {opacity: 1;}
+    60% {opacity: 0;}
+    76% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@-o-keyframes gifts_anim {
+    0%   {opacity: 0;}
+    8%  {opacity: 1;}
+    52%  {opacity: 1;}
+    60% {opacity: 0;}
+    76% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes slider_site_anim {
+    0%   {right:12%; opacity: 0;}
+    8%   {right:12%; opacity: 0;}
+    16%  {right:8%; opacity: 1;}
+    60%  {right:8%; opacity: 1;}
+    68%  {right:12%; opacity: 0;}
+    76%  {right:12%; opacity: 0;}
+    100% {right:12%; opacity: 0;}
+}
+@-webkit-keyframes slider_site_anim {
+    0%   {right:12%; opacity: 0;}
+    8%   {right:12%; opacity: 0;}
+    16%  {right:8%; opacity: 1;}
+    60%  {right:8%; opacity: 1;}
+    68%  {right:12%; opacity: 0;}
+    76%  {right:12%; opacity: 0;}
+    100% {right:12%; opacity: 0;}
+}
+@-moz-keyframes slider_site_anim {
+    0%   {right:12%; opacity: 0;}
+    8%   {right:12%; opacity: 0;}
+    16%  {right:8%; opacity: 1;}
+    60%  {right:8%; opacity: 1;}
+    68%  {right:12%; opacity: 0;}
+    76%  {right:12%; opacity: 0;}
+    100% {right:12%; opacity: 0;}
+}
+@-ms-keyframes slider_site_anim {
+    0%   {right:12%; opacity: 0;}
+    8%   {right:12%; opacity: 0;}
+    16%  {right:8%; opacity: 1;}
+    60%  {right:8%; opacity: 1;}
+    68%  {right:12%; opacity: 0;}
+    76%  {right:12%; opacity: 0;}
+    100% {right:12%; opacity: 0;}
+}
+@-o-keyframes slider_site_anim {
+    0%   {right:12%; opacity: 0;}
+    8%   {right:12%; opacity: 0;}
+    16%  {right:8%; opacity: 1;}
+    60%  {right:8%; opacity: 1;}
+    68%  {right:12%; opacity: 0;}
+    76%  {right:12%; opacity: 0;}
+    100% {right:12%; opacity: 0;}
+}
+
+@keyframes slider_logo_anim {
+    0%   {left:2%; opacity: 0;}
+    8%   {left:2%; opacity: 0;}
+    16%  {left:5%; opacity: 1;}
+    60%  {left:5%; opacity: 1;}
+    68%  {left:2%; opacity: 0;}
+    76%  {left:2%; opacity: 0;}
+    100% {left:2%; opacity: 0;}
+}
+@-webkit-keyframes slider_logo_anim {
+    0%   {left:2%; opacity: 0;}
+    8%   {left:2%; opacity: 0;}
+    16%  {left:5%; opacity: 1;}
+    60%  {left:5%; opacity: 1;}
+    68%  {left:2%; opacity: 0;}
+    76%  {left:2%; opacity: 0;}
+    100% {left:2%; opacity: 0;}
+}
+@-moz-keyframes slider_logo_anim {
+    0%   {left:2%; opacity: 0;}
+    8%   {left:2%; opacity: 0;}
+    16%  {left:5%; opacity: 1;}
+    60%  {left:5%; opacity: 1;}
+    68%  {left:2%; opacity: 0;}
+    76%  {left:2%; opacity: 0;}
+    100% {left:2%; opacity: 0;}
+}
+
+@-ms-keyframes slider_logo_anim {
+    0%   {left:2%; opacity: 0;}
+    8%   {left:2%; opacity: 0;}
+    16%  {left:5%; opacity: 1;}
+    60%  {left:5%; opacity: 1;}
+    68%  {left:2%; opacity: 0;}
+    76%  {left:2%; opacity: 0;}
+    100% {left:2%; opacity: 0;}
+}
+
+@-o-keyframes slider_logo_anim {
+    0%   {left:2%; opacity: 0;}
+    8%   {left:2%; opacity: 0;}
+    16%  {left:5%; opacity: 1;}
+    60%  {left:5%; opacity: 1;}
+    68%  {left:2%; opacity: 0;}
+    76%  {left:2%; opacity: 0;}
+    100% {left:2%; opacity: 0;}
+}
+
+
+@keyframes express_anim {
+    0%   {right:6%; opacity: 0;}
+    16%  {right:6%; opacity: 0;}
+    24%  {right:8%; opacity: 1;}
+    68%  {right:8%; opacity: 1;}
+    76%  {right:6%; opacity: 0;}
+    100% {right:6%; opacity: 0;}
+}
+@-webkit-keyframes express_anim {
+    0%   {right:6%; opacity: 0;}
+    16%  {right:6%; opacity: 0;}
+    24%  {right:8%; opacity: 1;}
+    68%  {right:8%; opacity: 1;}
+    76%  {right:6%; opacity: 0;}
+    100% {right:6%; opacity: 0;}
+}
+@-moz-keyframes express_anim {
+    0%   {right:6%; opacity: 0;}
+    16%  {right:6%; opacity: 0;}
+    24%  {right:8%; opacity: 1;}
+    68%  {right:8%; opacity: 1;}
+    76%  {right:6%; opacity: 0;}
+    100% {right:6%; opacity: 0;}
+}
+@-ms-keyframes express_anim {
+    0%   {right:6%; opacity: 0;}
+    16%  {right:6%; opacity: 0;}
+    24%  {right:8%; opacity: 1;}
+    68%  {right:8%; opacity: 1;}
+    76%  {right:6%; opacity: 0;}
+    100% {right:6%; opacity: 0;}
+}
+@-o-keyframes express_anim {
+    0%   {right:6%; opacity: 0;}
+    16%  {right:6%; opacity: 0;}
+    24%  {right:8%; opacity: 1;}
+    68%  {right:8%; opacity: 1;}
+    76%  {right:6%; opacity: 0;}
+    100% {right:6%; opacity: 0;}
+}
+ .slider_ny_1 {
+  background-image: url(/assets/slider.png);
+  margin: auto;
+  max-width: 1060px;
+  height: 40vw;
+  max-height: 435px;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  background-size: contain;
+ }
+ .slider_ny_2 {
+  background-image: url(/assets/slider_ny.png);
+  width: 1060px;
+  margin: auto;
+  height: 638px;
+  background-repeat: no-repeat;
+  background-size: contain;
+ }
+ .moz {
+  -moz-animation-duration: 26s;
+  -moz-animation-delay: 3s;
+  -moz-animation-iteration-count: infinite;
+ }
+ .ms {
+  -ms-animation-duration: 26s;
+  -ms-animation-delay: 3s;
+  -ms-animation-iteration-count: infinite;
+ }
+ .o {
+  -o-animation-duration: 26s;
+  -o-animation-delay: 3s;
+  -o-animation-iteration-count: infinite;
+ }
+.webkit {
+  -webkit-animation-duration: 26s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+ }
+ .default {
+  animation-duration: 26s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+ }
+ .slider_text {
+  background-image: url(/assets/descr.png);
+  height: 40%;
+  right: 0%;
+  opacity: 0;
+  position: absolute;
+  margin-top: 15%;
+  background-size: contain;
+  width: 34%;
+  background-repeat: no-repeat;
+  -webkit-animation-name: slider_text_anim;
+  -moz-animation-name: slider_text_anim;
+  -ms-animation-name: slider_text_anim;
+  -o-animation-name: slider_text_anim;
+  animation-name: slider_text_anim;
+} 
+  .slider_site {
+    position: absolute;
+    right: 12%;
+    background-image: url(/assets/me31.png);
+    height: 8%;
+    width: 26%;
+    bottom: 4%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    -webkit-animation-name: slider_site_anim;
+    -moz-animation-name: slider_site_anim;
+    -ms-animation-name: slider_site_anim;
+    -o-animation-name: slider_site_anim;
+    animation-name: slider_site_anim;
+  }
+  .logo_ny {
+    position: absolute;
+    background-image: url(/assets/me31_logo_ny.png);
+    width: 28%;
+    height: 25%;
+    left: 2%;
+    top: 5%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+    -webkit-animation-name: slider_logo_anim;
+    -moz-animation-name: slider_logo_anim;
+    -ms-animation-name: slider_logo_anim;
+    -o-animation-name: slider_logo_anim;
+    animation-name: slider_logo_anim;
+  }
+  .monkey {
+    position: absolute;
+    background-image: url(/assets/monkey.png);
+    width: 14%;
+    height: 40%;
+    left: 69%;
+    top: 37%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    background-size: contain;
+    -webkit-animation-name: monkey_anim;
+    -moz-animation-name: monkey_anim;
+    -ms-animation-name: monkey_anim;
+    -o-animation-name: monkey_anim;
+    animation-name: monkey_anim;
+
+    -moz-animation-duration: 26s;
+    -moz-animation-delay: 1s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-duration: 26s;
+    -ms-animation-delay: 1s;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-duration: 26s;
+    -o-animation-delay: 1s;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-duration: 26s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-duration: 26s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+  }
+  .gifts {
+    background-image: url(/assets/gifts.png);
+    width: 31%;
+    height: 63%;
+    left: 7%;
+    opacity: 0;
+    position: absolute;
+    margin-top: 15%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-animation-name: gifts_anim;
+    -moz-animation-name: gifts_anim;
+    -ms-animation-name: gifts_anim;
+    -o-animation-name: gifts_anim;
+    animation-name: gifts_anim;
+  }
+  .express {
+    position: absolute;
+    background-image: url(/assets/express.png);
+    height: 26%;
+    width: 14%;
+    top: 6%;
+    right: 6%;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-animation-name: express_anim;
+    -moz-animation-name: express_anim;
+    -ms-animation-name: express_anim;
+    -o-animation-name: express_anim;
+    animation-name: express_anim;
+  }
+  .preload * {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -ms-animation: none !important;
+    -o-animation: none !important;
+  }
 </style>
 <div class='slider_ny_1 preload'>
   <div class='monkey'></div>
@@ -39,7 +466,7 @@ function slide_out () {
       opacity: 0
       },2000, function() {
       $('.logo_ny').animate({
-        left: '18px',
+        left: '2%',
         opacity: 0
       },2000)
       $('.slider_site').animate({
