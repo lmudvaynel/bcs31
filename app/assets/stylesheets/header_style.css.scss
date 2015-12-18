@@ -9,6 +9,8 @@
     //min-height: 126px;
 }
 .header .container {
+    width:100%;
+    max-width: 1170px;
     position:relative;
     background: url(/assets/header_ny.png);
     background-size: 100%;
@@ -17,7 +19,7 @@
 
 @media (min-width: 1200px) {
   .header .container {
-    width: 1060px;
+    width: 1170px;
   }
 }
 .header_top{
