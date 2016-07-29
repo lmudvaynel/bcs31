@@ -32,7 +32,7 @@ class PagesController < ApplicationController
       end
     end
   end
-    
+  
   def show
     @page = Page.find_by_slug(params[:slug]) || Page.find(params[:slug])
     @parent = @page.parent
@@ -42,6 +42,11 @@ class PagesController < ApplicationController
       end
     end
     render params[:slug] if controller_view_exists?(params[:slug])
+  end
+
+  def robots
+    respond_to :text
+    expires_in 6.hours, public: true
   end
 
   private

@@ -24,7 +24,7 @@ Bcs31::Application.routes.draw do
   resources :invoices do
     post :search, on: :collection
   end
-
+  get '/robots.:format' => 'pages#robots'
   get 'price_of_delivery' => 'pages#price_of_delivery'
   post 'price_of_delivery' => 'pages#price_of_delivery', constraints: {format: :json}
 
